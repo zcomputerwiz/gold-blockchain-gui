@@ -47,14 +47,13 @@ const getCols = (type: WalletType) => [
     title: <Trans>Date</Trans>,
   },
   {
-    field: (row: Row) => {
-      return row.confirmed
+    field: (row: Row) =>
+      row.confirmed
         ? (
           <Trans>
             Confirmed at height {row.confirmed_at_height}
           </Trans>
-        ) : <Trans>Pending</Trans>;
-    },
+        ) : <Trans>Pending</Trans>,
     title: <Trans>Status</Trans>,
   },
   {

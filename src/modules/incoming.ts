@@ -108,7 +108,11 @@ export default function incomingReducer(
 
       const { message } = action;
       const { data } = message;
+      console.log("INCOMING DATA: ")
+      console.log(data)
       const { command } = message;
+      console.log("INCOMING COMMAND: ")
+      console.log(command)
       let success;
       let wallets;
       if (command === 'generate_mnemonic') {
@@ -314,8 +318,14 @@ export default function incomingReducer(
       }
       if (command === 'state_changed' && data.state === 'tx_update') {
         const id = data.wallet_id;
+        console.log("INCOMING ID: ")
+        console.log(id)
         wallets = state.wallets;
+        console.log("INCOMING WALLETS: ")
+        console.log(wallets)
         const wallet = wallets[Number(id)];
+        console.log("INCOMING WALLET: ")
+        console.log(wallet)
         wallet.sending_transaction = false;
         wallet.send_transaction_result = message.data.additional_data;
         return { ...state };
