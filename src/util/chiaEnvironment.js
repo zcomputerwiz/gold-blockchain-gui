@@ -94,8 +94,6 @@ const startChiaDaemon = () => {
     pyProc = new Process('python', [script], processOptions);
   }
   if (pyProc != null) {
-    pyProc.stdout.setEncoding('utf8');
-
     pyProc.stdout.on('data', function (data) {
       if (!have_cert) {
         process.stdout.write('No cert\n');
