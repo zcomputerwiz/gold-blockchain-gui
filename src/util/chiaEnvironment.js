@@ -52,7 +52,7 @@ const getChiaVersion = () => {
   try {
     version = child_process
       .execFileSync(exePath, ['version'], {
-        encoding: 'UTF-8',
+        encoding: 'en_US.UTF-8',
       })
       .trim();
   } catch (e1) {
@@ -60,7 +60,7 @@ const getChiaVersion = () => {
     try {
       version = child_process
         .execFileSync(path.basename(exePath), ['version'], {
-          encoding: 'UTF-8',
+          encoding: 'en_US.UTF-8',
         })
         .trim();
     } catch (e2) {
