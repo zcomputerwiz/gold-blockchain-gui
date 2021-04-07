@@ -108,11 +108,7 @@ export default function incomingReducer(
 
       const { message } = action;
       const { data } = message;
-      console.log("INCOMING DATA: ")
-      console.log(data)
       const { command } = message;
-      console.log("INCOMING COMMAND: ")
-      console.log(command)
       let success;
       let wallets;
       if (command === 'generate_mnemonic') {
@@ -282,14 +278,16 @@ export default function incomingReducer(
       } else if (command === 'did_get_did') {
         const id = data.wallet_id;
         const mydid = data.my_did;
-        const { coin_id } = data;
         wallets = state.wallets;
         const wallet = wallets[Number.parseInt(id, 10)];
         if (!wallet) {
           return state;
         }
         wallet.mydid = mydid;
-        wallet.didcoin = coin_id;
+        if (data.coin_id) {
+          const { coin_id } = data;
+          wallet.didcoin = coin_id;
+        }
         return { ...state };
       } else if (command === 'did_get_recovery_list') {
         const id = data.wallet_id;
@@ -303,29 +301,35 @@ export default function incomingReducer(
         wallet.backup_dids = dids;
         wallet.dids_num_req = dids_num_req;
         return { ...state };
-      } else if (command === 'did_create_attest') {
+      } else if (command === 'did_create_backup_file') {
+        success = data.success;
+      } else if (command === 'did_get_information_needed_for_recovery') {
+        success = data.success;
         const id = data.wallet_id;
-        const attest = data.message_spend_bundle;
+        const { my_did } = data;
+        const { coin_name } = data;
+        const { newpuzhash } = data;
+        const { pubkey } = data;
+        const { backup_dids } = data;
         wallets = state.wallets;
         const wallet = wallets[Number.parseInt(id, 10)];
         if (!wallet) {
           return state;
         }
-        wallet.did_attest = attest;
-        return { ...state };
-      } else if (command === 'did_create_backup_file') {
+        wallet.mydid = my_did;
+        wallet.didcoin = coin_name;
+        wallet.did_rec_puzhash = newpuzhash;
+        wallet.did_rec_pubkey = pubkey;
+        wallet.backup_dids = backup_dids;
+      } else if (command === 'did_recovery_spend') {
         success = data.success;
+        console.log("INCOMING DATA REC SPEND")
+        console.log(data)
       }
       if (command === 'state_changed' && data.state === 'tx_update') {
         const id = data.wallet_id;
-        console.log("INCOMING ID: ")
-        console.log(id)
         wallets = state.wallets;
-        console.log("INCOMING WALLETS: ")
-        console.log(wallets)
         const wallet = wallets[Number(id)];
-        console.log("INCOMING WALLET: ")
-        console.log(wallet)
         wallet.sending_transaction = false;
         wallet.send_transaction_result = message.data.additional_data;
         return { ...state };

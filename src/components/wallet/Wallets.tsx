@@ -24,7 +24,7 @@ import {
 import { CreateWalletView } from './create/WalletCreate';
 import ColouredWallet from './coloured/WalletColoured';
 import RateLimitedWallet from './rateLimited/WalletRateLimited';
-import DistributedWallet from './did/DIDWallet';
+import DistributedIDWallet from './did/DIDWallet';
 import type { RootState } from '../../modules/rootReducer';
 import WalletType from '../../constants/WalletType';
 import LayoutSidebar from '../layout/LayoutSidebar';

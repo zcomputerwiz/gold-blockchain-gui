@@ -169,7 +169,7 @@ export const RecoverDIDWallet = () => {
       </div>
       <Dropzone onDrop={handleDrop}>
         <Trans>
-          Drag and drop offer file
+          Drag and drop recovery file
         </Trans>
       </Dropzone>
     </div>
