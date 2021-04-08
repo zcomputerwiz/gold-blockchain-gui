@@ -323,8 +323,8 @@ export default function incomingReducer(
         wallet.backup_dids = backup_dids;
       } else if (command === 'did_recovery_spend') {
         success = data.success;
-        console.log("INCOMING DATA REC SPEND")
-        console.log(data)
+        console.log('INCOMING DATA REC SPEND');
+        console.log(data);
       }
       if (command === 'state_changed' && data.state === 'tx_update') {
         const id = data.wallet_id;
