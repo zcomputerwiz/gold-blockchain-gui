@@ -204,7 +204,7 @@ export default function Wallets() {
               )}
               {!!wallet && wallet.type === WalletType.DISTRIBUTED_ID && (
                 // @ts-ignore
-                <DistributedWallet wallet_id={id} />
+                <DistributedIDWallet wallet_id={id} />
               )}
             </Route>
             <Route path={`${path}/create`} exact>
