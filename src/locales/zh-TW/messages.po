@@ -34,8 +34,8 @@ msgstr "建議使用 128 個桶"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "收割機是在實際存放耕地的機器上運作的服務。塊農和收割機會與一個完整節點溝通以取得區塊鍵狀態。以下是你的收割機與塊農網路 學習更多"
 
-#: src/electron/main.tsx:366
-#: src/electron/main.tsx:444
+#: src/electron/main.tsx:365
+#: src/electron/main.tsx:443
 msgid "About Chia Blockchain"
 msgstr "關於 Chia 區塊鏈"
 
@@ -63,7 +63,7 @@ msgstr "動作"
 msgid "Add"
 msgstr "新增"
 
-#: src/components/wallet/create/createDIDWallet.js:230
+#: src/components/wallet/create/createDIDWallet.js:269
 msgid "Add Backup ID"
 msgstr ""
 
@@ -122,9 +122,17 @@ msgstr "數量 ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "初始代幣數量"
 
-#: src/components/wallet/create/createDIDWallet.js:151
-msgid "Amount must be an odd amount"
+#: src/components/wallet/create/createDIDWallet.js:147
+msgid "Amount must be an even amount."
 msgstr ""
+
+#: src/components/wallet/create/createDIDWallet.js:144
+#~ msgid "Amount must be an odd amount"
+#~ msgstr ""
+
+#: src/components/wallet/create/createDIDWallet.js:150
+#~ msgid "Amount must be an odd amount."
+#~ msgstr ""
 
 #: src/components/plot/PlotAction.tsx:30
 #: src/components/plot/queue/PlotQueueActions.tsx:32
@@ -267,15 +275,15 @@ msgstr "挑戰"
 msgid "Challenge Hash"
 msgstr "挑戰雜湊值"
 
-#: src/electron/main.tsx:346
+#: src/electron/main.tsx:345
 msgid "Chat on KeyBase"
 msgstr "在 KeyBase 上閒聊"
 
-#: src/electron/main.tsx:363
+#: src/electron/main.tsx:362
 msgid "Chia"
 msgstr "Chia"
 
-#: src/electron/main.tsx:313
+#: src/electron/main.tsx:312
 msgid "Chia Blockchain Wiki"
 msgstr "Chia 區塊鏈維基"
 
@@ -380,7 +388,7 @@ msgstr "連線類型"
 msgid "Connections"
 msgstr "連線"
 
-#: src/electron/main.tsx:331
+#: src/electron/main.tsx:330
 msgid "Contribute on GitHub"
 msgstr "在 GitHub 上貢獻"
 
@@ -401,7 +409,7 @@ msgid "Copy to Clipboard"
 msgstr "複製到剪貼板"
 
 #: src/components/backup/BackupCreate.tsx:70
-#: src/components/wallet/create/createDIDWallet.js:199
+#: src/components/wallet/create/createDIDWallet.js:250
 #: src/components/wallet/create/createExistingColouredCoin.jsx:141
 #: src/components/wallet/create/createNewColouredCoin.jsx:148
 #: src/components/wallet/create/createRLAdmin.jsx:333
@@ -515,7 +523,7 @@ msgstr "延遲"
 #: src/components/plot/queue/PlotQueueActions.tsx:65
 #: src/components/selectKey/SelectKey.tsx:39
 #: src/components/selectKey/SelectKey.tsx:53
-#: src/components/wallet/create/createDIDWallet.js:257
+#: src/components/wallet/create/createDIDWallet.js:296
 msgid "Delete"
 msgstr "刪除"
 
@@ -591,7 +599,7 @@ msgstr ""
 msgid "Drag and drop offer file"
 msgstr "拖放提案檔案"
 
-#: src/components/wallet/create/recoverDIDWallet.js:171
+#: src/components/wallet/create/recoverDIDWallet.js:158
 msgid "Drag and drop recovery file"
 msgstr ""
 
@@ -721,7 +729,7 @@ msgstr "費用數量"
 #~ msgstr ""
 
 #: src/electron/main.tsx:211
-#: src/electron/main.tsx:399
+#: src/electron/main.tsx:398
 msgid "File"
 msgstr "檔案"
 
@@ -740,11 +748,11 @@ msgstr "最終資料夾位置"
 msgid "Finished"
 msgstr "已完成"
 
-#: src/electron/main.tsx:352
+#: src/electron/main.tsx:351
 msgid "Follow on Twitter"
 msgstr "Twitter 上追隨"
 
-#: src/electron/main.tsx:319
+#: src/electron/main.tsx:318
 msgid "Frequently Asked Questions"
 msgstr "常見問題"
 
@@ -787,7 +795,7 @@ msgstr "表頭雜湊值"
 msgid "Height"
 msgstr "高度"
 
-#: src/electron/main.tsx:309
+#: src/electron/main.tsx:308
 msgid "Help"
 msgstr "幫助"
 
@@ -1002,7 +1010,7 @@ msgstr "暱稱"
 msgid "No"
 msgstr "否"
 
-#: src/middleware/middleware_api.jsx:254
+#: src/middleware/middleware_api.jsx:245
 msgid "No 24 word seed, since this key is imported."
 msgstr "由這個鑰匙是匯入的，沒有 24 個字種子。"
 
@@ -1124,12 +1132,19 @@ msgstr "請輸入 0 費用。 RL 尚未支援正向費用。"
 msgid "Please enter a valid initial coin amount"
 msgstr "請輸入有效的初始金額"
 
-#: src/components/wallet/create/createDIDWallet.js:139
+#: src/components/wallet/create/createDIDWallet.js:162
+msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
+msgstr ""
+
 #: src/components/wallet/create/createNewColouredCoin.jsx:69
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:679
 #: src/components/wallet/standard/WalletStandard.tsx:278
 msgid "Please enter a valid numeric amount"
 msgstr "請輸入有效的數字值"
+
+#: src/components/wallet/create/createDIDWallet.js:135
+msgid "Please enter a valid numeric amount."
+msgstr ""
 
 #: src/components/wallet/create/createExistingColouredCoin.jsx:70
 #: src/components/wallet/create/createNewColouredCoin.jsx:81
@@ -1298,11 +1313,11 @@ msgstr "前一個表頭雜湊值"
 msgid "Private key with public fingerprint {fingerprint}"
 msgstr "帶有公有指紋 {fingerprint} 的私鑰"
 
-#: src/middleware/middleware_api.jsx:218
+#: src/middleware/middleware_api.jsx:209
 msgid "Private key {0}"
 msgstr "私鑰 {0}"
 
-#: src/middleware/middleware_api.jsx:228
+#: src/middleware/middleware_api.jsx:219
 msgid "Private key:"
 msgstr "私鑰："
 
@@ -1318,7 +1333,7 @@ msgstr "發現證明數"
 msgid "Pubkey"
 msgstr "公鑰"
 
-#: src/middleware/middleware_api.jsx:236
+#: src/middleware/middleware_api.jsx:227
 msgid "Public key:"
 msgstr "公鑰："
 
@@ -1380,7 +1395,7 @@ msgstr "恢復 DID 錢包"
 msgid "Refresh Plots"
 msgstr "刷新耕地"
 
-#: src/electron/main.tsx:325
+#: src/electron/main.tsx:324
 msgid "Release Notes"
 msgstr "發行說明"
 
@@ -1388,7 +1403,7 @@ msgstr "發行說明"
 msgid "Rename"
 msgstr "更改名稱"
 
-#: src/electron/main.tsx:340
+#: src/electron/main.tsx:339
 msgid "Report an Issue..."
 msgstr "回報問題..."
 
@@ -1430,7 +1445,7 @@ msgstr "第二暫存資料夾位置"
 msgid "See private key"
 msgstr "看私鑰"
 
-#: src/middleware/middleware_api.jsx:246
+#: src/middleware/middleware_api.jsx:237
 msgid "Seed:"
 msgstr "種子："
 
@@ -1521,7 +1536,7 @@ msgstr "登入"
 msgid "Skips adding a final directory to harvester for farming"
 msgstr "跳過新增最終資料夾到收割機進行耕種"
 
-#: src/electron/main.tsx:410
+#: src/electron/main.tsx:409
 msgid "Speech"
 msgstr "語音"
 
@@ -1960,7 +1975,7 @@ msgstr "歡迎！以下的字是用來為你的錢包備份。沒有這些你將
 msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 msgstr "當你從你的管理員收到設定資訊封包時，在下面輸入以完成你的速率限制錢包設定："
 
-#: src/electron/main.tsx:295
+#: src/electron/main.tsx:294
 msgid "Window"
 msgstr "視窗"
 
