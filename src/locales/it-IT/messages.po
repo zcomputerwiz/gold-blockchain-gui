@@ -63,7 +63,8 @@ msgstr "Azioni"
 msgid "Add"
 msgstr "Inserisci"
 
-#: src/components/wallet/create/createDIDWallet.js:269
+#: src/components/wallet/create/createDIDWallet.js:286
+#: src/components/wallet/did/DIDWallet.js:877
 msgid "Add Backup ID"
 msgstr ""
 
@@ -122,7 +123,7 @@ msgstr "Totale ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "Importo Per Moneta Iniziale"
 
-#: src/components/wallet/create/createDIDWallet.js:147
+#: src/components/wallet/create/createDIDWallet.js:151
 msgid "Amount must be an even amount."
 msgstr ""
 
@@ -409,7 +410,7 @@ msgid "Copy to Clipboard"
 msgstr "Copia sulla Clipboard"
 
 #: src/components/backup/BackupCreate.tsx:70
-#: src/components/wallet/create/createDIDWallet.js:250
+#: src/components/wallet/create/createDIDWallet.js:267
 #: src/components/wallet/create/createExistingColouredCoin.jsx:141
 #: src/components/wallet/create/createNewColouredCoin.jsx:148
 #: src/components/wallet/create/createRLAdmin.jsx:333
@@ -523,7 +524,8 @@ msgstr "Ritardo"
 #: src/components/plot/queue/PlotQueueActions.tsx:65
 #: src/components/selectKey/SelectKey.tsx:39
 #: src/components/selectKey/SelectKey.tsx:53
-#: src/components/wallet/create/createDIDWallet.js:296
+#: src/components/wallet/create/createDIDWallet.js:313
+#: src/components/wallet/did/DIDWallet.js:904
 msgid "Delete"
 msgstr "Elimina"
 
@@ -591,7 +593,7 @@ msgstr "Hai dei plot esistenti su questa macchina? <0>Aggiungi Cartella Plot</0>
 msgid "Does your machine support parallel plotting?"
 msgstr "Questa macchina supporta il plotting parallelo?"
 
-#: src/components/wallet/did/DIDWallet.js:417
+#: src/components/wallet/did/DIDWallet.js:428
 msgid "Drag and drop attestation packet(s)"
 msgstr ""
 
@@ -1128,11 +1130,29 @@ msgstr "Per favore aggiungi una coppia di scambio"
 msgid "Please enter 0 fee. Positive fees not supported yet for RL."
 msgstr "Per favore inserisci tasse 0. Le tasse positive non sono ancora supportate per RL."
 
+#: src/components/wallet/did/DIDWallet.js:946
+msgid "Please enter a coin"
+msgstr ""
+
+#: src/components/wallet/did/DIDWallet.js:486
+#: src/components/wallet/did/DIDWallet.js:936
+msgid "Please enter a filename"
+msgstr ""
+
+#: src/components/wallet/did/DIDWallet.js:956
+msgid "Please enter a pubkey"
+msgstr ""
+
+#: src/components/wallet/did/DIDWallet.js:966
+msgid "Please enter a puzzlehash"
+msgstr ""
+
 #: src/components/wallet/create/createRLAdmin.jsx:146
 msgid "Please enter a valid initial coin amount"
 msgstr "Per favore inserisci un ammontare di moneta iniziale valido"
 
-#: src/components/wallet/create/createDIDWallet.js:162
+#: src/components/wallet/create/createDIDWallet.js:165
+#: src/components/wallet/did/DIDWallet.js:782
 msgid "Please enter a valid integer of 0 or greater for the number of Backup IDs needed for recovery."
 msgstr ""
 
@@ -1142,7 +1162,7 @@ msgstr ""
 msgid "Please enter a valid numeric amount"
 msgstr "Per favore inserisci una ammontare numerico valido"
 
-#: src/components/wallet/create/createDIDWallet.js:135
+#: src/components/wallet/create/createDIDWallet.js:139
 msgid "Please enter a valid numeric amount."
 msgstr ""
 
@@ -1616,7 +1636,8 @@ msgstr "Stato:"
 #~ msgid "Sub Block at height {0} in the Chia blockchain"
 #~ msgstr "Sub Block at height {0} in the Chia blockchain"
 
-#: src/components/wallet/did/DIDWallet.js:451
+#: src/components/wallet/did/DIDWallet.js:462
+#: src/components/wallet/did/DIDWallet.js:855
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:357
 msgid "Submit"
 msgstr "Invia"
@@ -1683,6 +1704,11 @@ msgstr "Il nodo non è sincronizzato"
 #: src/components/fullNode/FullNode.jsx:112
 msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
 msgstr "Il nodo si sta sincronizzando, ovvero sta scaricando i blocchi da altri nodi, per raggiungere l'ultimo blocco nella blockchain"
+
+#: src/components/wallet/create/createDIDWallet.js:178
+#: src/components/wallet/did/DIDWallet.js:795
+msgid "The number of Backup IDs needed for recovery cannot exceed the number of Backup IDs added."
+msgstr ""
 
 #: src/components/block/Block.jsx:271
 msgid "The seed used to create the plot. This depends on the pool pk and plot pk."
@@ -2017,7 +2043,7 @@ msgstr ""
 #~ msgid "You need to upgrade the Chia application as this version will stop working soon!"
 #~ msgstr "You need to upgrade the Chia application as this version will stop working soon!"
 
-#: src/components/wallet/did/DIDWallet.js:320
+#: src/components/wallet/did/DIDWallet.js:331
 msgid "Your DID requires at least {dids_num_req} attestation file(s) for recovery. Please upload additional files."
 msgstr ""
 
