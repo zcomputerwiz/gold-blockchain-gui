@@ -970,6 +970,10 @@ msgstr "Nombre de la red"
 msgid "New Address"
 msgstr "Nueva dirección"
 
+#: src/components/settings/Settings.tsx:80
+msgid "New Passcode"
+msgstr ""
+
 #: src/components/wallet/WalletAdd.tsx:32
 msgid "New Wallet"
 msgstr "Nueva billetera"
@@ -1064,6 +1068,10 @@ msgstr "Oferta"
 msgid "Offers Created"
 msgstr "Oferta creada"
 
+#: src/components/settings/Settings.tsx:68
+msgid "Old Passcode"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:312
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Por término medio, hay un minuto entre cada bloque de transacción. A menos que haya congestión, puede esperar que su transacción sea incluida en menos de un minuto."
@@ -1071,6 +1079,14 @@ msgstr "Por término medio, hay un minuto entre cada bloque de transacción. A m
 #: src/components/wallet/WalletHistory.tsx:19
 msgid "Outgoing"
 msgstr "Enviado"
+
+#: src/components/settings/Settings.tsx:49
+msgid "Passcode Settings"
+msgstr ""
+
+#: src/components/app/AppPassLogin.tsx:8
+#~ msgid "Password login test."
+#~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:167
 msgid "Peak Height"
@@ -1357,6 +1373,10 @@ msgstr "Opciones de Tarifa Limitada"
 msgid "Rate Limited User Wallet Setup"
 msgstr "Configuración de Monedero de Usuario con Tarifa Limitada"
 
+#: src/components/settings/Settings.tsx:73
+msgid "Re-enter Old Passcode"
+msgstr ""
+
 #: src/components/wallet/coloured/WalletColoured.tsx:453
 #: src/components/wallet/standard/WalletStandard.tsx:369
 msgid "Receive Address"
@@ -1485,6 +1505,11 @@ msgstr "Envíe este paquete de información al usuario de su Cartera con Tarifa 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:285
 msgid "Send your pubkey to your Rate Limited Wallet admin:"
 msgstr "Enviar su llave pública a su administrador de Cartera de Tarifa Limitada:"
+
+#: src/components/dashboard/DashboardSideBar.tsx:28
+#: src/components/settings/Settings.tsx:93
+msgid "Settings"
+msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:40
 msgid "Show Advanced Options"

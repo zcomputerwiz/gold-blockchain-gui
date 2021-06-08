@@ -970,6 +970,10 @@ msgstr "إسم الشبكة"
 msgid "New Address"
 msgstr "عنوان جديد"
 
+#: src/components/settings/Settings.tsx:80
+msgid "New Passcode"
+msgstr ""
+
 #: src/components/wallet/WalletAdd.tsx:32
 msgid "New Wallet"
 msgstr "محفظة جديدة"
@@ -1064,6 +1068,10 @@ msgstr "عرض"
 msgid "Offers Created"
 msgstr "عروض تم إنشاؤها"
 
+#: src/components/settings/Settings.tsx:68
+msgid "Old Passcode"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:312
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "في المتوسط هناك دقيقة واحدة بين كل كتلة معاملة. ما لم يكن هناك اكتظاظ يمكنك أن تتوقع إدراج معاملتك في أقل من دقيقة."
@@ -1071,6 +1079,14 @@ msgstr "في المتوسط هناك دقيقة واحدة بين كل كتلة 
 #: src/components/wallet/WalletHistory.tsx:19
 msgid "Outgoing"
 msgstr "الصادرة"
+
+#: src/components/settings/Settings.tsx:49
+msgid "Passcode Settings"
+msgstr ""
+
+#: src/components/app/AppPassLogin.tsx:8
+#~ msgid "Password login test."
+#~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:167
 msgid "Peak Height"
@@ -1357,6 +1373,10 @@ msgstr "قيم خيارات محدودة"
 msgid "Rate Limited User Wallet Setup"
 msgstr "معدل إعداد محفظة المستخدم المحدود"
 
+#: src/components/settings/Settings.tsx:73
+msgid "Re-enter Old Passcode"
+msgstr ""
+
 #: src/components/wallet/coloured/WalletColoured.tsx:453
 #: src/components/wallet/standard/WalletStandard.tsx:369
 msgid "Receive Address"
@@ -1485,6 +1505,11 @@ msgstr "أرسل حزمة المعلومات هذه إلى مستخدم المح
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:285
 msgid "Send your pubkey to your Rate Limited Wallet admin:"
 msgstr "أرسل المحفظة الخاصة بك إلى مدير المحفظة المحدودة المعدل:"
+
+#: src/components/dashboard/DashboardSideBar.tsx:28
+#: src/components/settings/Settings.tsx:93
+msgid "Settings"
+msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:40
 msgid "Show Advanced Options"

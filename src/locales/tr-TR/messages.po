@@ -970,6 +970,10 @@ msgstr "Network Adı"
 msgid "New Address"
 msgstr "Yeni Adres"
 
+#: src/components/settings/Settings.tsx:80
+msgid "New Passcode"
+msgstr ""
+
 #: src/components/wallet/WalletAdd.tsx:32
 msgid "New Wallet"
 msgstr "Yeni Cüzdan"
@@ -1064,6 +1068,10 @@ msgstr "Teklif"
 msgid "Offers Created"
 msgstr "Teklif Oluşturuldu"
 
+#: src/components/settings/Settings.tsx:68
+msgid "Old Passcode"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:312
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Ortalama olarak, her işlem bloğu arasında bir dakika vardır. Tıkanıklık olmadığı sürece işleminizin bir dakikadan daha kısa sürede gerçekleşmesini bekleyebilirsiniz."
@@ -1071,6 +1079,14 @@ msgstr "Ortalama olarak, her işlem bloğu arasında bir dakika vardır. Tıkan�
 #: src/components/wallet/WalletHistory.tsx:19
 msgid "Outgoing"
 msgstr "Giden"
+
+#: src/components/settings/Settings.tsx:49
+msgid "Passcode Settings"
+msgstr ""
+
+#: src/components/app/AppPassLogin.tsx:8
+#~ msgid "Password login test."
+#~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:167
 msgid "Peak Height"
@@ -1357,6 +1373,10 @@ msgstr "Hız Limit Ayarı"
 msgid "Rate Limited User Wallet Setup"
 msgstr "Hız Limitli Kullanıcı Cüzdanı Kurulumu"
 
+#: src/components/settings/Settings.tsx:73
+msgid "Re-enter Old Passcode"
+msgstr ""
+
 #: src/components/wallet/coloured/WalletColoured.tsx:453
 #: src/components/wallet/standard/WalletStandard.tsx:369
 msgid "Receive Address"
@@ -1485,6 +1505,11 @@ msgstr "Bu bilgi paketini, cüzdanlarının kurulumunu tamamlamak için kullanma
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:285
 msgid "Send your pubkey to your Rate Limited Wallet admin:"
 msgstr "Yayın anahtarınızı Rate Limited Cüzdan yöneticinize gönderin:"
+
+#: src/components/dashboard/DashboardSideBar.tsx:28
+#: src/components/settings/Settings.tsx:93
+msgid "Settings"
+msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:40
 msgid "Show Advanced Options"

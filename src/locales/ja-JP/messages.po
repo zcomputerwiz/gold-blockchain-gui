@@ -970,6 +970,10 @@ msgstr "ネットワーク名"
 msgid "New Address"
 msgstr "新規アドレス"
 
+#: src/components/settings/Settings.tsx:80
+msgid "New Passcode"
+msgstr ""
+
 #: src/components/wallet/WalletAdd.tsx:32
 msgid "New Wallet"
 msgstr "新規ウォレット作成"
@@ -1064,6 +1068,10 @@ msgstr "注文"
 msgid "Offers Created"
 msgstr "作成した注文"
 
+#: src/components/settings/Settings.tsx:68
+msgid "Old Passcode"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:312
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "取引ブロックは約1分間隔で作成されます。混雑時を除き、1分以内にあなたの送金も取り込まれるはずです。"
@@ -1071,6 +1079,14 @@ msgstr "取引ブロックは約1分間隔で作成されます。混雑時を�
 #: src/components/wallet/WalletHistory.tsx:19
 msgid "Outgoing"
 msgstr "出金"
+
+#: src/components/settings/Settings.tsx:49
+msgid "Passcode Settings"
+msgstr ""
+
+#: src/components/app/AppPassLogin.tsx:8
+#~ msgid "Password login test."
+#~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:167
 msgid "Peak Height"
@@ -1357,6 +1373,10 @@ msgstr "レート制限付きのオプション"
 msgid "Rate Limited User Wallet Setup"
 msgstr "レート制限付きユーザーウォレットのセットアップ"
 
+#: src/components/settings/Settings.tsx:73
+msgid "Re-enter Old Passcode"
+msgstr ""
+
 #: src/components/wallet/coloured/WalletColoured.tsx:453
 #: src/components/wallet/standard/WalletStandard.tsx:369
 msgid "Receive Address"
@@ -1485,6 +1505,11 @@ msgstr "レート制限ウォレットのユーザーに、セットアップを
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:285
 msgid "Send your pubkey to your Rate Limited Wallet admin:"
 msgstr "レート制限付きウォレットの管理者にあなたの公開鍵を送ってください:"
+
+#: src/components/dashboard/DashboardSideBar.tsx:28
+#: src/components/settings/Settings.tsx:93
+msgid "Settings"
+msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:40
 msgid "Show Advanced Options"

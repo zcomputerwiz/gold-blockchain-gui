@@ -832,3 +832,26 @@ export const did_generate_backup_file = (wallet_id, filename) => {
   };
   return action;
 };
+
+/*
+export const settings_toggle_pass = (wallet_id) => {
+  const action = walletMessage();
+  action.message.command = 'fill in function name here';
+  action.message.data = {
+    wallet_id,
+  };
+};
+*/
+
+/*
+export const settings_update_pass = (wallet_id, oldpass1, oldpass2, newpass) => {
+  const action = walletMessage();
+  action.message.command = 'fill in function name here';
+  action.message.data = {
+    wallet_id,
+    oldpass1,
+    oldpass2,
+    newpass,
+  };
+};
+*/

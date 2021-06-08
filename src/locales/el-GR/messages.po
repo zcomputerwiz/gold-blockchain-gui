@@ -970,6 +970,10 @@ msgstr "Όνομα Δικτύου"
 msgid "New Address"
 msgstr "Νέα διεύθυνση"
 
+#: src/components/settings/Settings.tsx:80
+msgid "New Passcode"
+msgstr ""
+
 #: src/components/wallet/WalletAdd.tsx:32
 msgid "New Wallet"
 msgstr "Νέο Πορτοφόλι"
@@ -1064,6 +1068,10 @@ msgstr "Προσφορά"
 msgid "Offers Created"
 msgstr "Δημιουργήθηκαν Προσφορές"
 
+#: src/components/settings/Settings.tsx:68
+msgid "Old Passcode"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:312
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Κατά μέσο όρο υπάρχει ένα λεπτό μεταξύ κάθε μπλοκ συναλλαγών. Αν δεν υπάρχει συμφόρηση, μπορείτε να περιμένετε ότι η συναλλαγή σας θα συμπεριληφθεί σε λιγότερο από ένα λεπτό."
@@ -1071,6 +1079,14 @@ msgstr "Κατά μέσο όρο υπάρχει ένα λεπτό μεταξύ �
 #: src/components/wallet/WalletHistory.tsx:19
 msgid "Outgoing"
 msgstr "Εξερχόμενες"
+
+#: src/components/settings/Settings.tsx:49
+msgid "Passcode Settings"
+msgstr ""
+
+#: src/components/app/AppPassLogin.tsx:8
+#~ msgid "Password login test."
+#~ msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:167
 msgid "Peak Height"
@@ -1357,6 +1373,10 @@ msgstr "Rate Limited Επιλογές"
 msgid "Rate Limited User Wallet Setup"
 msgstr "Rate Limited User Wallet Setup"
 
+#: src/components/settings/Settings.tsx:73
+msgid "Re-enter Old Passcode"
+msgstr ""
+
 #: src/components/wallet/coloured/WalletColoured.tsx:453
 #: src/components/wallet/standard/WalletStandard.tsx:369
 msgid "Receive Address"
@@ -1485,6 +1505,11 @@ msgstr "Στείλτε αυτό το πακέτο πληροφοριών στο 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:285
 msgid "Send your pubkey to your Rate Limited Wallet admin:"
 msgstr "Στείλτε το δημόσιο κλειδί σας στον διαχειριστή του Rate Limited Wallet:"
+
+#: src/components/dashboard/DashboardSideBar.tsx:28
+#: src/components/settings/Settings.tsx:93
+msgid "Settings"
+msgstr ""
 
 #: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:40
 msgid "Show Advanced Options"
