@@ -15,6 +15,7 @@ import { exit_and_close } from '../../modules/message';
 import useLocale from '../../hooks/useLocale';
 import AppModalDialogs from './AppModalDialogs';
 import AppLoading from './AppLoading';
+import AppPassLogin from './AppPassLogin';
 import { i18n, activateLocale, defaultLocale, getMaterialLocale } from '../../config/locales';
 import Fonts from './fonts/Fonts';
 
@@ -38,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
 export default function App() {
   const { value: darkMode } = useDarkMode();
   const [locale] = useLocale(defaultLocale);
-  
+
   const theme = useMemo(() => {
     const material = getMaterialLocale(locale);
     return darkMode
@@ -80,6 +81,7 @@ export default function App() {
               <AppRouter />
               <AppModalDialogs />
               <AppLoading />
+              <AppPassLogin />
             </ThemeProvider>
           </WebSocketConnection>
         </I18nProvider>
