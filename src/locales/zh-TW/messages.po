@@ -86,7 +86,7 @@ msgstr "新增錢包"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:47
 #: src/components/plot/PlotHeader.tsx:54
-#: src/components/plot/add/PlotAdd.tsx:143
+#: src/components/plot/add/PlotAdd.tsx:152
 #: src/components/plot/overview/PlotOverviewHero.tsx:40
 #: src/components/plotNFT/PlotNFTCard.tsx:153
 msgid "Add a Plot"
@@ -132,7 +132,7 @@ msgstr "數量 ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "初始代幣數量"
 
-#: src/components/plot/PlotAction.tsx:36
+#: src/components/plot/PlotAction.tsx:35
 #: src/components/plot/queue/PlotQueueActions.tsx:43
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "你確要刪除這個耕地嗎？此耕地將無法尋回。"
@@ -437,7 +437,7 @@ msgid "Copy to Clipboard"
 msgstr "複製到剪貼板"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:157
+#: src/components/plot/add/PlotAdd.tsx:166
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:131
 #: src/components/wallet/create/createExistingColouredCoin.jsx:141
 #: src/components/wallet/create/createNewColouredCoin.jsx:148
@@ -532,6 +532,10 @@ msgstr ""
 msgid "Creating Plot NFT for Self Pooling"
 msgstr ""
 
+#: src/components/plot/add/PlotAdd.tsx:84
+msgid "Currency code is not defined"
+msgstr ""
+
 #: src/components/plotNFT/PlotNFTCard.tsx:118
 msgid "Current Difficulty"
 msgstr ""
@@ -566,8 +570,8 @@ msgstr "日期"
 msgid "Delay"
 msgstr "延遲"
 
-#: src/components/plot/PlotAction.tsx:34
-#: src/components/plot/PlotAction.tsx:58
+#: src/components/plot/PlotAction.tsx:33
+#: src/components/plot/PlotAction.tsx:57
 #: src/components/plot/queue/PlotQueueActions.tsx:40
 #: src/components/plot/queue/PlotQueueActions.tsx:85
 #: src/components/selectKey/SelectKey.tsx:61
@@ -575,7 +579,7 @@ msgstr "延遲"
 msgid "Delete"
 msgstr "刪除"
 
-#: src/components/plot/PlotAction.tsx:33
+#: src/components/plot/PlotAction.tsx:32
 #: src/components/plot/queue/PlotQueueActions.tsx:39
 msgid "Delete Plot"
 msgstr "刪除耕地"
@@ -2074,6 +2078,10 @@ msgstr "交易過濾雜湊值"
 msgid "Type"
 msgstr "類型"
 
+#: src/components/plot/add/PlotAdd.tsx:94
+msgid "Unable to create plot NFT"
+msgstr ""
+
 #: src/components/plotNFT/PlotNFTState.tsx:34
 msgid "Unconfirmed transaction"
 msgstr ""
@@ -2327,6 +2335,10 @@ msgstr "高度："
 #: src/components/wallet/Wallets.tsx:146
 msgid "not synced"
 msgstr "未同步"
+
+#: src/components/plot/add/PlotAdd.tsx:98
+msgid "p2_singleton_puzzle_hash is not defined"
+msgstr ""
 
 #: src/components/wallet/WalletStatusCard.tsx:28
 #: src/components/wallet/Wallets.tsx:140

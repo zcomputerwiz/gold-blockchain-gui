@@ -86,7 +86,7 @@ msgstr "Cüzdan Ekle"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:47
 #: src/components/plot/PlotHeader.tsx:54
-#: src/components/plot/add/PlotAdd.tsx:143
+#: src/components/plot/add/PlotAdd.tsx:152
 #: src/components/plot/overview/PlotOverviewHero.tsx:40
 #: src/components/plotNFT/PlotNFTCard.tsx:153
 msgid "Add a Plot"
@@ -132,7 +132,7 @@ msgstr "Miktar ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "İlk Coin için Miktar"
 
-#: src/components/plot/PlotAction.tsx:36
+#: src/components/plot/PlotAction.tsx:35
 #: src/components/plot/queue/PlotQueueActions.tsx:43
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Bu plot'u silmek istediğinizden emin misiniz? Silinen plot kurtarılamaz."
@@ -437,7 +437,7 @@ msgid "Copy to Clipboard"
 msgstr "Panoya kopyala"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:157
+#: src/components/plot/add/PlotAdd.tsx:166
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:131
 #: src/components/wallet/create/createExistingColouredCoin.jsx:141
 #: src/components/wallet/create/createNewColouredCoin.jsx:148
@@ -532,6 +532,10 @@ msgstr ""
 msgid "Creating Plot NFT for Self Pooling"
 msgstr ""
 
+#: src/components/plot/add/PlotAdd.tsx:84
+msgid "Currency code is not defined"
+msgstr ""
+
 #: src/components/plotNFT/PlotNFTCard.tsx:118
 msgid "Current Difficulty"
 msgstr ""
@@ -566,8 +570,8 @@ msgstr "Tarih"
 msgid "Delay"
 msgstr "Ertele"
 
-#: src/components/plot/PlotAction.tsx:34
-#: src/components/plot/PlotAction.tsx:58
+#: src/components/plot/PlotAction.tsx:33
+#: src/components/plot/PlotAction.tsx:57
 #: src/components/plot/queue/PlotQueueActions.tsx:40
 #: src/components/plot/queue/PlotQueueActions.tsx:85
 #: src/components/selectKey/SelectKey.tsx:61
@@ -575,7 +579,7 @@ msgstr "Ertele"
 msgid "Delete"
 msgstr "Sil"
 
-#: src/components/plot/PlotAction.tsx:33
+#: src/components/plot/PlotAction.tsx:32
 #: src/components/plot/queue/PlotQueueActions.tsx:39
 msgid "Delete Plot"
 msgstr "Arazi sil"
@@ -2074,6 +2078,10 @@ msgstr "Karma Transfer Filtresi"
 msgid "Type"
 msgstr "Tür"
 
+#: src/components/plot/add/PlotAdd.tsx:94
+msgid "Unable to create plot NFT"
+msgstr ""
+
 #: src/components/plotNFT/PlotNFTState.tsx:34
 msgid "Unconfirmed transaction"
 msgstr ""
@@ -2327,6 +2335,10 @@ msgstr "yükseklik:"
 #: src/components/wallet/Wallets.tsx:146
 msgid "not synced"
 msgstr "senkronize edilmedi"
+
+#: src/components/plot/add/PlotAdd.tsx:98
+msgid "p2_singleton_puzzle_hash is not defined"
+msgstr ""
 
 #: src/components/wallet/WalletStatusCard.tsx:28
 #: src/components/wallet/Wallets.tsx:140
