@@ -3,6 +3,7 @@ import type Wallet from '../types/Wallet';
 import createWallet from '../util/createWallet';
 
 type IncomingState = {
+  password_status: boolean;
   mnemonic: string[];
   public_key_fingerprints: number[];
   selected_fingerprint?: number | null;
@@ -37,6 +38,7 @@ type IncomingState = {
 };
 
 const initialState: IncomingState = {
+  password_status: false,
   mnemonic: [],
   public_key_fingerprints: [],
   selected_fingerprint: null,
@@ -139,15 +141,6 @@ export default function incomingReducer(
             logged_in: false,
             public_key_fingerprints: [],
             logged_in_received: true,
-          };
-        }
-      } else if (command === 'is_keyring_locked') {
-        success = data.success;
-        if (success) {
-          const { is_keyring_locked } = data;
-          return {
-            ...state,
-            password_status: is_keyring_locked,
           };
         }
       } else if (command === 'get_public_keys') {

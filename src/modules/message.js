@@ -834,6 +834,15 @@ export const did_generate_backup_file = (wallet_id, filename) => {
 };
 
 /*
+export const check_pass_status = () => {
+  const action = walletMessage();
+  action.message.command = 'fill in function name here';
+  action.message.data = {}
+  return action;
+}
+*/
+
+/*
 export const settings_toggle_pass = (wallet_id) => {
   const action = walletMessage();
   action.message.command = 'fill in function name here';
@@ -852,6 +861,16 @@ export const settings_update_pass = (wallet_id, oldpass1, oldpass2, newpass) => 
     oldpass1,
     oldpass2,
     newpass,
+  };
+};
+*/
+
+/*
+export const launch_password_submit = (password) => {
+  const action = walletMessage();
+  action.message.command = 'fill in function name here';
+  action.message.data = {
+    password,
   };
 };
 */
