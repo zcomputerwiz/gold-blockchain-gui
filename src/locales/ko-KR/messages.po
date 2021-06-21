@@ -1084,6 +1084,10 @@ msgstr "내보내는 중"
 msgid "Passcode Settings"
 msgstr ""
 
+#: src/components/app/AppPassLogin.tsx:35
+msgid "Password"
+msgstr ""
+
 #: src/components/app/AppPassLogin.tsx:8
 #~ msgid "Password login test."
 #~ msgstr ""
@@ -1126,6 +1130,10 @@ msgstr "거래 페어를 추가하십시오"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:712
 msgid "Please enter 0 fee. Positive fees not supported yet for RL."
 msgstr "수수료 0을 입력하세요. RL에는 아직 양수 수수료가 지원되지 않습니다."
+
+#: src/components/app/AppPassLogin.tsx:22
+msgid "Please enter a password"
+msgstr ""
 
 #: src/components/wallet/create/createRLAdmin.jsx:146
 msgid "Please enter a valid initial coin amount"

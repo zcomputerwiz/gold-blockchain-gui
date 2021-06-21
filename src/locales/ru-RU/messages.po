@@ -1256,6 +1256,10 @@ msgstr "Исходящие"
 msgid "Passcode Settings"
 msgstr ""
 
+#: src/components/app/AppPassLogin.tsx:35
+msgid "Password"
+msgstr ""
+
 #: src/components/app/AppPassLogin.tsx:8
 #~ msgid "Password login test."
 #~ msgstr ""
@@ -1298,6 +1302,10 @@ msgstr "Пожалуйста, добавьте торговую пару"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:712
 msgid "Please enter 0 fee. Positive fees not supported yet for RL."
 msgstr "Пожалуйста, введите комиссию 0. Положительные комиссии для кошельков с ограничением скорости пока не поддерживаются."
+
+#: src/components/app/AppPassLogin.tsx:22
+msgid "Please enter a password"
+msgstr ""
 
 #: src/components/wallet/create/createRLAdmin.jsx:146
 msgid "Please enter a valid initial coin amount"

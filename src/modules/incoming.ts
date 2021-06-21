@@ -143,6 +143,15 @@ export default function incomingReducer(
             logged_in_received: true,
           };
         }
+      } else if (command === 'is_keyring_locked') {
+         success = data.success;
+         if (success) {
+           const { is_keyring_locked } = data;
+           return {
+             ...state,
+             password_status: is_keyring_locked,
+           };
+         }
       } else if (command === 'get_public_keys') {
         success = data.success;
         if (success) {

@@ -1084,6 +1084,10 @@ msgstr "Wychodzące"
 msgid "Passcode Settings"
 msgstr ""
 
+#: src/components/app/AppPassLogin.tsx:35
+msgid "Password"
+msgstr ""
+
 #: src/components/app/AppPassLogin.tsx:8
 #~ msgid "Password login test."
 #~ msgstr ""
@@ -1126,6 +1130,10 @@ msgstr "Proszę dodać parę transakcji"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:712
 msgid "Please enter 0 fee. Positive fees not supported yet for RL."
 msgstr "Wprowadź prowizję 0. Dodatnie prowizje nieobsługiwane jeszcze dla RL."
+
+#: src/components/app/AppPassLogin.tsx:22
+msgid "Please enter a password"
+msgstr ""
 
 #: src/components/wallet/create/createRLAdmin.jsx:146
 msgid "Please enter a valid initial coin amount"
