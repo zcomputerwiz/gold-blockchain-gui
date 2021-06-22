@@ -20,7 +20,7 @@ function loadConfig(version) {
     const config_root_dir =
       'CHIA_ROOT' in process.env
         ? process.env.CHIA_ROOT
-        : path.join(os.homedir(), '.chia', version);
+        : path.join(os.homedir(), '.silicoin', version);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
