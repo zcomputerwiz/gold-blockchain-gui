@@ -58,7 +58,7 @@ export default function PlotAddSelectFinalDirectory() {
           }}
           required
         />
-        <ButtonSelected onClick={handleSelect} size="large" variant="contained" selected={hasFinalLocation} nowrap>
+        <ButtonSelected onClick={handleSelect} size="large" variant="contained" selected={hasFinalLocation}>
           {hasFinalLocation ? (
             <Trans>Selected</Trans>
           ) : (

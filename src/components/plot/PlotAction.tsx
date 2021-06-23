@@ -11,6 +11,7 @@ import {
 } from '../../modules/harvesterMessages';
 import type Plot from '../../types/Plot';
 import useOpenDialog from '../../hooks/useOpenDialog';
+import isWindows from '../../util/isWindows';
 
 type Props = {
   plot: Plot;
@@ -28,6 +29,10 @@ export default function PlotAction(props: Props) {
   const canDelete = !isWindows;
 
   async function handleDeletePlot() {
+    if (!canDelete) {
+      return;
+    }
+
     const deleteConfirmed = await openDialog((
       <ConfirmDialog
         title={<Trans>Delete Plot</Trans>}
