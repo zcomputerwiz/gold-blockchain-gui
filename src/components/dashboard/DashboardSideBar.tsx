@@ -44,6 +44,16 @@ export default function DashboardSideBar() {
           title={<Trans>Wallets</Trans>}
         />
         <SideBarItem
+          to="/dashboard/plot"
+          icon={<PlotIcon fontSize="large" />}
+          title={<Trans>Plots</Trans>}
+        />
+        <SideBarItem
+          to="/dashboard/farm"
+          icon={<FarmIcon fontSize="large" />}
+          title={<Trans>Farm</Trans>}
+        />
+        <SideBarItem
           to="/"
           icon={<KeysIcon fontSize="large" />}
           onSelect={handleLogOut}
