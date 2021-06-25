@@ -634,7 +634,7 @@ msgstr "排除最終資料夾"
 msgid "Failed to open (invalid plots)"
 msgstr "開啟失敗（無效耕地）"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "間隔"
 msgid "K-Size"
 msgstr "K-大小"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Keys"
 msgstr "金鑰"
 
@@ -1213,7 +1213,7 @@ msgstr "平行耕地"
 msgid "Plot is duplicate of {0}"
 msgstr "耕地與 {0} 重複"
 
-#: src/components/dashboard/DashboardSideBar.tsx:49
+#: src/components/dashboard/DashboardSideBar.tsx:50
 msgid "Plots"
 msgstr "耕地"
 

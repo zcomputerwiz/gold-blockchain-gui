@@ -634,7 +634,7 @@ msgstr "Изузмите коначни директоријум"
 msgid "Failed to open (invalid plots)"
 msgstr "Отварање није успело (неважећи плотови)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "Интервал"
 msgid "K-Size"
 msgstr "К-величина"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Keys"
 msgstr "Кључеви"
 
@@ -1213,7 +1213,7 @@ msgstr "Плотуј паралелно"
 msgid "Plot is duplicate of {0}"
 msgstr "Плот је дупликат {0}"
 
-#: src/components/dashboard/DashboardSideBar.tsx:49
+#: src/components/dashboard/DashboardSideBar.tsx:50
 msgid "Plots"
 msgstr "Плотови"
 

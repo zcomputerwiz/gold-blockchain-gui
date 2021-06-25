@@ -640,7 +640,7 @@ msgstr "Finales Verzeichnis ausschließen"
 msgid "Failed to open (invalid plots)"
 msgstr "Öffnen fehlgeschlagen (ungültige Plots)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -862,7 +862,7 @@ msgstr "Intervall"
 msgid "K-Size"
 msgstr "K-Größe"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Keys"
 msgstr "Schlüssel"
 
@@ -1219,7 +1219,7 @@ msgstr "Parallel plotten"
 msgid "Plot is duplicate of {0}"
 msgstr "Plot ist ein Duplikat von {0}"
 
-#: src/components/dashboard/DashboardSideBar.tsx:49
+#: src/components/dashboard/DashboardSideBar.tsx:50
 msgid "Plots"
 msgstr "Plots"
 

@@ -634,7 +634,7 @@ msgstr "Uteslut slutlig mapp"
 msgid "Failed to open (invalid plots)"
 msgstr "Det gick inte att öppna (ogiltiga plottar)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/dashboard/DashboardSideBar.tsx:55
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "Intervall"
 msgid "K-Size"
 msgstr "K-storlek"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/dashboard/DashboardSideBar.tsx:62
 msgid "Keys"
 msgstr "Nycklar"
 
@@ -1213,7 +1213,7 @@ msgstr "Plotta parallellt"
 msgid "Plot is duplicate of {0}"
 msgstr "Plotten är en dubblett av {0}"
 
-#: src/components/dashboard/DashboardSideBar.tsx:49
+#: src/components/dashboard/DashboardSideBar.tsx:50
 msgid "Plots"
 msgstr "Plottar"
 
