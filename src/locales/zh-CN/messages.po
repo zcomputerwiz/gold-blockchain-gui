@@ -634,7 +634,7 @@ msgstr "不耕种最终输出文件夹"
 msgid "Failed to open (invalid plots)"
 msgstr "打开失败（农田无效）"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "间隔"
 msgid "K-Size"
 msgstr "K值大小"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "密钥"
 
@@ -1213,7 +1213,7 @@ msgstr "并发开垦"
 msgid "Plot is duplicate of {0}"
 msgstr "农田与 {0} 重复"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "农田"
 

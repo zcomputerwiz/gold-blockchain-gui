@@ -634,7 +634,7 @@ msgstr "Exclude final directory"
 msgid "Failed to open (invalid plots)"
 msgstr "Failed to open (invalid plots)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -738,11 +738,11 @@ msgstr "Frequently Asked Questions"
 #: src/components/dashboard/DashboardSideBar.tsx:38
 #: src/components/fullNode/FullNode.jsx:313
 msgid "Full Node"
-msgstr "Application Node"
+msgstr "Node"
 
 #: src/components/fullNode/FullNode.jsx:256
 msgid "Full Node Status"
-msgstr "Application Node Status"
+msgstr "Node"
 
 #: src/electron/main.tsx:333
 msgid "Full Screen"
@@ -856,7 +856,7 @@ msgstr "Interval"
 msgid "K-Size"
 msgstr "K-Size"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "Keys"
 
@@ -1213,7 +1213,7 @@ msgstr "Plot in Parallel"
 msgid "Plot is duplicate of {0}"
 msgstr "Plot is duplicate of {0}"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Plots"
 

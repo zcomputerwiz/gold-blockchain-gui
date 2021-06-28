@@ -806,7 +806,7 @@ msgstr "Исключить окончательную директорию"
 msgid "Failed to open (invalid plots)"
 msgstr "Неудается открыть (некоррекные участки)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -1028,7 +1028,7 @@ msgstr "Интервал"
 msgid "K-Size"
 msgstr "K-размер"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "Ключи"
 
@@ -1385,7 +1385,7 @@ msgstr "Засеивать паралельно"
 msgid "Plot is duplicate of {0}"
 msgstr "Плот дубликат {0}"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Участки"
 

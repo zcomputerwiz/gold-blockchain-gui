@@ -634,7 +634,7 @@ msgstr "Excluir directorio final"
 msgid "Failed to open (invalid plots)"
 msgstr "Error al abrir (parcelas inválidas)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "Intervalo"
 msgid "K-Size"
 msgstr "Tamaño-K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "Llaves"
 
@@ -1213,7 +1213,7 @@ msgstr "Sembrar en Paralelo"
 msgid "Plot is duplicate of {0}"
 msgstr "Parcela es duplicado de {0}"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Parcelas"
 

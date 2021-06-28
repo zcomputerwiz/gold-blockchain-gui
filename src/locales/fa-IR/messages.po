@@ -640,7 +640,7 @@ msgstr "بجز آخرین پوشه"
 msgid "Failed to open (invalid plots)"
 msgstr "ناتوانی در بازگشایی (پلات های نامعتبر)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -862,7 +862,7 @@ msgstr "فاصله"
 msgid "K-Size"
 msgstr "مقدار حجم-K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "کلیدها"
 
@@ -1221,7 +1221,7 @@ msgstr "پلات سازی به شکل موازی"
 msgid "Plot is duplicate of {0}"
 msgstr "پلات کپی این {0} پلات است"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "پلات ها"
 
