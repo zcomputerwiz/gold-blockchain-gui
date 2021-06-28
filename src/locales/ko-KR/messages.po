@@ -634,7 +634,7 @@ msgstr "최종 경로 없이 플롯 만들기"
 msgid "Failed to open (invalid plots)"
 msgstr "플롯 열기에 실패했습니다. (사유: 유효하지 않은 플롯)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "간격"
 msgid "K-Size"
 msgstr "K-크기"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "키"
 
@@ -1213,7 +1213,7 @@ msgstr "병렬 플로팅"
 msgid "Plot is duplicate of {0}"
 msgstr "{0} 의 복제된 구성"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "플롯"
 

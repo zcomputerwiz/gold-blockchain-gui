@@ -634,7 +634,7 @@ msgstr "Jätä pois lopullinen hakemisto"
 msgid "Failed to open (invalid plots)"
 msgstr "Ei voi avata (epäkelpo plotti)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "Aikaväli"
 msgid "K-Size"
 msgstr "K-Arvo"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "Avaimet"
 
@@ -1213,7 +1213,7 @@ msgstr "Rinnakkaisplottaa"
 msgid "Plot is duplicate of {0}"
 msgstr "Plotti on {0}:n duplikaatti"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Plotit"
 

@@ -634,7 +634,7 @@ msgstr "Hedef klasörü hariç et"
 msgid "Failed to open (invalid plots)"
 msgstr "Açılamadı (geçersiz arazi)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "Aralık"
 msgid "K-Size"
 msgstr "K-Ebadı"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "Anahtarlar"
 
@@ -1213,7 +1213,7 @@ msgstr "Eş Zamanlı Plot"
 msgid "Plot is duplicate of {0}"
 msgstr "Plot {0} ile aynı"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Plot'lar"
 

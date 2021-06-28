@@ -634,7 +634,7 @@ msgstr "Pomiń folder docelowy"
 msgid "Failed to open (invalid plots)"
 msgstr "Nie udało się otworzyć (nieprawidłowe działki)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "Interwał"
 msgid "K-Size"
 msgstr "K-rozmiar"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "Klucze"
 
@@ -1213,7 +1213,7 @@ msgstr "Generuj działki równolegle"
 msgid "Plot is duplicate of {0}"
 msgstr "Działka jest kopią {0}"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Działki"
 

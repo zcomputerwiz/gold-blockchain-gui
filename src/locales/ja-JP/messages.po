@@ -634,7 +634,7 @@ msgstr "最終ディレクトリを除外"
 msgid "Failed to open (invalid plots)"
 msgstr "開けませんでした (耕地に問題あり)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:622
 #: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Farm"
@@ -856,7 +856,7 @@ msgstr "インターバル"
 msgid "K-Size"
 msgstr "K 値"
 
-#: src/components/dashboard/DashboardSideBar.tsx:62
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "鍵"
 
@@ -1213,7 +1213,7 @@ msgstr "並列処理で耕す"
 msgid "Plot is duplicate of {0}"
 msgstr "この耕地は {0} と重複しています"
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "耕地"
 

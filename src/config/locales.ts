@@ -78,10 +78,6 @@ export const locales = [
     locale: 'en-US',
     label: 'English',
   },
-  {
-    locale: 'zh-CN',
-    label: '简体中文',
-  },
 ];
 
 i18n.loadLocaleData('ar-SA', { plurals: ar });
