@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 100,
   },
   resultSuccess: {
-    color: '#3AAC59',
+    color: '#6f98ec',
   },
   resultFailure: {
     color: 'red',
