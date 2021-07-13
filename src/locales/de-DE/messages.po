@@ -86,7 +86,7 @@ msgstr "Plot zur Warteschlange hinzufügen"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:46
 #: src/components/plot/PlotHeader.tsx:63
-#: src/components/plot/add/PlotAdd.tsx:160
+#: src/components/plot/add/PlotAdd.tsx:158
 #: src/components/plot/overview/PlotOverviewHero.tsx:54
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:232
 #: src/components/plotNFT/PlotNFTCard.tsx:271
@@ -138,8 +138,8 @@ msgstr "Anzahl ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "Anzahl für initialen Coin"
 
-#: src/components/plot/PlotAction.tsx:30
-#: src/components/plot/queue/PlotQueueActions.tsx:46
+#: src/components/plot/PlotAction.tsx:31
+#: src/components/plot/queue/PlotQueueActions.tsx:47
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Bist du sicher, dass du den Plot löschen möchtest? Der Plot kann nicht wiederhergestellt werden."
 
@@ -453,7 +453,7 @@ msgid "Copy to Clipboard"
 msgstr "In die Zwischenablage kopieren"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:177
+#: src/components/plot/add/PlotAdd.tsx:175
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:175
 #: src/components/wallet/create/createExistingColouredCoin.jsx:133
 #: src/components/wallet/create/createNewColouredCoin.jsx:142
@@ -548,7 +548,7 @@ msgstr "Erstellen eines Plot-NFT und Pool-Beitritt"
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Erstellen eines Plot-NFT für Selbst-Pooling"
 
-#: src/components/plot/add/PlotAdd.tsx:86
+#: src/components/plot/add/PlotAdd.tsx:84
 msgid "Currency code is not defined"
 msgstr "Währungscode ist nicht definiert"
 
@@ -588,10 +588,10 @@ msgstr "Datum"
 msgid "Delay"
 msgstr "Verzögerung"
 
-#: src/components/plot/PlotAction.tsx:27
-#: src/components/plot/PlotAction.tsx:57
-#: src/components/plot/queue/PlotQueueActions.tsx:43
-#: src/components/plot/queue/PlotQueueActions.tsx:97
+#: src/components/plot/PlotAction.tsx:28
+#: src/components/plot/PlotAction.tsx:58
+#: src/components/plot/queue/PlotQueueActions.tsx:44
+#: src/components/plot/queue/PlotQueueActions.tsx:98
 #: src/components/plotNFT/PlotNFTCard.tsx:119
 #: src/components/selectKey/SelectKey.tsx:67
 #: src/components/selectKey/SelectKey.tsx:109
@@ -599,8 +599,8 @@ msgstr "Verzögerung"
 msgid "Delete"
 msgstr "Löschen"
 
-#: src/components/plot/PlotAction.tsx:26
-#: src/components/plot/queue/PlotQueueActions.tsx:42
+#: src/components/plot/PlotAction.tsx:27
+#: src/components/plot/queue/PlotQueueActions.tsx:43
 msgid "Delete Plot"
 msgstr "Löschen Plot"
 
@@ -784,8 +784,8 @@ msgid "Farmer is not running"
 msgstr "Farmer läuft nicht"
 
 #: src/middleware/middleware_api.jsx:275
-msgid "Farmer public key:"
-msgstr "Öffentlicher Schlüssel des Farmers:"
+#~ msgid "Farmer public key:"
+#~ msgstr "Öffentlicher Schlüssel des Farmers:"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:33
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
@@ -1040,7 +1040,7 @@ msgstr "Trete einem Pool bei und erhalte konsistente XCH Farming-Belohnungen. Er
 msgid "K-Size"
 msgstr "K-Größe"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "Keys"
 msgstr "Schlüssel"
 
@@ -1203,7 +1203,7 @@ msgstr "Spitzname"
 msgid "No"
 msgstr "Nein"
 
-#: src/middleware/middleware_api.jsx:301
+#: src/middleware/middleware_api.jsx:285
 msgid "No 24 word seed, since this key is imported."
 msgstr "Kein 24 Wort Seed seit dieser Schlüssel importiert wurde."
 
@@ -1522,7 +1522,6 @@ msgstr "Punkte in den letzten 24 Stunden gefunden"
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr "Pool"
@@ -1582,8 +1581,8 @@ msgid "Pool does not provide target_puzzle_hash."
 msgstr "Pool stellt keine target_puzzle_hash bereit."
 
 #: src/middleware/middleware_api.jsx:283
-msgid "Pool public key:"
-msgstr "Öffentlicher Pool-Schlüssel:"
+#~ msgid "Pool public key:"
+#~ msgstr "Öffentlicher Pool-Schlüssel:"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:274
 #: src/components/plotNFT/PlotNFTCard.tsx:326
@@ -1777,7 +1776,7 @@ msgstr "Temporärer Verzeichnisort"
 msgid "See private key"
 msgstr "Privaten Schlüssel anzeigen"
 
-#: src/middleware/middleware_api.jsx:293
+#: src/middleware/middleware_api.jsx:277
 msgid "Seed:"
 msgstr "Seed:"
 
@@ -2278,7 +2277,7 @@ msgstr "Transaktions Filter Hash"
 msgid "Type"
 msgstr "Typ"
 
-#: src/components/plot/add/PlotAdd.tsx:101
+#: src/components/plot/add/PlotAdd.tsx:99
 msgid "Unable to create plot NFT"
 msgstr "Erstellen des Plot-NFT fehlgeschlagen"
 
@@ -2328,7 +2327,7 @@ msgstr "Pool-Details überprüfen"
 msgid "View"
 msgstr "Ansicht"
 
-#: src/components/plot/queue/PlotQueueActions.tsx:79
+#: src/components/plot/queue/PlotQueueActions.tsx:80
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:63
 msgid "View Log"
 msgstr "Log anzeigen"
@@ -2572,7 +2571,7 @@ msgstr "Höhe:"
 msgid "not synced"
 msgstr "nicht synchronisiert"
 
-#: src/components/plot/add/PlotAdd.tsx:105
+#: src/components/plot/add/PlotAdd.tsx:103
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash ist nicht definiert"
 

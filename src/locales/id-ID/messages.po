@@ -86,7 +86,7 @@ msgstr "Tambahkan Plot ke Antrian"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:46
 #: src/components/plot/PlotHeader.tsx:63
-#: src/components/plot/add/PlotAdd.tsx:160
+#: src/components/plot/add/PlotAdd.tsx:158
 #: src/components/plot/overview/PlotOverviewHero.tsx:54
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:232
 #: src/components/plotNFT/PlotNFTCard.tsx:271
@@ -138,8 +138,8 @@ msgstr "Jumlah ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "Jumlah Untuk Koin Inisial"
 
-#: src/components/plot/PlotAction.tsx:30
-#: src/components/plot/queue/PlotQueueActions.tsx:46
+#: src/components/plot/PlotAction.tsx:31
+#: src/components/plot/queue/PlotQueueActions.tsx:47
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Anda yakin ingin menghapus plot ini? Plot ini tidak akan dapat dipulihkan."
 
@@ -453,7 +453,7 @@ msgid "Copy to Clipboard"
 msgstr "Salin ke Clipboard"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:177
+#: src/components/plot/add/PlotAdd.tsx:175
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:175
 #: src/components/wallet/create/createExistingColouredCoin.jsx:133
 #: src/components/wallet/create/createNewColouredCoin.jsx:142
@@ -548,7 +548,7 @@ msgstr ""
 msgid "Creating Plot NFT for Self Pooling"
 msgstr ""
 
-#: src/components/plot/add/PlotAdd.tsx:86
+#: src/components/plot/add/PlotAdd.tsx:84
 msgid "Currency code is not defined"
 msgstr ""
 
@@ -588,10 +588,10 @@ msgstr "Tanggal"
 msgid "Delay"
 msgstr "Tunda"
 
-#: src/components/plot/PlotAction.tsx:27
-#: src/components/plot/PlotAction.tsx:57
-#: src/components/plot/queue/PlotQueueActions.tsx:43
-#: src/components/plot/queue/PlotQueueActions.tsx:97
+#: src/components/plot/PlotAction.tsx:28
+#: src/components/plot/PlotAction.tsx:58
+#: src/components/plot/queue/PlotQueueActions.tsx:44
+#: src/components/plot/queue/PlotQueueActions.tsx:98
 #: src/components/plotNFT/PlotNFTCard.tsx:119
 #: src/components/selectKey/SelectKey.tsx:67
 #: src/components/selectKey/SelectKey.tsx:109
@@ -599,8 +599,8 @@ msgstr "Tunda"
 msgid "Delete"
 msgstr "Hapus"
 
-#: src/components/plot/PlotAction.tsx:26
-#: src/components/plot/queue/PlotQueueActions.tsx:42
+#: src/components/plot/PlotAction.tsx:27
+#: src/components/plot/queue/PlotQueueActions.tsx:43
 msgid "Delete Plot"
 msgstr "Hapus Plot"
 
@@ -778,8 +778,8 @@ msgid "Farmer is not running"
 msgstr "Farmer sedang tidak berjalan"
 
 #: src/middleware/middleware_api.jsx:275
-msgid "Farmer public key:"
-msgstr ""
+#~ msgid "Farmer public key:"
+#~ msgstr ""
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:33
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
@@ -1034,7 +1034,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "Ukuran-K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "Keys"
 msgstr "Keys"
 
@@ -1197,7 +1197,7 @@ msgstr "Nama Panggilan"
 msgid "No"
 msgstr "Tidak"
 
-#: src/middleware/middleware_api.jsx:301
+#: src/middleware/middleware_api.jsx:285
 msgid "No 24 word seed, since this key is imported."
 msgstr "Tidak ada benih 24 kata, sejak kunci ini di impor."
 
@@ -1516,7 +1516,6 @@ msgstr ""
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr ""
@@ -1576,8 +1575,8 @@ msgid "Pool does not provide target_puzzle_hash."
 msgstr ""
 
 #: src/middleware/middleware_api.jsx:283
-msgid "Pool public key:"
-msgstr ""
+#~ msgid "Pool public key:"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:274
 #: src/components/plotNFT/PlotNFTCard.tsx:326
@@ -1771,7 +1770,7 @@ msgstr "Folder sementara dua"
 msgid "See private key"
 msgstr "Lihat kata kunci pribadi"
 
-#: src/middleware/middleware_api.jsx:293
+#: src/middleware/middleware_api.jsx:277
 msgid "Seed:"
 msgstr "Benih:"
 
@@ -2272,7 +2271,7 @@ msgstr "Seleksi Hash Transaksi"
 msgid "Type"
 msgstr "Jenis"
 
-#: src/components/plot/add/PlotAdd.tsx:101
+#: src/components/plot/add/PlotAdd.tsx:99
 msgid "Unable to create plot NFT"
 msgstr ""
 
@@ -2322,7 +2321,7 @@ msgstr ""
 msgid "View"
 msgstr "Lihat"
 
-#: src/components/plot/queue/PlotQueueActions.tsx:79
+#: src/components/plot/queue/PlotQueueActions.tsx:80
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:63
 msgid "View Log"
 msgstr "Lihat Log"
@@ -2566,7 +2565,7 @@ msgstr "tinggi:"
 msgid "not synced"
 msgstr "tidak sinkron"
 
-#: src/components/plot/add/PlotAdd.tsx:105
+#: src/components/plot/add/PlotAdd.tsx:103
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 

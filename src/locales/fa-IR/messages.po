@@ -88,7 +88,7 @@ msgstr "افزودن پلات به صف"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:46
 #: src/components/plot/PlotHeader.tsx:63
-#: src/components/plot/add/PlotAdd.tsx:160
+#: src/components/plot/add/PlotAdd.tsx:158
 #: src/components/plot/overview/PlotOverviewHero.tsx:54
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:232
 #: src/components/plotNFT/PlotNFTCard.tsx:271
@@ -140,8 +140,8 @@ msgstr "Amount ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "Amount For Initial Coin"
 
-#: src/components/plot/PlotAction.tsx:30
-#: src/components/plot/queue/PlotQueueActions.tsx:46
+#: src/components/plot/PlotAction.tsx:31
+#: src/components/plot/queue/PlotQueueActions.tsx:47
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "آیا مطمئنید می‌خواهید این پلات را حذف کنید؟ پلات نمی‌تواند بازیابی شود."
 
@@ -457,7 +457,7 @@ msgid "Copy to Clipboard"
 msgstr "رونوشت در کلیپ بورد"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:177
+#: src/components/plot/add/PlotAdd.tsx:175
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:175
 #: src/components/wallet/create/createExistingColouredCoin.jsx:133
 #: src/components/wallet/create/createNewColouredCoin.jsx:142
@@ -552,7 +552,7 @@ msgstr "Creating Plot NFT and Joining the Pool"
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Creating Plot NFT for Self Pooling"
 
-#: src/components/plot/add/PlotAdd.tsx:86
+#: src/components/plot/add/PlotAdd.tsx:84
 msgid "Currency code is not defined"
 msgstr "Currency code is not defined"
 
@@ -592,10 +592,10 @@ msgstr "Date"
 msgid "Delay"
 msgstr "Delay"
 
-#: src/components/plot/PlotAction.tsx:27
-#: src/components/plot/PlotAction.tsx:57
-#: src/components/plot/queue/PlotQueueActions.tsx:43
-#: src/components/plot/queue/PlotQueueActions.tsx:97
+#: src/components/plot/PlotAction.tsx:28
+#: src/components/plot/PlotAction.tsx:58
+#: src/components/plot/queue/PlotQueueActions.tsx:44
+#: src/components/plot/queue/PlotQueueActions.tsx:98
 #: src/components/plotNFT/PlotNFTCard.tsx:119
 #: src/components/selectKey/SelectKey.tsx:67
 #: src/components/selectKey/SelectKey.tsx:109
@@ -603,8 +603,8 @@ msgstr "Delay"
 msgid "Delete"
 msgstr "Delete"
 
-#: src/components/plot/PlotAction.tsx:26
-#: src/components/plot/queue/PlotQueueActions.tsx:42
+#: src/components/plot/PlotAction.tsx:27
+#: src/components/plot/queue/PlotQueueActions.tsx:43
 msgid "Delete Plot"
 msgstr "Delete Plot"
 
@@ -784,8 +784,8 @@ msgid "Farmer is not running"
 msgstr "مزرعه دار درحال اجرا نیست"
 
 #: src/middleware/middleware_api.jsx:275
-msgid "Farmer public key:"
-msgstr "Farmer public key:"
+#~ msgid "Farmer public key:"
+#~ msgstr "Farmer public key:"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:33
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
@@ -1040,7 +1040,7 @@ msgstr "Join a pool and get more consistent XCH farming rewards. Create a plot N
 msgid "K-Size"
 msgstr "مقدار حجم-K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "Keys"
 msgstr "Keys"
 
@@ -1203,7 +1203,7 @@ msgstr "Nickname"
 msgid "No"
 msgstr "No"
 
-#: src/middleware/middleware_api.jsx:301
+#: src/middleware/middleware_api.jsx:285
 msgid "No 24 word seed, since this key is imported."
 msgstr "هیچ بذر ۲۴ کلمه‌ای نیست، از هنگامی که این کلید را وارد کرده اید."
 
@@ -1520,7 +1520,6 @@ msgstr "Points Found in Last 24 Hours"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Points Successful in Last 24 Hours"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr "Pool"
@@ -1580,8 +1579,8 @@ msgid "Pool does not provide target_puzzle_hash."
 msgstr "Pool does not provide target_puzzle_hash."
 
 #: src/middleware/middleware_api.jsx:283
-msgid "Pool public key:"
-msgstr "کلید عمومی استخر:"
+#~ msgid "Pool public key:"
+#~ msgstr "کلید عمومی استخر:"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:274
 #: src/components/plotNFT/PlotNFTCard.tsx:326
@@ -1775,7 +1774,7 @@ msgstr "Second temporary folder location"
 msgid "See private key"
 msgstr "See private key"
 
-#: src/middleware/middleware_api.jsx:293
+#: src/middleware/middleware_api.jsx:277
 msgid "Seed:"
 msgstr "بذر:"
 
@@ -2278,7 +2277,7 @@ msgstr "Transactions Filter Hash"
 msgid "Type"
 msgstr "Type"
 
-#: src/components/plot/add/PlotAdd.tsx:101
+#: src/components/plot/add/PlotAdd.tsx:99
 msgid "Unable to create plot NFT"
 msgstr "Unable to create plot NFT"
 
@@ -2328,7 +2327,7 @@ msgstr "Verify Pool Details"
 msgid "View"
 msgstr "View"
 
-#: src/components/plot/queue/PlotQueueActions.tsx:79
+#: src/components/plot/queue/PlotQueueActions.tsx:80
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:63
 msgid "View Log"
 msgstr "مشاهده سوابق(لاگ)"
@@ -2576,7 +2575,7 @@ msgstr "ارتفاع:"
 msgid "not synced"
 msgstr "همگام‌سازی نشده"
 
-#: src/components/plot/add/PlotAdd.tsx:105
+#: src/components/plot/add/PlotAdd.tsx:103
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash is not defined"
 

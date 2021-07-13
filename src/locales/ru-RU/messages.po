@@ -86,7 +86,7 @@ msgstr "Добавить участок в очередь"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:46
 #: src/components/plot/PlotHeader.tsx:63
-#: src/components/plot/add/PlotAdd.tsx:160
+#: src/components/plot/add/PlotAdd.tsx:158
 #: src/components/plot/overview/PlotOverviewHero.tsx:54
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:232
 #: src/components/plotNFT/PlotNFTCard.tsx:271
@@ -138,8 +138,8 @@ msgstr "Количество ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "Начальное количество монет"
 
-#: src/components/plot/PlotAction.tsx:30
-#: src/components/plot/queue/PlotQueueActions.tsx:46
+#: src/components/plot/PlotAction.tsx:31
+#: src/components/plot/queue/PlotQueueActions.tsx:47
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Вы уверены, что хотите удалить участок? Участок не подлежит восстановлению."
 
@@ -625,7 +625,7 @@ msgid "Copy to Clipboard"
 msgstr "Скопировать в буфер обмена"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:177
+#: src/components/plot/add/PlotAdd.tsx:175
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:175
 #: src/components/wallet/create/createExistingColouredCoin.jsx:133
 #: src/components/wallet/create/createNewColouredCoin.jsx:142
@@ -720,7 +720,7 @@ msgstr ""
 msgid "Creating Plot NFT for Self Pooling"
 msgstr ""
 
-#: src/components/plot/add/PlotAdd.tsx:86
+#: src/components/plot/add/PlotAdd.tsx:84
 msgid "Currency code is not defined"
 msgstr ""
 
@@ -760,10 +760,10 @@ msgstr "Дата"
 msgid "Delay"
 msgstr "Задержка"
 
-#: src/components/plot/PlotAction.tsx:27
-#: src/components/plot/PlotAction.tsx:57
-#: src/components/plot/queue/PlotQueueActions.tsx:43
-#: src/components/plot/queue/PlotQueueActions.tsx:97
+#: src/components/plot/PlotAction.tsx:28
+#: src/components/plot/PlotAction.tsx:58
+#: src/components/plot/queue/PlotQueueActions.tsx:44
+#: src/components/plot/queue/PlotQueueActions.tsx:98
 #: src/components/plotNFT/PlotNFTCard.tsx:119
 #: src/components/selectKey/SelectKey.tsx:67
 #: src/components/selectKey/SelectKey.tsx:109
@@ -771,8 +771,8 @@ msgstr "Задержка"
 msgid "Delete"
 msgstr "Удалить"
 
-#: src/components/plot/PlotAction.tsx:26
-#: src/components/plot/queue/PlotQueueActions.tsx:42
+#: src/components/plot/PlotAction.tsx:27
+#: src/components/plot/queue/PlotQueueActions.tsx:43
 msgid "Delete Plot"
 msgstr "Удалить участок"
 
@@ -950,8 +950,8 @@ msgid "Farmer is not running"
 msgstr "Фермер не запущен"
 
 #: src/middleware/middleware_api.jsx:275
-msgid "Farmer public key:"
-msgstr ""
+#~ msgid "Farmer public key:"
+#~ msgstr ""
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:33
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
@@ -1206,7 +1206,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-размер"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:61
 msgid "Keys"
 msgstr "Ключи"
 
@@ -1369,7 +1369,7 @@ msgstr "Псевдоним"
 msgid "No"
 msgstr "Нет"
 
-#: src/middleware/middleware_api.jsx:301
+#: src/middleware/middleware_api.jsx:285
 msgid "No 24 word seed, since this key is imported."
 msgstr "Нет 24 слов семя, так как этот ключ импортируется."
 
@@ -1686,7 +1686,6 @@ msgstr ""
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr ""
@@ -1746,8 +1745,8 @@ msgid "Pool does not provide target_puzzle_hash."
 msgstr ""
 
 #: src/middleware/middleware_api.jsx:283
-msgid "Pool public key:"
-msgstr ""
+#~ msgid "Pool public key:"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:274
 #: src/components/plotNFT/PlotNFTCard.tsx:326
@@ -1941,7 +1940,7 @@ msgstr "Расположение второй временной папки"
 msgid "See private key"
 msgstr "Посмотреть закрытый ключ"
 
-#: src/middleware/middleware_api.jsx:293
+#: src/middleware/middleware_api.jsx:277
 msgid "Seed:"
 msgstr "Семя:"
 
@@ -2442,7 +2441,7 @@ msgstr "Хэш фильтра транзакций"
 msgid "Type"
 msgstr "Тип"
 
-#: src/components/plot/add/PlotAdd.tsx:101
+#: src/components/plot/add/PlotAdd.tsx:99
 msgid "Unable to create plot NFT"
 msgstr ""
 
@@ -2492,7 +2491,7 @@ msgstr ""
 msgid "View"
 msgstr "Вид"
 
-#: src/components/plot/queue/PlotQueueActions.tsx:79
+#: src/components/plot/queue/PlotQueueActions.tsx:80
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:63
 msgid "View Log"
 msgstr "Посмотреть журнал"
@@ -2736,7 +2735,7 @@ msgstr "высота:"
 msgid "not synced"
 msgstr "не синхр."
 
-#: src/components/plot/add/PlotAdd.tsx:105
+#: src/components/plot/add/PlotAdd.tsx:103
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
