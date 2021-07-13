@@ -269,7 +269,7 @@ export default function WalletGraph(props: Props) {
         xScale={{
           type: 'point',
         }}
-        colors={{ scheme: 'accent' }}
+        colors={{ scheme: 'category10' }}
         axisTop={null}
         axisRight={null}
         axisBottom={
@@ -291,8 +291,8 @@ export default function WalletGraph(props: Props) {
         curve="monotoneX"
         defs={[
           linearGradientDef('gradientA', [
-            { offset: 0, color: 'inherit' },
-            { offset: 100, color: 'inherit', opacity: 0 },
+            { offset: 0, color: '#6f98ec' },
+            { offset: 100, color: '#6f98ec', opacity: 0 },
           ]),
         ]}
         fill={[{ match: '*', id: 'gradientA' }]}
