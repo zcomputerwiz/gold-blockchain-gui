@@ -24,7 +24,7 @@ msgstr "(Optional)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by great bloke."
+msgstr "*Want to explore Silicoin’s blocks further? Check out <0>Silicoin Explorer</0> built by great bloke."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -45,7 +45,7 @@ msgstr "A harvester is a service running on a machine where plot(s) are actually
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chia Blockchain"
-msgstr "Some stuff about Chia"
+msgstr "Some stuff about Silicoin"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -217,7 +217,7 @@ msgstr "Block VDF Iterations"
 
 #: src/components/block/Block.jsx:336
 msgid "Block at height {0} in the Chia blockchain"
-msgstr "Block at height {0} in the Chia blockchain"
+msgstr "Block at height {0} in the Silicoin blockchain"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -310,15 +310,15 @@ msgstr "Chat on KeyBase with the cool kids"
 
 #: src/electron/main.tsx:419
 msgid "Chia"
-msgstr "Chia"
+msgstr "Silicoin"
 
 #: src/electron/main.tsx:358
 msgid "Chia Blockchain Wiki"
-msgstr "Chia Blockchain Wiki"
+msgstr "Silicoin Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
-msgstr "Chia Wallet with my future beer money"
+msgstr "Silicoin Wallet with my future beer money"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -691,7 +691,7 @@ msgstr "Edit"
 
 #: src/components/wallet/WalletImport.tsx:147
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
+msgstr "Enter the 24 word mnemonic that you have saved in order to restore your Silicoin wallet."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -705,7 +705,7 @@ msgstr "Error, she's knacked"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-msgstr "Error: Cannot send chia to coloured address. Please enter a chia address."
+msgstr "Error: Cannot send Silicoin to coloured address. Please enter a Silicoin address."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1481,7 +1481,7 @@ msgstr "Plots Passed Filter, you have a chance"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-msgstr "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
+msgstr "Plots are allocated space on your hard drive used to farm and earn Silicoin. <0>Learn more</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1918,7 +1918,7 @@ msgstr "Spending Interval Length (number of blocks)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
-msgstr "Spending Limit (chia per interval): {0}"
+msgstr "Spending Limit (Silicoin per interval): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2111,7 +2111,7 @@ msgstr "This feature is available only from the GUI."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
 msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-msgstr "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
+msgstr "This is the amount of Silicoin that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Silicoin that you have just spent but is not yet in the blockchain."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2131,7 +2131,7 @@ msgstr "This is the time the block was created by the farmer, which is before it
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "This is the total amount of Silicoin in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2177,7 +2177,7 @@ msgstr "This trade was included on blockchain at this block height"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-msgstr "This version of Chia is no longer compatible with the blockchain and can not safely farm, no beer money for you."
+msgstr "This version of Silicoin is no longer compatible with the blockchain and can not safely farm, no beer money for you."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2412,7 +2412,7 @@ msgstr "Want to Join a Pool? Create a Plot NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
 msgid "Want to earn more Chia? Add more plots to your farm."
-msgstr "Want to earn more Chia to get more beer money? Add more plots to your farm."
+msgstr "Want to earn more Silicoin to get more beer money? Add more plots to your farm."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2440,7 +2440,7 @@ msgstr "Weight is the total added difficulty of all sub blocks up to and includi
 
 #: src/components/selectKey/SelectKey.tsx:141
 msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Welcome to Chia. Please log in with an existing key, or create a new key."
+msgstr "Welcome to Silicoin. Please log in with an existing key, or create a new key."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2600,7 +2600,7 @@ msgstr "{currencyCode} Block Rewards"
 
 #: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
 msgid "{currencyCode} Total Chia Farmed"
-msgstr "{currencyCode} Total Chia Farmed"
+msgstr "{currencyCode} Total Silicoin Farmed"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

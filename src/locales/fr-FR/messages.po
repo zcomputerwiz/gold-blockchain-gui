@@ -24,7 +24,7 @@ msgstr "(Facultatif)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "*Vous voulez explorer la blockchain Chia plus en détail ? Consultez <0>Chia Explorer</0> construit par un développeur open source."
+msgstr "*Vous voulez explorer la blockchain Silicoin plus en détail ? Consultez <0>Silicoin Explorer</0> construit par un développeur open source."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -45,7 +45,7 @@ msgstr "Le moissonneur est un service qui tourne sur une machine qui stocke des 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chia Blockchain"
-msgstr "À propos de la blockchain Chia"
+msgstr "À propos de la blockchain Silicoin"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -217,7 +217,7 @@ msgstr "Itération du bloc VDF"
 
 #: src/components/block/Block.jsx:336
 msgid "Block at height {0} in the Chia blockchain"
-msgstr "Bloc à la hauteur {0} dans la blockchain Chia"
+msgstr "Bloc à la hauteur {0} dans la blockchain Silicoin"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -310,15 +310,15 @@ msgstr "Chat sur KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chia"
-msgstr "Chia"
+msgstr "Silicoin"
 
 #: src/electron/main.tsx:358
 msgid "Chia Blockchain Wiki"
-msgstr "Wiki de la Chia Blockchain"
+msgstr "Wiki de la Silicoin Blockchain"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
-msgstr "Portefeuille Chia"
+msgstr "Portefeuille Silicoin"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -691,7 +691,7 @@ msgstr "Éditer"
 
 #: src/components/wallet/WalletImport.tsx:147
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "Entrez les 24 mots mnémotechniques que vous avez sauvegardé afin de restaurer votre portefeuille Chia."
+msgstr "Entrez les 24 mots mnémotechniques que vous avez sauvegardé afin de restaurer votre portefeuille Silicoin."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -705,7 +705,7 @@ msgstr "Erreur"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-msgstr "Erreur: Impossible d'envoyer du chia à une adresse colorée. Merci d'entrer une adresse chia valide."
+msgstr "Erreur: Impossible d'envoyer du Silicoin à une adresse colorée. Merci d'entrer une adresse Silicoin valide."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1481,7 +1481,7 @@ msgstr "Parcelles passées par le filtre"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-msgstr "Les parcelles constituent l'espace alloué sur votre disque dur pour cultiver et gagner du Chia. <0>En savoir plus</0>"
+msgstr "Les parcelles constituent l'espace alloué sur votre disque dur pour cultiver et gagner du Silicoin. <0>En savoir plus</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1918,7 +1918,7 @@ msgstr "Intervalle de dépense (nombre de blocs)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
-msgstr "Limite de dépense (chia par intervalle): {0}"
+msgstr "Limite de dépense (Silicoin par intervalle): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2111,7 +2111,7 @@ msgstr "Cette caractéristique est uniquement disponible via l'interface graphiq
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
 msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-msgstr "Il s'agit du montant de Chia que vous pouvez actuellement utiliser pour effectuer des transactions. Cela n'inclut pas les récompenses de culture et les transactions en attente ainsi que les Chia que vous venez de dépenser et qui ne sont pas encore dans la blockchain."
+msgstr "Il s'agit du montant de Silicoin que vous pouvez actuellement utiliser pour effectuer des transactions. Cela n'inclut pas les récompenses de culture et les transactions en attente ainsi que les Silicoin que vous venez de dépenser et qui ne sont pas encore dans la blockchain."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2131,7 +2131,7 @@ msgstr "C'est le moment où le bloc a été créé par le fermier, ce qui se pro
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Il s'agit de la quantité totale de Chia dans la blockchain au plus récent sous-bloc contrôlé par vos clés privées. Il comprend des récompenses de culture gelées, mais pas des transactions entrantes et sortantes."
+msgstr "Il s'agit de la quantité totale de Silicoin dans la blockchain au plus récent sous-bloc contrôlé par vos clés privées. Il comprend des récompenses de culture gelées, mais pas des transactions entrantes et sortantes."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2177,7 +2177,7 @@ msgstr "Cette transaction a été incluse sur la blockchain à cette hauteur de 
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-msgstr "Cette version de Chia n'est plus compatible avec la blockchain et ne peut pas cultiver de façon sûre."
+msgstr "Cette version de Silicoin n'est plus compatible avec la blockchain et ne peut pas cultiver de façon sûre."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2412,7 +2412,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
 msgid "Want to earn more Chia? Add more plots to your farm."
-msgstr "Vous voulez gagner plus de Chia ? Ajoutez plus de parcelles à votre ferme."
+msgstr "Vous voulez gagner plus de Silicoin ? Ajoutez plus de parcelles à votre ferme."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2440,7 +2440,7 @@ msgstr "Le poids est la difficulté totale de tous les sous-blocs, celui-ci incl
 
 #: src/components/selectKey/SelectKey.tsx:141
 msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Bienvenue sur Chia. Veuillez vous connecter avec une clé existante, ou créer une nouvelle clé."
+msgstr "Bienvenue sur Silicoin. Veuillez vous connecter avec une clé existante, ou créer une nouvelle clé."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2600,7 +2600,7 @@ msgstr "{currencyCode} récompenses de blocs"
 
 #: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
 msgid "{currencyCode} Total Chia Farmed"
-msgstr "{currencyCode} Total de Chia récoltés"
+msgstr "{currencyCode} Total de Silicoin récoltés"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

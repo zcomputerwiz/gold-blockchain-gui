@@ -24,7 +24,7 @@ msgstr "(اختياري)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "*هل ترغب في زيادة استكشاف Chia؟ تحقق من <0> Chia Explorer</0> التي بناها مطور مفتوح المصدر."
+msgstr "*هل ترغب في زيادة استكشاف Silicoin؟ تحقق من <0> Silicoin Explorer</0> التي بناها مطور مفتوح المصدر."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -45,7 +45,7 @@ msgstr "الحصاد هو خدمة تعمل على الحاسوب حيث يتم 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chia Blockchain"
-msgstr "معلومات عن Chia Blockchain"
+msgstr "معلومات عن Silicoin Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -310,15 +310,15 @@ msgstr "الدردشة على KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chia"
-msgstr "Chia"
+msgstr "Silicoin"
 
 #: src/electron/main.tsx:358
 msgid "Chia Blockchain Wiki"
-msgstr "Chia Blockchain Wiki"
+msgstr "Silicoin Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
-msgstr "محفظة Chia"
+msgstr "محفظة Silicoin"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -691,7 +691,7 @@ msgstr "تعديل"
 
 #: src/components/wallet/WalletImport.tsx:147
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "أدخل الـ 24 كلمة التي قمت بحفظها من أجل استعادة محفظة Chia الخاصة بك."
+msgstr "أدخل الـ 24 كلمة التي قمت بحفظها من أجل استعادة محفظة Silicoin الخاصة بك."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -705,7 +705,7 @@ msgstr "خطأ"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-msgstr "خطأ: لا يمكن إرسال chia إلى عنوان العملات الملونة. الرجاء إدخال عنوان chia."
+msgstr "خطأ: لا يمكن إرسال Silicoin إلى عنوان العملات الملونة. الرجاء إدخال عنوان Silicoin."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1481,7 +1481,7 @@ msgstr "اجتاز تصفية المؤامرات"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-msgstr "يتم تخصيص مساحة قطع الأراضي على محرك الأقراص الثابتة الخاص بك لاستخدامها في الزراعة وكسب Chia. <0> معرفة المزيد </0>"
+msgstr "يتم تخصيص مساحة قطع الأراضي على محرك الأقراص الثابتة الخاص بك لاستخدامها في الزراعة وكسب Silicoin. <0> معرفة المزيد </0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1918,7 +1918,7 @@ msgstr "طول الفاصل الزمني للإنفاق (عدد الكتل)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
-msgstr "حد الإنفاق (chia لكل فاصلة): {0}"
+msgstr "حد الإنفاق (Silicoin لكل فاصلة): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

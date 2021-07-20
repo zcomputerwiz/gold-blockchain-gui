@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "*Wants t' explore taken booty further? See <0>Chia Explorer</0> by a mighty free pirate."
+msgstr "*Wants t' explore taken booty further? See <0>Silicoin Explorer</0> by a mighty free pirate."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -45,7 +45,7 @@ msgstr "A tender be a vessel where crewdogs are actually at. A plunderer 'n tend
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chia Blockchain"
-msgstr "About Chia Blockchain"
+msgstr "About Silicoin Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -217,7 +217,7 @@ msgstr "Booty Thumbs Twiddled"
 
 #: src/components/block/Block.jsx:336
 msgid "Block at height {0} in the Chia blockchain"
-msgstr "Booty at number {0} in the Chia blockchain"
+msgstr "Booty at number {0} in the Silicoin blockchain"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -310,15 +310,15 @@ msgstr "Natter on KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chia"
-msgstr "Chia"
+msgstr "Silicoin"
 
 #: src/electron/main.tsx:358
 msgid "Chia Blockchain Wiki"
-msgstr "Chia Blockchain Wiki"
+msgstr "Silicoin Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
-msgstr "Chia Treasure Chest"
+msgstr "Silicoin Treasure Chest"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -691,7 +691,7 @@ msgstr "Edit"
 
 #: src/components/wallet/WalletImport.tsx:147
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "Give the 24 word mnemonic that ye scribbled down in order t' restore yer Chia treasure chest."
+msgstr "Give the 24 word mnemonic that ye scribbled down in order t' restore yer Silicoin treasure chest."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -705,7 +705,7 @@ msgstr "It ain't right"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-msgstr "Arrgh: Can nah send chia 't jinxed coordinates. Give chia coordinates."
+msgstr "Arrgh: Can nah send Silicoin 't jinxed coordinates. Give Silicoin coordinates."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1481,7 +1481,7 @@ msgstr "Crewdogs Takin' Action"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-msgstr "Crewdogs are recruited space on yer hard drive used t' plunder 'n get Chia. <0>Look fer more</0>"
+msgstr "Crewdogs are recruited space on yer hard drive used t' plunder 'n get Silicoin. <0>Look fer more</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1918,7 +1918,7 @@ msgstr "Spendin' Interval Length (number o' booties)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
-msgstr "Squanderin' Limit (chia per interval): {0}"
+msgstr "Squanderin' Limit (Silicoin per interval): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2027,7 +2027,7 @@ msgstr "Temporary folder"
 
 #: src/components/app/AppTimeBomb.tsx:30
 msgid "The application will stop working at block height 193536."
-msgstr "T'is version o' Chia will stop workin' at booty 193536."
+msgstr "T'is version o' Silicoin will stop workin' at booty 193536."
 
 #: src/components/farm/FarmFullNodeConnections.tsx:97
 msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
@@ -2111,7 +2111,7 @@ msgstr "This feature be available from GUI only."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
 msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-msgstr "'tis the amount o' Chia that ye can currently use t' make transactions. It does nah include pendin' lootin' rewards, pendin' incomin' transactions, 'n Chia that ye 'ave jus' spent but ain't yet in the blockchain."
+msgstr "'tis the amount o' Silicoin that ye can currently use t' make transactions. It does nah include pendin' lootin' rewards, pendin' incomin' transactions, 'n Silicoin that ye 'ave jus' spent but ain't yet in the blockchain."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2131,7 +2131,7 @@ msgstr "'tis the time the booty was gotten by the plunderer, which be afore 'tis
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "'tis the total amount o' chia in the blockchain at the current peak sub booty which be controlled by yer private treasure maps. It has frozen farmin' rewards, but nah pendin' incomin' 'n outgoin' transactions."
+msgstr "'tis the total amount o' Silicoin in the blockchain at the current peak sub booty which be controlled by yer private treasure maps. It has frozen farmin' rewards, but nah pendin' incomin' 'n outgoin' transactions."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2177,7 +2177,7 @@ msgstr "This trade was added t' the blockchain at this booty number"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-msgstr "T'is version o' Chia is no longer workin' wit' the blockchain 'n no good fer plunderin'."
+msgstr "T'is version o' Silicoin is no longer workin' wit' the blockchain 'n no good fer plunderin'."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2412,7 +2412,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
 msgid "Want to earn more Chia? Add more plots to your farm."
-msgstr "Wants t' earn more Chia? Assign more crewdogs t' yer plunderer."
+msgstr "Wants t' earn more Silicoin? Assign more crewdogs t' yer plunderer."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2440,7 +2440,7 @@ msgstr "Weight be the sum o' pirate huntin' o' all sub booties up to an' includi
 
 #: src/components/selectKey/SelectKey.tsx:141
 msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Ahoy t' Chia. Come in wit' an existin' treasure map, or make a new treasure map."
+msgstr "Ahoy t' Silicoin. Come in wit' an existin' treasure map, or make a new treasure map."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

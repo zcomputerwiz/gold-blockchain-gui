@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "*Želiš više istražiti Chia blokove? Pogledaj <0>Chia Explorer</0> napravljen od strane razvojnih programera otvorenog koda."
+msgstr "*Želiš više istražiti Silicoin blokove? Pogledaj <0>Silicoin Explorer</0> napravljen od strane razvojnih programera otvorenog koda."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -45,7 +45,7 @@ msgstr "Sakupljač je servis pokrenut na računalu gdje su spremljena zemljišta
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chia Blockchain"
-msgstr "O Chia Blockchainu"
+msgstr "O Silicoin Blockchainu"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -217,7 +217,7 @@ msgstr "VDF Ponavljanje Bloka"
 
 #: src/components/block/Block.jsx:336
 msgid "Block at height {0} in the Chia blockchain"
-msgstr "Blok je na {0} visini u Chia blockchainu"
+msgstr "Blok je na {0} visini u Silicoin blockchainu"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -310,15 +310,15 @@ msgstr "Razgovaraj na KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chia"
-msgstr "Chia"
+msgstr "Silicoin"
 
 #: src/electron/main.tsx:358
 msgid "Chia Blockchain Wiki"
-msgstr "Chia Blockchain Wiki"
+msgstr "Silicoin Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
-msgstr "Chia Novčanik"
+msgstr "Silicoin Novčanik"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -691,7 +691,7 @@ msgstr "Uredi"
 
 #: src/components/wallet/WalletImport.tsx:147
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "Unesi 24 mnemonic riječi koje su kreirane prilikom kreiranja novčanika kako bi mogao vratiti postojeći Chia novčanik."
+msgstr "Unesi 24 mnemonic riječi koje su kreirane prilikom kreiranja novčanika kako bi mogao vratiti postojeći Silicoin novčanik."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -705,7 +705,7 @@ msgstr "Greška"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
-msgstr "Greška: Nemogu poslati Chia na obojanu adresu. Unesi Chia adresu."
+msgstr "Greška: Nemogu poslati Silicoin na obojanu adresu. Unesi Silicoin adresu."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1481,7 +1481,7 @@ msgstr "Zemljišta su prošla filter"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chia. <0>Learn more</0>"
-msgstr "Zemljišta su alociran prostor na tvome tvrdom pogonu koja se koriste za uzgoj i zaradu Chia. <0>Saznaj više</0>"
+msgstr "Zemljišta su alociran prostor na tvome tvrdom pogonu koja se koriste za uzgoj i zaradu Silicoin. <0>Saznaj više</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1918,7 +1918,7 @@ msgstr "Duljina intervala potrošnje (broj blokova)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
-msgstr "Limit potrošnje (chia po intervalu): {0}"
+msgstr "Limit potrošnje (Silicoin po intervalu): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2111,7 +2111,7 @@ msgstr "Ova mogućnost je dostupna samo iz GUI."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
 msgid "This is the amount of Chia that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chia that you have just spent but is not yet in the blockchain."
-msgstr "Ovo je iznos Chia koji trenutno možeš koristiti za transakcije. Ne uključuje nagrade na čekanju, transakcije na čekanju i Chia koje si potrošio, ali još nisu u blockchainu."
+msgstr "Ovo je iznos Silicoin koji trenutno možeš koristiti za transakcije. Ne uključuje nagrade na čekanju, transakcije na čekanju i Silicoin koje si potrošio, ali još nisu u blockchainu."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2131,7 +2131,7 @@ msgstr "Ovo je vrijeme bloka koji je farmer kreirao, koje je prije nego je zavr�
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of chia in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Ovo je ukupan iznos Chia u blockchainu na trenutnom najvisem pod bloku koji je kontroliran sa tvojim privatnim ključevima. Uključuje zamrznute nagrade, ali ne i ulazne ili odlazne transakcije na čekanju."
+msgstr "Ovo je ukupan iznos Silicoin u blockchainu na trenutnom najvisem pod bloku koji je kontroliran sa tvojim privatnim ključevima. Uključuje zamrznute nagrade, ali ne i ulazne ili odlazne transakcije na čekanju."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2177,7 +2177,7 @@ msgstr "Ova trgovina je uključena u blockchain na ovoj visini bloka"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 msgid "This version of Chia is no longer compatible with the blockchain and can not safely farm."
-msgstr "Ova verzija Chia vise nije kompatibilna sa blockchainom i ne može se sigurno uzgajati."
+msgstr "Ova verzija Silicoin vise nije kompatibilna sa blockchainom i ne može se sigurno uzgajati."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2412,7 +2412,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
 msgid "Want to earn more Chia? Add more plots to your farm."
-msgstr "Želiš zaraditi više Chia? Dodaj više zemljišta u svoju farmu."
+msgstr "Želiš zaraditi više Silicoin? Dodaj više zemljišta u svoju farmu."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2440,7 +2440,7 @@ msgstr "Težina je ukupno dodanih kompleksnosti svih pod blokova uključujući i
 
 #: src/components/selectKey/SelectKey.tsx:141
 msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Dobrodošao u Chia. Prijavi se sa postojećim ključem, ili kreiraj novi."
+msgstr "Dobrodošao u Silicoin. Prijavi se sa postojećim ključem, ili kreiraj novi."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2600,7 +2600,7 @@ msgstr "{currencyCode} Nagrade bloka"
 
 #: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
 msgid "{currencyCode} Total Chia Farmed"
-msgstr "{currencyCode} Ukupno ugojeno Chia"
+msgstr "{currencyCode} Ukupno ugojeno Silicoin"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

@@ -24,7 +24,7 @@ msgstr "(Valinnainen)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chia’s blocks further? Check out <0>Chia Explorer</0> built by an open source developer."
-msgstr "Haluatko tarkastella lohkoja? Katso avoimen koodin <0>Chia Explorer</0>."
+msgstr "Haluatko tarkastella lohkoja? Katso avoimen koodin <0>Silicoin Explorer</0>."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -45,7 +45,7 @@ msgstr "Harvesteri on palvelu koneella, jolle plot-tiedostot on tallennettu. Far
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chia Blockchain"
-msgstr "Chia Lohkoketjusta"
+msgstr "Silicoin Lohkoketjusta"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -310,15 +310,15 @@ msgstr "Keskustele KeyBasessa"
 
 #: src/electron/main.tsx:419
 msgid "Chia"
-msgstr "Chia"
+msgstr "Silicoin"
 
 #: src/electron/main.tsx:358
 msgid "Chia Blockchain Wiki"
-msgstr "Chia Wiki"
+msgstr "Silicoin Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
-msgstr "Chia-lompakko"
+msgstr "Silicoin-lompakko"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -691,7 +691,7 @@ msgstr "Muokkaa"
 
 #: src/components/wallet/WalletImport.tsx:147
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet."
-msgstr "Anna tallentamasi 24 muistisanaa palauttaaksesi Chia-lompakon."
+msgstr "Anna tallentamasi 24 muistisanaa palauttaaksesi Silicoin-lompakon."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
