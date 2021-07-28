@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: silver;
   }
 
-  body { 
+  body {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -144,7 +144,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/Chia-Network/chia-blockchain/issues"
+          href="https://github.com/silicoin-network/silicoin-blockchain/issues"
           target="_blank"
         >
           Report an issue

@@ -18,7 +18,7 @@ function getInstallerConfig () {
     authors: 'Silicoin Network',
     version: process.env.CHIA_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chia-blockchain/master/electron-react/src/assets/img/chia.ico',
+    iconUrl: 'https://raw.githubusercontent.com/silicoin-network/silicoin-blockchain/master/electron-react/src/assets/img/chia.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
