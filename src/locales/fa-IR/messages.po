@@ -44,8 +44,8 @@ msgstr ""
 "دروگر (Harvester) یک سرویس در حال اجرا بر روی ماشینی است که پلات (ها) در عمل آنجا ذخیره شده اند. مزرعه دار (Farmer) و دروگر برای دیدن وضعیت رشته (Chain) با گره کامل در تعامل هستند. شبکه دروگر های متصل خود را در زیر ببینید. \n"
 "بیشتر فرار بگیرید"
 
-#: src/electron/main.tsx:422
-#: src/electron/main.tsx:509
+#: src/electron/main.tsx:438
+#: src/electron/main.tsx:525
 msgid "About Chia Blockchain"
 msgstr "درباره بلاکچین چیـا"
 
@@ -308,11 +308,11 @@ msgstr "Change"
 msgid "Change Pool"
 msgstr "Change Pool"
 
-#: src/electron/main.tsx:401
+#: src/electron/main.tsx:417
 msgid "Chat on KeyBase"
 msgstr "در اپلیکیشن KeyBase صبحت کنید"
 
-#: src/electron/main.tsx:419
+#: src/electron/main.tsx:435
 msgid "Chia"
 msgstr "چیـا"
 
@@ -320,9 +320,17 @@ msgstr "چیـا"
 msgid "Chia Blockchain Wiki"
 msgstr "ویکی زنجیره بلوکی چیـا"
 
+#: src/electron/main.tsx:398
+msgid "Chia Forks Calculator"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
 msgstr "کیف پول چیـا"
+
+#: src/electron/main.tsx:390
+msgid "ChiaHub"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -841,7 +849,7 @@ msgstr "مبلغ کارمزد ها"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:456
+#: src/electron/main.tsx:472
 msgid "File"
 msgstr "File"
 
@@ -860,7 +868,7 @@ msgstr "Final folder location"
 msgid "Finished"
 msgstr "Finished"
 
-#: src/electron/main.tsx:407
+#: src/electron/main.tsx:423
 msgid "Follow on Twitter"
 msgstr "Follow on Twitter"
 
@@ -1732,7 +1740,7 @@ msgstr "Removing"
 msgid "Rename"
 msgstr "تغییر نام"
 
-#: src/electron/main.tsx:393
+#: src/electron/main.tsx:409
 msgid "Report an Issue..."
 msgstr "گزارش یک مشکل یا خطا..."
 
@@ -1894,7 +1902,7 @@ msgstr "Smooth out your XCH farming rewards by joining a pool."
 msgid "Something went wrong"
 msgstr "Something went wrong"
 
-#: src/electron/main.tsx:470
+#: src/electron/main.tsx:486
 msgid "Speech"
 msgstr "Speech"
 

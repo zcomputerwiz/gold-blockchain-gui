@@ -42,8 +42,8 @@ msgstr "Es werden 128 Buckets empfohlen"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "Ein Harvester ist ein auf dem Computer laufender Dienst, auf dem Plot(s) gespeichert sind. Ein Farmer und Harvester kommunizieren mit einem Full Node um den Status der Chain zu ermitteln. Betrachte unten dein Netzwerk an verbundenen Harvestern Lerne mehr"
 
-#: src/electron/main.tsx:422
-#: src/electron/main.tsx:509
+#: src/electron/main.tsx:438
+#: src/electron/main.tsx:525
 msgid "About Chia Blockchain"
 msgstr "Mehr über die Silicoin Blockchain"
 
@@ -304,11 +304,11 @@ msgstr "Ändern"
 msgid "Change Pool"
 msgstr "Pool wechseln"
 
-#: src/electron/main.tsx:401
+#: src/electron/main.tsx:417
 msgid "Chat on KeyBase"
 msgstr "Chatte auf KeyBase"
 
-#: src/electron/main.tsx:419
+#: src/electron/main.tsx:435
 msgid "Chia"
 msgstr "Silicoin"
 
@@ -316,9 +316,17 @@ msgstr "Silicoin"
 msgid "Chia Blockchain Wiki"
 msgstr "Silicoin Blockchain Wiki"
 
+#: src/electron/main.tsx:398
+msgid "Chia Forks Calculator"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
 msgstr "Silicoin Wallet"
+
+#: src/electron/main.tsx:390
+msgid "ChiaHub"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -841,7 +849,7 @@ msgstr "Höhe der Gebühr"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:456
+#: src/electron/main.tsx:472
 msgid "File"
 msgstr "Datei"
 
@@ -860,7 +868,7 @@ msgstr "Finaler Speicherort"
 msgid "Finished"
 msgstr "Beendet"
 
-#: src/electron/main.tsx:407
+#: src/electron/main.tsx:423
 msgid "Follow on Twitter"
 msgstr "Folge auf Twitter"
 
@@ -1734,7 +1742,7 @@ msgstr "Entfernen"
 msgid "Rename"
 msgstr "Umbenennen"
 
-#: src/electron/main.tsx:393
+#: src/electron/main.tsx:409
 msgid "Report an Issue..."
 msgstr "Ein Problem melden..."
 
@@ -1896,7 +1904,7 @@ msgstr "Glätte deine XCH Farming-Belohnungen indem du einem Pool beitrittst."
 msgid "Something went wrong"
 msgstr ""
 
-#: src/electron/main.tsx:470
+#: src/electron/main.tsx:486
 msgid "Speech"
 msgstr "Sprache"
 

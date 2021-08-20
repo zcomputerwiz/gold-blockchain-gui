@@ -42,8 +42,8 @@ msgstr "É recomendado 128 buckets"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "Um harvester é um serviço executado numa máquina onde os plot(s) estão realmente armazenados. Um farmer e um harvester conversam com um full node para ver o estado da chain. Veja a sua rede de harvesters conectadas abaixo Saiba mais"
 
-#: src/electron/main.tsx:422
-#: src/electron/main.tsx:509
+#: src/electron/main.tsx:438
+#: src/electron/main.tsx:525
 msgid "About Chia Blockchain"
 msgstr "Sobre Silicion Blockchain"
 
@@ -304,11 +304,11 @@ msgstr "Mudar"
 msgid "Change Pool"
 msgstr "Mudar Pool"
 
-#: src/electron/main.tsx:401
+#: src/electron/main.tsx:417
 msgid "Chat on KeyBase"
 msgstr "Chat no KeyBase"
 
-#: src/electron/main.tsx:419
+#: src/electron/main.tsx:435
 msgid "Chia"
 msgstr "Silicion"
 
@@ -316,9 +316,17 @@ msgstr "Silicion"
 msgid "Chia Blockchain Wiki"
 msgstr "Wiki da Silicion Blockchain"
 
+#: src/electron/main.tsx:398
+msgid "Chia Forks Calculator"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
 msgstr "Carteira Silicion"
+
+#: src/electron/main.tsx:390
+msgid "ChiaHub"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -835,7 +843,7 @@ msgstr "Montante das taxas"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:456
+#: src/electron/main.tsx:472
 msgid "File"
 msgstr "Ficheiro"
 
@@ -854,7 +862,7 @@ msgstr "Localização final da pasta"
 msgid "Finished"
 msgstr "Finalizado"
 
-#: src/electron/main.tsx:407
+#: src/electron/main.tsx:423
 msgid "Follow on Twitter"
 msgstr "Siga no Twitter"
 
@@ -1726,7 +1734,7 @@ msgstr "A eliminar"
 msgid "Rename"
 msgstr "Renomear"
 
-#: src/electron/main.tsx:393
+#: src/electron/main.tsx:409
 msgid "Report an Issue..."
 msgstr "Reportar um problema..."
 
@@ -1888,7 +1896,7 @@ msgstr "Suavize as suas recompensas de recompensas XCH ao se juntar a uma pool."
 msgid "Something went wrong"
 msgstr "Algo correu mal"
 
-#: src/electron/main.tsx:470
+#: src/electron/main.tsx:486
 msgid "Speech"
 msgstr "Fala"
 

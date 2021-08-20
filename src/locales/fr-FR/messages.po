@@ -42,8 +42,8 @@ msgstr "128 buckets sont recommandés"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "Le moissonneur est un service qui tourne sur une machine qui stocke des parcelles. Le fermier et le moissonneur dialoguent avec le full node pour regarder l'état de la chaîne. Regardez votre réseau de moissonneurs connectés ci-dessous. Plus d'informations"
 
-#: src/electron/main.tsx:422
-#: src/electron/main.tsx:509
+#: src/electron/main.tsx:438
+#: src/electron/main.tsx:525
 msgid "About Chia Blockchain"
 msgstr "À propos de la blockchain Silicoin"
 
@@ -304,11 +304,11 @@ msgstr "Modifier"
 msgid "Change Pool"
 msgstr "Changer de pool"
 
-#: src/electron/main.tsx:401
+#: src/electron/main.tsx:417
 msgid "Chat on KeyBase"
 msgstr "Chat sur KeyBase"
 
-#: src/electron/main.tsx:419
+#: src/electron/main.tsx:435
 msgid "Chia"
 msgstr "Silicoin"
 
@@ -316,9 +316,17 @@ msgstr "Silicoin"
 msgid "Chia Blockchain Wiki"
 msgstr "Wiki de la Silicoin Blockchain"
 
+#: src/electron/main.tsx:398
+msgid "Chia Forks Calculator"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
 msgstr "Portefeuille Silicoin"
+
+#: src/electron/main.tsx:390
+msgid "ChiaHub"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -835,7 +843,7 @@ msgstr "Montant des frais"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:456
+#: src/electron/main.tsx:472
 msgid "File"
 msgstr "Fichier"
 
@@ -854,7 +862,7 @@ msgstr "Emplacement du dossier final"
 msgid "Finished"
 msgstr "Terminé"
 
-#: src/electron/main.tsx:407
+#: src/electron/main.tsx:423
 msgid "Follow on Twitter"
 msgstr "Suivez-nous sur Twitter"
 
@@ -1726,7 +1734,7 @@ msgstr "Suppression"
 msgid "Rename"
 msgstr "Renommer"
 
-#: src/electron/main.tsx:393
+#: src/electron/main.tsx:409
 msgid "Report an Issue..."
 msgstr "Remonter un problème..."
 
@@ -1888,7 +1896,7 @@ msgstr ""
 msgid "Something went wrong"
 msgstr ""
 
-#: src/electron/main.tsx:470
+#: src/electron/main.tsx:486
 msgid "Speech"
 msgstr "Dicter"
 

@@ -42,8 +42,8 @@ msgstr "バケツ数は 128 がおすすめ"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "収穫機は耕地が実際に保存されているデバイス上に走らせるサービスです。農家と収穫機はフルノードと通信することでブロックチェーンの状態を認識します。以下が接続されている収穫機ネットワークです。詳しく"
 
-#: src/electron/main.tsx:422
-#: src/electron/main.tsx:509
+#: src/electron/main.tsx:438
+#: src/electron/main.tsx:525
 msgid "About Chia Blockchain"
 msgstr "チアブロックチェーンについて"
 
@@ -304,11 +304,11 @@ msgstr ""
 msgid "Change Pool"
 msgstr ""
 
-#: src/electron/main.tsx:401
+#: src/electron/main.tsx:417
 msgid "Chat on KeyBase"
 msgstr "Keybase でチャット"
 
-#: src/electron/main.tsx:419
+#: src/electron/main.tsx:435
 msgid "Chia"
 msgstr "チア"
 
@@ -316,9 +316,17 @@ msgstr "チア"
 msgid "Chia Blockchain Wiki"
 msgstr "チアブロックチェーンの Wiki"
 
+#: src/electron/main.tsx:398
+msgid "Chia Forks Calculator"
+msgstr ""
+
 #: src/components/wallet/standard/WalletStandard.tsx:647
 msgid "Chia Wallet"
 msgstr "チアウォレット"
+
+#: src/electron/main.tsx:390
+msgid "ChiaHub"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -835,7 +843,7 @@ msgstr "全手数料"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:456
+#: src/electron/main.tsx:472
 msgid "File"
 msgstr "ファイル"
 
@@ -854,7 +862,7 @@ msgstr "最終フォルダの場所"
 msgid "Finished"
 msgstr "完成"
 
-#: src/electron/main.tsx:407
+#: src/electron/main.tsx:423
 msgid "Follow on Twitter"
 msgstr "Twitter でフォロー"
 
@@ -1726,7 +1734,7 @@ msgstr "削除中"
 msgid "Rename"
 msgstr "名称変更"
 
-#: src/electron/main.tsx:393
+#: src/electron/main.tsx:409
 msgid "Report an Issue..."
 msgstr "問題を報告"
 
@@ -1888,7 +1896,7 @@ msgstr ""
 msgid "Something went wrong"
 msgstr ""
 
-#: src/electron/main.tsx:470
+#: src/electron/main.tsx:486
 msgid "Speech"
 msgstr "スピーチ"
 

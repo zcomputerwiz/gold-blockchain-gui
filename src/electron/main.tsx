@@ -387,6 +387,22 @@ if (!handleSquirrelEvent()) {
             },
           },
           {
+            label: i18n._(/* i18n */ { id: 'ChiaHub' }),
+            click: () => {
+              openExternal(
+                'https://www.chia-hub.com',
+              );
+            },
+          },
+          {
+            label: i18n._(/* i18n */ { id: 'Chia Forks Calculator' }),
+            click: () => {
+              openExternal(
+                'https://chiaforkscalculator.com',
+              );
+            },
+          },
+          {
             type: 'separator',
           },
           {
@@ -400,13 +416,13 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://keybase.io/team/chia_network.public');
+              openExternal('https://keybase.io/team/silicoin_network.public');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/chia_project');
+              openExternal('https://twitter.com/silicoin_project');
             },
           },
         ],
