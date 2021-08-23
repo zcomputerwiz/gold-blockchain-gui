@@ -42,8 +42,8 @@ msgstr "Odporúčame 128 sektorov"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "Kombajn je služba bežiaca na stroji, kde sú uložené polia. Farmár a kombajn komunikujú s plným uzlom, aby zistili stav reťaze. Nižšie si pozrite svoju sieť prepojených kombajnov. Viac informácií"
 
-#: src/electron/main.tsx:438
-#: src/electron/main.tsx:525
+#: src/electron/main.tsx:446
+#: src/electron/main.tsx:533
 msgid "About Chia Blockchain"
 msgstr "O Silicion blockchaine"
 
@@ -304,11 +304,11 @@ msgstr "Zmeniť"
 msgid "Change Pool"
 msgstr "Zmeniť združenie"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Chat on KeyBase"
 msgstr "Chatovať na KeyBase"
 
-#: src/electron/main.tsx:435
+#: src/electron/main.tsx:443
 msgid "Chia"
 msgstr "Silicion"
 
@@ -326,6 +326,10 @@ msgstr "Silicion peňaženka"
 
 #: src/electron/main.tsx:390
 msgid "ChiaHub"
+msgstr ""
+
+#: src/electron/main.tsx:406
+msgid "Chiaforks Blockchain"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -843,7 +847,7 @@ msgstr "Výška poplatkov"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:472
+#: src/electron/main.tsx:480
 msgid "File"
 msgstr "Súbor"
 
@@ -862,7 +866,7 @@ msgstr "Cieľový adresár"
 msgid "Finished"
 msgstr "Dokončené"
 
-#: src/electron/main.tsx:423
+#: src/electron/main.tsx:431
 msgid "Follow on Twitter"
 msgstr "Sledovať na Twitteri"
 
@@ -1734,7 +1738,7 @@ msgstr "Odstraňujem"
 msgid "Rename"
 msgstr "Premenovať"
 
-#: src/electron/main.tsx:409
+#: src/electron/main.tsx:417
 msgid "Report an Issue..."
 msgstr "Nahlásiť Problém..."
 
@@ -1896,7 +1900,7 @@ msgstr "Zjemnite si svoje farmárske XCH odmeny pripojením sa k združeniu."
 msgid "Something went wrong"
 msgstr "Niečo sa pokazilo"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Speech"
 msgstr "Reč"
 

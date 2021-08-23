@@ -42,8 +42,8 @@ msgstr "кофи"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "Комбайнът е услуга, работеща на машина, в която действително се съхраняват парцелите. Фермер и комбайн говорят с пълен възел, за да видят състоянието на веригата. Вижте мрежата си от свързани комбайни по-долу Научете повече"
 
-#: src/electron/main.tsx:438
-#: src/electron/main.tsx:525
+#: src/electron/main.tsx:446
+#: src/electron/main.tsx:533
 msgid "About Chia Blockchain"
 msgstr "Относно Чиа Блокчейн"
 
@@ -304,11 +304,11 @@ msgstr ""
 msgid "Change Pool"
 msgstr ""
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Chat on KeyBase"
 msgstr "Чат в KeyBase"
 
-#: src/electron/main.tsx:435
+#: src/electron/main.tsx:443
 msgid "Chia"
 msgstr "Чиа"
 
@@ -326,6 +326,10 @@ msgstr "Silicoin Портфейл"
 
 #: src/electron/main.tsx:390
 msgid "ChiaHub"
+msgstr ""
+
+#: src/electron/main.tsx:406
+msgid "Chiaforks Blockchain"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -843,7 +847,7 @@ msgstr "Размер на таксите"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:472
+#: src/electron/main.tsx:480
 msgid "File"
 msgstr "Файл"
 
@@ -862,7 +866,7 @@ msgstr "Местоположение на финална папка"
 msgid "Finished"
 msgstr "Завършен"
 
-#: src/electron/main.tsx:423
+#: src/electron/main.tsx:431
 msgid "Follow on Twitter"
 msgstr "Последвай в Twitter"
 
@@ -1736,7 +1740,7 @@ msgstr "Премахване"
 msgid "Rename"
 msgstr "Преименувай"
 
-#: src/electron/main.tsx:409
+#: src/electron/main.tsx:417
 msgid "Report an Issue..."
 msgstr "Съобщете за проблем..."
 
@@ -1898,7 +1902,7 @@ msgstr ""
 msgid "Something went wrong"
 msgstr ""
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Speech"
 msgstr "Реч"
 

@@ -42,8 +42,8 @@ msgstr "Az ajánlott vödrök száma 128"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "A betakarító egy szolgáltatás ahol a parcellák valójában tárolásra kerülnek. A gazdász és a betakarító kommunikációjából kivehető egy teljes rész, hogy látható legyen miként is áll a lánc. Alább láthatód azokat a betakarítókat akik a hálózatodhoz vannak csatlakozva. Tudj meg többet"
 
-#: src/electron/main.tsx:438
-#: src/electron/main.tsx:525
+#: src/electron/main.tsx:446
+#: src/electron/main.tsx:533
 msgid "About Chia Blockchain"
 msgstr "A Silicion Blockchain-ről"
 
@@ -304,11 +304,11 @@ msgstr "Módosítás"
 msgid "Change Pool"
 msgstr ""
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Chat on KeyBase"
 msgstr "Csevegés a KeyBase-n"
 
-#: src/electron/main.tsx:435
+#: src/electron/main.tsx:443
 msgid "Chia"
 msgstr "Silicion"
 
@@ -326,6 +326,10 @@ msgstr "Silicion Pénztárca"
 
 #: src/electron/main.tsx:390
 msgid "ChiaHub"
+msgstr ""
+
+#: src/electron/main.tsx:406
+msgid "Chiaforks Blockchain"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -843,7 +847,7 @@ msgstr "Díjak összege"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:472
+#: src/electron/main.tsx:480
 msgid "File"
 msgstr "Fájl"
 
@@ -862,7 +866,7 @@ msgstr "Végleges mappa helye"
 msgid "Finished"
 msgstr "Befejezve"
 
-#: src/electron/main.tsx:423
+#: src/electron/main.tsx:431
 msgid "Follow on Twitter"
 msgstr "Kövess minket a Twitteren"
 
@@ -1734,7 +1738,7 @@ msgstr "Eltávolítás"
 msgid "Rename"
 msgstr "Átnevezés"
 
-#: src/electron/main.tsx:409
+#: src/electron/main.tsx:417
 msgid "Report an Issue..."
 msgstr "Hibabejelentés..."
 
@@ -1896,7 +1900,7 @@ msgstr ""
 msgid "Something went wrong"
 msgstr "Hiba történt"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Speech"
 msgstr "Beszéd"
 

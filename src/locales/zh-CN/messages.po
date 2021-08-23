@@ -42,8 +42,8 @@ msgstr "排序桶数量推荐设置为128"
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "收割机是一个在存有农田文件的机器上运行的服务。农民和收割机通过和全节点交互来得到链的状态。你可以在下面看到你网络所连接的收割机。了解更多"
 
-#: src/electron/main.tsx:438
-#: src/electron/main.tsx:525
+#: src/electron/main.tsx:446
+#: src/electron/main.tsx:533
 msgid "About Chia Blockchain"
 msgstr "关于Silicion区块链项目"
 
@@ -304,11 +304,11 @@ msgstr "变更"
 msgid "Change Pool"
 msgstr "更换农业合作社"
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Chat on KeyBase"
 msgstr "在Keybase上参与讨论"
 
-#: src/electron/main.tsx:435
+#: src/electron/main.tsx:443
 msgid "Chia"
 msgstr "Silicoin"
 
@@ -326,6 +326,10 @@ msgstr "Silicoin钱包"
 
 #: src/electron/main.tsx:390
 msgid "ChiaHub"
+msgstr ""
+
+#: src/electron/main.tsx:406
+msgid "Chiaforks Blockchain"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -843,7 +847,7 @@ msgstr "费用"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:472
+#: src/electron/main.tsx:480
 msgid "File"
 msgstr "文件"
 
@@ -862,7 +866,7 @@ msgstr "最终输出文件夹位置"
 msgid "Finished"
 msgstr "已完成"
 
-#: src/electron/main.tsx:423
+#: src/electron/main.tsx:431
 msgid "Follow on Twitter"
 msgstr "关注我们的Twitter"
 
@@ -1734,7 +1738,7 @@ msgstr "删除中"
 msgid "Rename"
 msgstr "重命名"
 
-#: src/electron/main.tsx:409
+#: src/electron/main.tsx:417
 msgid "Report an Issue..."
 msgstr "报告问题"
 
@@ -1896,7 +1900,7 @@ msgstr "加入农业合作社来稳定tSIT耕作收益。"
 msgid "Something went wrong"
 msgstr "出错了"
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Speech"
 msgstr "演说"
 

@@ -403,6 +403,14 @@ if (!handleSquirrelEvent()) {
             },
           },
           {
+            label: i18n._(/* i18n */ { id: 'Chiaforks Blockchain' }),
+            click: () => {
+              openExternal(
+                'https://chiaforksblockchain.com',
+              );
+            },
+          },
+          {
             type: 'separator',
           },
           {

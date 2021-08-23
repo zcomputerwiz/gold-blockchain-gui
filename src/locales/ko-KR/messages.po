@@ -42,8 +42,8 @@ msgstr "128의 버킷을 권장합니다."
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "수확기는 플롯이 실제 저장되어 구동되는 기기입니다. 파머와 수확기는 전체 체인의 상황을 풀 노드를 통해 확인합니다. 아래의 더 보기 버튼을 눌러, 네트워크에 연결된 수확기를 확인하십시오."
 
-#: src/electron/main.tsx:438
-#: src/electron/main.tsx:525
+#: src/electron/main.tsx:446
+#: src/electron/main.tsx:533
 msgid "About Chia Blockchain"
 msgstr "치아 블록체인에 대하여"
 
@@ -304,11 +304,11 @@ msgstr ""
 msgid "Change Pool"
 msgstr ""
 
-#: src/electron/main.tsx:417
+#: src/electron/main.tsx:425
 msgid "Chat on KeyBase"
 msgstr "키베이스에서 채팅하기"
 
-#: src/electron/main.tsx:435
+#: src/electron/main.tsx:443
 msgid "Chia"
 msgstr "치아"
 
@@ -326,6 +326,10 @@ msgstr "치아 지갑"
 
 #: src/electron/main.tsx:390
 msgid "ChiaHub"
+msgstr ""
+
+#: src/electron/main.tsx:406
+msgid "Chiaforks Blockchain"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
@@ -843,7 +847,7 @@ msgstr "수수료 금액"
 #~ msgstr ""
 
 #: src/electron/main.tsx:255
-#: src/electron/main.tsx:472
+#: src/electron/main.tsx:480
 msgid "File"
 msgstr "파일"
 
@@ -862,7 +866,7 @@ msgstr "최종 폴더 위치"
 msgid "Finished"
 msgstr "완료됨"
 
-#: src/electron/main.tsx:423
+#: src/electron/main.tsx:431
 msgid "Follow on Twitter"
 msgstr "트위터 팔로우하기"
 
@@ -1734,7 +1738,7 @@ msgstr "제거"
 msgid "Rename"
 msgstr "이름 바꾸기"
 
-#: src/electron/main.tsx:409
+#: src/electron/main.tsx:417
 msgid "Report an Issue..."
 msgstr "문제 보고하기..."
 
@@ -1896,7 +1900,7 @@ msgstr ""
 msgid "Something went wrong"
 msgstr ""
 
-#: src/electron/main.tsx:486
+#: src/electron/main.tsx:494
 msgid "Speech"
 msgstr "말하다"
 
