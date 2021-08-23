@@ -268,7 +268,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://tokendock.io/silicoin`}
+          href={`https://tokendock.io`}
         >
           {currencyCode
             ? toBech32m(
@@ -284,7 +284,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://tokendock.io/silicoin`}
+          href={`https://tokendock.io`}
         >
           {currencyCode
             ? toBech32m(

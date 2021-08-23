@@ -65,7 +65,7 @@ export default function FarmLatestBlockChallenges() {
           *Want to explore Chia’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://tokendock.io/silicoin"
+            href="https://tokendock.io"
             target="_blank"
           >
             Chia Explorer
