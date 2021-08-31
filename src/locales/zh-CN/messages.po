@@ -358,6 +358,10 @@ msgstr "正在关闭节点与服务"
 msgid "Coins:"
 msgstr "币："
 
+#: src/components/pool/PoolCollection.tsx:78
+#~ msgid "Collection"
+#~ msgstr ""
+
 #: src/components/trading/CreateOffer.jsx:172
 #: src/components/trading/TradesTable.tsx:24
 msgid "Colour"
@@ -1046,7 +1050,7 @@ msgstr "加入农业合作社来获得持续的tSIT耕种收益。创建一个�
 msgid "K-Size"
 msgstr "K值大小"
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Keys"
 msgstr "密钥"
 
@@ -1085,7 +1089,7 @@ msgstr "退出农业合作社"
 msgid "List view"
 msgstr "列表视图"
 
-#: src/components/pool/Pool.tsx:21
+#: src/components/pool/Pool.tsx:24
 msgid "Loading Plot NFTs"
 msgstr "正在加载农田NFT"
 
@@ -1526,7 +1530,8 @@ msgstr "最近24小时获取的积点"
 msgid "Points Successful in Last 24 Hours"
 msgstr "最近24小时成功获取的积点"
 
-#: src/components/pool/Pool.tsx:25
+#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/pool/Pool.tsx:28
 msgid "Pool"
 msgstr "农业合作社"
 
@@ -1593,6 +1598,14 @@ msgstr "农业合作社未提供 target_puzzle_hash。"
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
 msgid "Pool:"
 msgstr "农业合作社："
+
+#: src/components/pool/PoolCollection.tsx:52
+msgid "PoolAddress"
+msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:34
+#~ msgid "PoolAdress"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
@@ -1662,6 +1675,14 @@ msgstr "公钥"
 #: src/middleware/middleware_api.jsx:267
 msgid "Public key:"
 msgstr "公钥："
+
+#: src/components/pool/PoolCollection.tsx:71
+#~ msgid "QDID"
+#~ msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:59
+msgid "Query"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:162
 msgid "Queue Name"

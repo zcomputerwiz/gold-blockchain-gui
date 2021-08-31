@@ -358,6 +358,10 @@ msgstr "Nedluking af node og server"
 msgid "Coins:"
 msgstr "Mønter:"
 
+#: src/components/pool/PoolCollection.tsx:78
+#~ msgid "Collection"
+#~ msgstr ""
+
 #: src/components/trading/CreateOffer.jsx:172
 #: src/components/trading/TradesTable.tsx:24
 msgid "Colour"
@@ -1046,7 +1050,7 @@ msgstr "Tilslut en pulje og få stabil XCH farm belønninger. Opret en plot NFT 
 msgid "K-Size"
 msgstr "K-Størrelse"
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Keys"
 msgstr "Nøgler"
 
@@ -1085,7 +1089,7 @@ msgstr "Forlader Pulje"
 msgid "List view"
 msgstr "Listevisning"
 
-#: src/components/pool/Pool.tsx:21
+#: src/components/pool/Pool.tsx:24
 msgid "Loading Plot NFTs"
 msgstr "Indlæser Plot NFT'er"
 
@@ -1526,7 +1530,8 @@ msgstr "Point Fundet i de sidste 24 Timer"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Point Fundet i de sidste 24 Timer"
 
-#: src/components/pool/Pool.tsx:25
+#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/pool/Pool.tsx:28
 msgid "Pool"
 msgstr "Pulje"
 
@@ -1593,6 +1598,14 @@ msgstr "Pulje tilbyder ikke target_puzzle_hash."
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
 msgid "Pool:"
 msgstr "Pulje:"
+
+#: src/components/pool/PoolCollection.tsx:52
+msgid "PoolAddress"
+msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:34
+#~ msgid "PoolAdress"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
@@ -1662,6 +1675,14 @@ msgstr "Pubnøgle"
 #: src/middleware/middleware_api.jsx:267
 msgid "Public key:"
 msgstr "Offentlig nøgle:"
+
+#: src/components/pool/PoolCollection.tsx:71
+#~ msgid "QDID"
+#~ msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:59
+msgid "Query"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:162
 msgid "Queue Name"

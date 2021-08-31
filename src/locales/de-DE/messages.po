@@ -358,6 +358,10 @@ msgstr "Schließe Node und Server"
 msgid "Coins:"
 msgstr "Coins:"
 
+#: src/components/pool/PoolCollection.tsx:78
+#~ msgid "Collection"
+#~ msgstr ""
+
 #: src/components/trading/CreateOffer.jsx:172
 #: src/components/trading/TradesTable.tsx:24
 msgid "Colour"
@@ -1052,7 +1056,7 @@ msgstr "Trete einem Pool bei und erhalte konsistente XCH Farming-Belohnungen. Er
 msgid "K-Size"
 msgstr "K-Größe"
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Keys"
 msgstr "Schlüssel"
 
@@ -1091,7 +1095,7 @@ msgstr "Pool wird verlassen"
 msgid "List view"
 msgstr "Listenansicht"
 
-#: src/components/pool/Pool.tsx:21
+#: src/components/pool/Pool.tsx:24
 msgid "Loading Plot NFTs"
 msgstr "Lade Plot-NFTs"
 
@@ -1534,7 +1538,8 @@ msgstr "Punkte in den letzten 24 Stunden gefunden"
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/pool/Pool.tsx:25
+#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/pool/Pool.tsx:28
 msgid "Pool"
 msgstr "Pool"
 
@@ -1601,6 +1606,14 @@ msgstr "Pool stellt keine target_puzzle_hash bereit."
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
 msgid "Pool:"
 msgstr "Pool:"
+
+#: src/components/pool/PoolCollection.tsx:52
+msgid "PoolAddress"
+msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:34
+#~ msgid "PoolAdress"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
@@ -1670,6 +1683,14 @@ msgstr "Pubkey"
 #: src/middleware/middleware_api.jsx:267
 msgid "Public key:"
 msgstr "Öffentlicher Schlüssel:"
+
+#: src/components/pool/PoolCollection.tsx:71
+#~ msgid "QDID"
+#~ msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:59
+msgid "Query"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:162
 msgid "Queue Name"

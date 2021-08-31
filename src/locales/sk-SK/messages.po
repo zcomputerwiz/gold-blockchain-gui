@@ -358,6 +358,10 @@ msgstr "Zatvára sa uzol a server"
 msgid "Coins:"
 msgstr "Mince:"
 
+#: src/components/pool/PoolCollection.tsx:78
+#~ msgid "Collection"
+#~ msgstr ""
+
 #: src/components/trading/CreateOffer.jsx:172
 #: src/components/trading/TradesTable.tsx:24
 msgid "Colour"
@@ -1046,7 +1050,7 @@ msgstr "Pripojte sa k združeniu a získajte konzistentnejšie farmárske XCH od
 msgid "K-Size"
 msgstr "K-veľkosť"
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Keys"
 msgstr "Kľúče"
 
@@ -1085,7 +1089,7 @@ msgstr "Opúšťanie združenia"
 msgid "List view"
 msgstr "Zobraziť ako zoznam"
 
-#: src/components/pool/Pool.tsx:21
+#: src/components/pool/Pool.tsx:24
 msgid "Loading Plot NFTs"
 msgstr "Načítavanie NFT polí"
 
@@ -1526,7 +1530,8 @@ msgstr "Body nájdené za posledných 24 hodín"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Úspešné body za posledných 24 hodín"
 
-#: src/components/pool/Pool.tsx:25
+#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/pool/Pool.tsx:28
 msgid "Pool"
 msgstr "Združenie"
 
@@ -1593,6 +1598,14 @@ msgstr "Združenie neposkytuje target_puzzle_hash."
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
 msgid "Pool:"
 msgstr "Združenie:"
+
+#: src/components/pool/PoolCollection.tsx:52
+msgid "PoolAddress"
+msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:34
+#~ msgid "PoolAdress"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
@@ -1662,6 +1675,14 @@ msgstr "Verejný kľúč"
 #: src/middleware/middleware_api.jsx:267
 msgid "Public key:"
 msgstr "Verejný kľúč:"
+
+#: src/components/pool/PoolCollection.tsx:71
+#~ msgid "QDID"
+#~ msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:59
+msgid "Query"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:162
 msgid "Queue Name"

@@ -358,6 +358,10 @@ msgstr "Po mbyllim nodën dhe serverin"
 msgid "Coins:"
 msgstr "Monedha:"
 
+#: src/components/pool/PoolCollection.tsx:78
+#~ msgid "Collection"
+#~ msgstr ""
+
 #: src/components/trading/CreateOffer.jsx:172
 #: src/components/trading/TradesTable.tsx:24
 msgid "Colour"
@@ -1046,7 +1050,7 @@ msgstr "Bashkohuni me një poll dhe merrni shpërblime më të qëndrueshme XCH.
 msgid "K-Size"
 msgstr "Madhësia K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:61
+#: src/components/dashboard/DashboardSideBar.tsx:66
 msgid "Keys"
 msgstr "Çelësi"
 
@@ -1085,7 +1089,7 @@ msgstr "Largimi nga polli"
 msgid "List view"
 msgstr "Pamje si listë"
 
-#: src/components/pool/Pool.tsx:21
+#: src/components/pool/Pool.tsx:24
 msgid "Loading Plot NFTs"
 msgstr "Po ngarkon plotet e NFT"
 
@@ -1526,7 +1530,8 @@ msgstr "Pikët që gjenden në 24 orët e fundit"
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/pool/Pool.tsx:25
+#: src/components/dashboard/DashboardSideBar.tsx:60
+#: src/components/pool/Pool.tsx:28
 msgid "Pool"
 msgstr "Polli"
 
@@ -1593,6 +1598,14 @@ msgstr "Polli nuk ofron target_puzzle_hash."
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
 msgid "Pool:"
 msgstr "Polli:"
+
+#: src/components/pool/PoolCollection.tsx:52
+msgid "PoolAddress"
+msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:34
+#~ msgid "PoolAdress"
+#~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTExternalState.tsx:24
 #: src/components/plotNFT/PlotNFTState.tsx:59
@@ -1662,6 +1675,14 @@ msgstr "Pubkey"
 #: src/middleware/middleware_api.jsx:267
 msgid "Public key:"
 msgstr "Çelësi publik:"
+
+#: src/components/pool/PoolCollection.tsx:71
+#~ msgid "QDID"
+#~ msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:59
+msgid "Query"
+msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:162
 msgid "Queue Name"
