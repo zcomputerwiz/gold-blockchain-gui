@@ -1605,7 +1605,7 @@ msgstr "Pool does not provide target_puzzle_hash."
 msgid "Pool:"
 msgstr "Pool:"
 
-#: src/components/pool/PoolCollection.tsx:52
+#: src/components/pool/PoolCollection.tsx:56
 msgid "PoolAddress"
 msgstr ""
 
@@ -1687,8 +1687,8 @@ msgstr "Public key:"
 #~ msgstr ""
 
 #: src/components/pool/PoolCollection.tsx:59
-msgid "Query"
-msgstr ""
+#~ msgid "Query"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:162
 msgid "Queue Name"
@@ -2611,6 +2611,10 @@ msgstr "همگام‌سازی نشده"
 #: src/components/plot/add/PlotAdd.tsx:103
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash is not defined"
+
+#: src/components/pool/PoolCollection.tsx:76
+msgid "qdId"
+msgstr ""
 
 #: src/components/wallet/WalletStatusCard.tsx:27
 #: src/components/wallet/Wallets.tsx:123

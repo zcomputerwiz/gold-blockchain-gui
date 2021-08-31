@@ -1599,7 +1599,7 @@ msgstr ""
 msgid "Pool:"
 msgstr ""
 
-#: src/components/pool/PoolCollection.tsx:52
+#: src/components/pool/PoolCollection.tsx:56
 msgid "PoolAddress"
 msgstr ""
 
@@ -1681,8 +1681,8 @@ msgstr "Publieke sleutel:"
 #~ msgstr ""
 
 #: src/components/pool/PoolCollection.tsx:59
-msgid "Query"
-msgstr ""
+#~ msgid "Query"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:162
 msgid "Queue Name"
@@ -2598,6 +2598,10 @@ msgstr "niet gesynchroniseerd"
 
 #: src/components/plot/add/PlotAdd.tsx:103
 msgid "p2_singleton_puzzle_hash is not defined"
+msgstr ""
+
+#: src/components/pool/PoolCollection.tsx:76
+msgid "qdId"
 msgstr ""
 
 #: src/components/wallet/WalletStatusCard.tsx:27
