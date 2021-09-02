@@ -230,7 +230,6 @@ export function get_coin_records_by_puzzle_hash(puzzle_hash) {
       true,
     );
 
-    console.log(response)
     return response?.data
   };
 }

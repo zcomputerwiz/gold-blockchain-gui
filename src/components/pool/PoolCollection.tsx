@@ -10,15 +10,15 @@ import { useForm } from 'react-hook-form';
 import {
   Typography,
   Button,
-  TextField,
 } from '@material-ui/core';
 
 import {
-  fullNodeMessage,
   get_coin_records_by_puzzle_hash
 } from '../../modules/fullnodeMessages';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+
+const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, get_coin_info_mojo, bytes_to_hex, hex_to_bytes } = require("chia-utils");
 
 const StyledInputBase = styled(InputBase)`
   min-width: 15rem;
@@ -30,7 +30,6 @@ type FormData = {
 };
 
 export default function PoolCollection() {
-  const history = useHistory();
   const dispatch = useDispatch();
 
   const methods = useForm<FormData>({
@@ -44,13 +43,18 @@ export default function PoolCollection() {
   async function handleSearch(values: FormData) {
     let address = values.poolAddress
     if (address) {
-      const result = await dispatch(get_coin_records_by_puzzle_hash(address));
-      console.log("========")
-      console.log(result)
+      let puzzlehash = address_to_puzzle_hash(address)
+      const dataw = await dispatch(get_coin_records_by_puzzle_hash(puzzlehash));
+      if (dataw.success) {
+        alert("success")
+      } else {
+        alert("fail")
+      }
+
+      console.log(dataw)
     }
   }
   
-
   function handleCollection(values: FormData) {
     if (values.qdId) {
       alert(values.qdId)
@@ -66,7 +70,7 @@ export default function PoolCollection() {
             <Box />
             <StyledInputBase
               name="poolAddress"
-              placeholder={t`PoolAddress`}
+              placeholder='Pool Contract Address'
               fullWidth
             />
             <IconButton type="submit" aria-label="search">
@@ -86,7 +90,7 @@ export default function PoolCollection() {
             <Box />
             <StyledInputBase
               name="qdId"
-              placeholder={t`qdId`}
+              placeholder='NFT Launcher Id'
               fullWidth
             />
             <Button variant="contained" color="primary" type="submit">

@@ -1600,8 +1600,8 @@ msgid "Pool:"
 msgstr "Conjunto:"
 
 #: src/components/pool/PoolCollection.tsx:69
-msgid "PoolAddress"
-msgstr ""
+#~ msgid "PoolAddress"
+#~ msgstr ""
 
 #: src/components/pool/PoolCollection.tsx:34
 #~ msgid "PoolAdress"
@@ -2601,8 +2601,8 @@ msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash no está definido"
 
 #: src/components/pool/PoolCollection.tsx:89
-msgid "qdId"
-msgstr ""
+#~ msgid "qdId"
+#~ msgstr ""
 
 #: src/components/wallet/WalletStatusCard.tsx:27
 #: src/components/wallet/Wallets.tsx:123
