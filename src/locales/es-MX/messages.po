@@ -1089,7 +1089,7 @@ msgstr "Dejando Conjunto"
 msgid "List view"
 msgstr "Vista de lista"
 
-#: src/components/pool/Pool.tsx:24
+#: src/components/pool/Pool.tsx:22
 msgid "Loading Plot NFTs"
 msgstr "Cargando NFTs de Parcela"
 
@@ -1531,7 +1531,7 @@ msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
 #: src/components/dashboard/DashboardSideBar.tsx:60
-#: src/components/pool/Pool.tsx:28
+#: src/components/pool/Pool.tsx:26
 msgid "Pool"
 msgstr "Conjunto"
 
@@ -1599,7 +1599,7 @@ msgstr "Pool no proporciona target_puzzle_hash."
 msgid "Pool:"
 msgstr "Conjunto:"
 
-#: src/components/pool/PoolCollection.tsx:56
+#: src/components/pool/PoolCollection.tsx:69
 msgid "PoolAddress"
 msgstr ""
 
@@ -2600,7 +2600,7 @@ msgstr "no sincronizado"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash no está definido"
 
-#: src/components/pool/PoolCollection.tsx:76
+#: src/components/pool/PoolCollection.tsx:89
 msgid "qdId"
 msgstr ""
 

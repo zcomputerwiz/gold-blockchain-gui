@@ -1089,7 +1089,7 @@ msgstr "Opustit pool"
 msgid "List view"
 msgstr "Zobrazení jako seznam"
 
-#: src/components/pool/Pool.tsx:24
+#: src/components/pool/Pool.tsx:22
 msgid "Loading Plot NFTs"
 msgstr "Načítání NFT polí"
 
@@ -1531,7 +1531,7 @@ msgid "Points Successful in Last 24 Hours"
 msgstr "Body úspěšné v posledních 24 hodinách"
 
 #: src/components/dashboard/DashboardSideBar.tsx:60
-#: src/components/pool/Pool.tsx:28
+#: src/components/pool/Pool.tsx:26
 msgid "Pool"
 msgstr "Pool"
 
@@ -1599,7 +1599,7 @@ msgstr "Pool neposkytuje target_puzzle_hash."
 msgid "Pool:"
 msgstr "Pool:"
 
-#: src/components/pool/PoolCollection.tsx:56
+#: src/components/pool/PoolCollection.tsx:69
 msgid "PoolAddress"
 msgstr ""
 
@@ -2600,7 +2600,7 @@ msgstr "nesynchronizováno"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
-#: src/components/pool/PoolCollection.tsx:76
+#: src/components/pool/PoolCollection.tsx:89
 msgid "qdId"
 msgstr ""
 

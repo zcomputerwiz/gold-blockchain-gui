@@ -1089,7 +1089,7 @@ msgstr "Saindo do bolão"
 msgid "List view"
 msgstr "Visualização em lista"
 
-#: src/components/pool/Pool.tsx:24
+#: src/components/pool/Pool.tsx:22
 msgid "Loading Plot NFTs"
 msgstr "Carregando Lote NFTs"
 
@@ -1531,7 +1531,7 @@ msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
 #: src/components/dashboard/DashboardSideBar.tsx:60
-#: src/components/pool/Pool.tsx:28
+#: src/components/pool/Pool.tsx:26
 msgid "Pool"
 msgstr "Bolão"
 
@@ -1599,7 +1599,7 @@ msgstr "O bolão não fornece o alvo_desafio_hash."
 msgid "Pool:"
 msgstr "Bolão:"
 
-#: src/components/pool/PoolCollection.tsx:56
+#: src/components/pool/PoolCollection.tsx:69
 msgid "PoolAddress"
 msgstr ""
 
@@ -2600,7 +2600,7 @@ msgstr "não sincronizado"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash não está definido"
 
-#: src/components/pool/PoolCollection.tsx:76
+#: src/components/pool/PoolCollection.tsx:89
 msgid "qdId"
 msgstr ""
 

@@ -1089,7 +1089,7 @@ msgstr "Largimi nga polli"
 msgid "List view"
 msgstr "Pamje si listë"
 
-#: src/components/pool/Pool.tsx:24
+#: src/components/pool/Pool.tsx:22
 msgid "Loading Plot NFTs"
 msgstr "Po ngarkon plotet e NFT"
 
@@ -1531,7 +1531,7 @@ msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
 #: src/components/dashboard/DashboardSideBar.tsx:60
-#: src/components/pool/Pool.tsx:28
+#: src/components/pool/Pool.tsx:26
 msgid "Pool"
 msgstr "Polli"
 
@@ -1599,7 +1599,7 @@ msgstr "Polli nuk ofron target_puzzle_hash."
 msgid "Pool:"
 msgstr "Polli:"
 
-#: src/components/pool/PoolCollection.tsx:56
+#: src/components/pool/PoolCollection.tsx:69
 msgid "PoolAddress"
 msgstr ""
 
@@ -2600,7 +2600,7 @@ msgstr "i pa sinkronizuar"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash nuk është përcaktuar"
 
-#: src/components/pool/PoolCollection.tsx:76
+#: src/components/pool/PoolCollection.tsx:89
 msgid "qdId"
 msgstr ""
 

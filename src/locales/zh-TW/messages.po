@@ -1089,7 +1089,7 @@ msgstr "離開農會"
 msgid "List view"
 msgstr "清單檢視"
 
-#: src/components/pool/Pool.tsx:24
+#: src/components/pool/Pool.tsx:22
 msgid "Loading Plot NFTs"
 msgstr "正在讀取耕地 NFT"
 
@@ -1531,7 +1531,7 @@ msgid "Points Successful in Last 24 Hours"
 msgstr "過去24小時有效的積分"
 
 #: src/components/dashboard/DashboardSideBar.tsx:60
-#: src/components/pool/Pool.tsx:28
+#: src/components/pool/Pool.tsx:26
 msgid "Pool"
 msgstr "農會"
 
@@ -1599,7 +1599,7 @@ msgstr "礦池未提供 目標_拼圖_雜湊值。"
 msgid "Pool:"
 msgstr "池："
 
-#: src/components/pool/PoolCollection.tsx:56
+#: src/components/pool/PoolCollection.tsx:69
 msgid "PoolAddress"
 msgstr ""
 
@@ -2600,7 +2600,7 @@ msgstr "未同步"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "\"p2_singleton_puzzle_hash\"參數未定義"
 
-#: src/components/pool/PoolCollection.tsx:76
+#: src/components/pool/PoolCollection.tsx:89
 msgid "qdId"
 msgstr ""
 

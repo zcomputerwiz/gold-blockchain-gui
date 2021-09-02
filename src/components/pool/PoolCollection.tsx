@@ -13,6 +13,13 @@ import {
   TextField,
 } from '@material-ui/core';
 
+import {
+  fullNodeMessage,
+  get_coin_records_by_puzzle_hash
+} from '../../modules/fullnodeMessages';
+
+import { useSelector, useDispatch } from 'react-redux';
+
 const StyledInputBase = styled(InputBase)`
   min-width: 15rem;
 `;
@@ -24,6 +31,8 @@ type FormData = {
 
 export default function PoolCollection() {
   const history = useHistory();
+  const dispatch = useDispatch();
+
   const methods = useForm<FormData>({
     shouldUnregister: false,
     defaultValues: {
@@ -32,11 +41,15 @@ export default function PoolCollection() {
     },
   });
 
-  function handleSearch(values: FormData) {
-    if (values.poolAddress) {
-      alert(values.poolAddress)
+  async function handleSearch(values: FormData) {
+    let address = values.poolAddress
+    if (address) {
+      const result = await dispatch(get_coin_records_by_puzzle_hash(address));
+      console.log("========")
+      console.log(result)
     }
   }
+  
 
   function handleCollection(values: FormData) {
     if (values.qdId) {
