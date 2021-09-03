@@ -24,7 +24,7 @@ import {
 import { useDispatch } from 'react-redux';
 import { date } from '@lingui/core/cjs/formats';
 
-const { address_to_puzzle_hash, puzzle_hash_to_address, get_coin_info, get_coin_info_mojo, bytes_to_hex, hex_to_bytes } = require("chia-utils");
+import { address_to_puzzle_hash } from './address_to_puzzle_hash' 
 
 const StyledInputBase = styled(InputBase)`
   min-width: 15rem;
