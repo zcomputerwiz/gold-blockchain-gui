@@ -233,3 +233,21 @@ export function get_coin_records_by_puzzle_hash(puzzle_hash) {
     return response?.data
   };
 }
+
+export function push_tx(spend_bundle) {
+  return async (dispatch) => {
+    const response = await async_api(
+      dispatch,
+      fullNodeMessage({
+        command: 'push_tx',
+        data: {
+          spend_bundle: spend_bundle,
+        },
+      }),
+      false,
+      true,
+    );
+
+    return response?.data
+  };
+}

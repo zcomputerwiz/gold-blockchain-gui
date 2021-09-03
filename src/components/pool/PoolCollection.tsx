@@ -13,7 +13,8 @@ import {
 } from '@material-ui/core';
 
 import {
-  get_coin_records_by_puzzle_hash
+  get_coin_records_by_puzzle_hash,
+  push_tx,
 } from '../../modules/fullnodeMessages';
 
 import {
@@ -106,10 +107,21 @@ export default function PoolCollection() {
       return
     }
 
+    console.log("======")
+    console.log(can_records)
     const data = await dispatch(recover_pool_nft(pool_contract_hash, qdId, can_records));
+    console.log(data)
+    console.log("======")
     if (data.success) {
       let spend_bundle = data.spend_bundle
       console.log(spend_bundle)
+      const pushTxData = await dispatch(push_tx(spend_bundle));
+      console.log(pushTxData)
+      if (data.success) {
+
+      } else {
+        alert("push_tx fail")
+      }
     } else {
       alert("recover fail")
     }
