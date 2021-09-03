@@ -53,7 +53,7 @@ export default function PoolCollection() {
       var current = (new Date()).getTime()/1000
       if ((current-timestamp)>604800) {
         can += amount
-        temp.push(record)
+        temp.push(record.coin)
       } else {
         cannot += amount
       }
@@ -96,11 +96,6 @@ export default function PoolCollection() {
   }
   
   async function handleCollection(values: FormData) {
-
-    console.log("=====")
-    console.log(pool_contract_hash)
-    console.log(can_records)
-
     let qdId = values.qdId
     if (!qdId) {
       alert("Input NFT Launcher Id")
@@ -112,7 +107,14 @@ export default function PoolCollection() {
     }
 
     const data = await dispatch(recover_pool_nft(pool_contract_hash, qdId, can_records));
-    console.log(data)
+    if (data.success) {
+      let spend_bundle = data.spend_bundle
+      console.log(spend_bundle)
+    } else {
+      alert("recover fail")
+    }
+
+    // console.log(data)
   }
 
   return (
