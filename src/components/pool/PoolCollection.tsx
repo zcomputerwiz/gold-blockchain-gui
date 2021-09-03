@@ -60,7 +60,7 @@ export default function PoolCollection() {
     }
 
     can_records = temp
-    return "Total Coins Not Recovered:" + total/1000000000000 + "\n" + "Total Coins Can Recovered:" + can/1000000000000
+    return "Total Coins Not Recovered:" + total/1000000000000 + "<br/>" + "Total Coins Can Recovered:" + can/1000000000000
   }
 
 
@@ -90,7 +90,7 @@ export default function PoolCollection() {
           let result = dealSearchResult(data.coin_records)
           setContent(result)
         } else {
-          alert("fail")
+          alert(data.error)
         }
       } catch (error) {
         alert(error)
@@ -123,10 +123,10 @@ export default function PoolCollection() {
         if (pushTxData.success) {
           alert("success")
         } else {
-          alert("push_tx fail")
+          alert(pushTxData.error)
         }
       } else {
-        alert("recover fail")
+        alert(data.error)
       }
     } catch (error) {
       alert(error)
@@ -154,8 +154,8 @@ export default function PoolCollection() {
         </Paper>
       </Form>
 
-      <Typography variant="body1" color="textSecondary">
-      {typography}
+      <Typography variant="body1" color="textSecondary"  dangerouslySetInnerHTML={{__html: typography}}>
+      
       </Typography>
 
       <Form methods={methods} onSubmit={handleCollection}>
