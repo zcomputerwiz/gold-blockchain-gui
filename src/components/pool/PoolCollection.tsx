@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react"
 import { t } from '@lingui/macro';
 import { Box, IconButton, Paper } from '@material-ui/core';
 import { Search as SearchIcon } from '@material-ui/icons';
@@ -61,7 +61,7 @@ export default function PoolCollection() {
     }
 
     can_records = temp
-    return "can:" + can/1000000000000 + "\n" + "can not:" + cannot/1000000000000
+    return "Collectible coins:" + can/1000000000000 + "\n" + "Uncollectible coins:" + cannot/1000000000000
   }
 
 
@@ -81,18 +81,21 @@ export default function PoolCollection() {
     if (address) {
       pool_contract_hash = ""
       can_records = new Array()
+      setContent("Query Result:")
 
-      let puzzlehash = address_to_puzzle_hash(address)
-      const data = await dispatch(get_coin_records_by_puzzle_hash(puzzlehash));
-      if (data.success) {
-        pool_contract_hash = puzzlehash
-        let result = dealSearchResult(data.coin_records)
-        alert(result)
-      } else {
-        alert("fail")
+      try {
+        let puzzlehash = address_to_puzzle_hash(address)
+        const data = await dispatch(get_coin_records_by_puzzle_hash(puzzlehash));
+        if (data.success) {
+          pool_contract_hash = puzzlehash
+          let result = dealSearchResult(data.coin_records)
+          setContent(result)
+        } else {
+          alert("fail")
+        }
+      } catch (error) {
+        alert(error)
       }
-
-      // console.log(data)
     }
   }
   
@@ -103,32 +106,36 @@ export default function PoolCollection() {
       return
     }
     if (can_records.length < 1) {
-      alert("No coin records")
+      alert("No coins to collect")
       return
     }
 
-    console.log("======")
-    console.log(can_records)
-    const data = await dispatch(recover_pool_nft(pool_contract_hash, qdId, can_records));
-    console.log(data)
-    console.log("======")
-    if (data.success) {
-      let spend_bundle = data.spend_bundle
-      console.log(spend_bundle)
-      const pushTxData = await dispatch(push_tx(spend_bundle));
-      console.log(pushTxData)
+    try {
+      console.log("======")
+      console.log(can_records)
+      const data = await dispatch(recover_pool_nft(pool_contract_hash, qdId, can_records));
+      console.log(data)
+      console.log("======")
       if (data.success) {
-        alert("success")
+        let spend_bundle = data.spend_bundle
+        console.log(spend_bundle)
+        const pushTxData = await dispatch(push_tx(spend_bundle));
+        console.log(pushTxData)
+        if (pushTxData.success) {
+          alert("success")
+        } else {
+          alert("push_tx fail")
+        }
       } else {
-        alert("push_tx fail")
+        alert("recover fail")
       }
-    } else {
-      alert("recover fail")
+    } catch (error) {
+      alert(error)
     }
-
-    // console.log(data)
   }
 
+
+  const [typography, setContent] = useState("Query Result:")
   return (
     <Flex flexDirection="column" gap={3}>
 
@@ -149,7 +156,7 @@ export default function PoolCollection() {
       </Form>
 
       <Typography variant="body1" color="textSecondary">
-      Query Result:
+      {typography}
       </Typography>
 
       <Form methods={methods} onSubmit={handleCollection}>
