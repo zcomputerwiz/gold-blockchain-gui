@@ -118,7 +118,7 @@ export default function PoolCollection() {
       const pushTxData = await dispatch(push_tx(spend_bundle));
       console.log(pushTxData)
       if (data.success) {
-
+        alert("success")
       } else {
         alert("push_tx fail")
       }
