@@ -16,6 +16,10 @@ import {
   get_coin_records_by_puzzle_hash
 } from '../../modules/fullnodeMessages';
 
+import {
+  recover_pool_nft
+} from '../../modules/message';
+
 import { useDispatch } from 'react-redux';
 import { date } from '@lingui/core/cjs/formats';
 
@@ -30,13 +34,16 @@ type FormData = {
   qdId: string;
 };
 
+var can_records = new Array()
+var pool_contract_hash = ""
+
 export default function PoolCollection() {
 
-  //private==================================
   function dealSearchResult(records:any[]):string {
 
-    var amount1: number = 0
-    var amount2: number = 0
+    var can: number = 0
+    var cannot: number = 0
+    var temp = new Array()
 
     var record: any
     for(let record of records) {
@@ -44,16 +51,16 @@ export default function PoolCollection() {
       var timestamp: number = record.timestamp
 
       var current = (new Date()).getTime()/1000
-      console.log(current)
-      console.log(timestamp+604800)
-      console.log("===")
-      if ((timestamp+604800)>current) {
-        amount1 += amount
+      if ((current-timestamp)>604800) {
+        can += amount
+        temp.push(record)
       } else {
-        amount2 += amount
+        cannot += amount
       }
     }
-    return "can:" + amount1 + "\n" + "can not:" + amount2
+
+    can_records = temp
+    return "can:" + can/1000000000000 + "\n" + "can not:" + cannot/1000000000000
   }
 
 
@@ -71,129 +78,41 @@ export default function PoolCollection() {
   async function handleSearch(values: FormData) {
     let address = values.poolAddress
     if (address) {
+      pool_contract_hash = ""
+      can_records = new Array()
+
       let puzzlehash = address_to_puzzle_hash(address)
-      //const data = await dispatch(get_coin_records_by_puzzle_hash(puzzlehash));
-
-      const data = {
-        "coin_records": [
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb9240000000000000000000000000003807b",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 229501,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1630300194
-            },
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb92400000000000000000000000000034c6e",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 216175,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1630051755
-            },
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb92400000000000000000000000000034611",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 214549,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1630023808
-            },
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb92400000000000000000000000000034715",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 214810,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1630029159
-            },
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb92400000000000000000000000000036bd6",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 224218,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1630201631
-            },
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb924000000000000000000000000000396d3",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 235221,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1630409145
-            },
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb924000000000000000000000000000372bf",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 225985,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1630233807
-            },
-            {
-                "coin": {
-                    "amount": 1750000000000,
-                    "parent_coin_info": "0xe3b0c44298fc1c149afbf4c8996fb9240000000000000000000000000003306d",
-                    "puzzle_hash": "0x8773bacc0caf6e2d423a26e2bcab6d7b9d0be90534829c1f697bff78715d011e"
-                },
-                "coinbase": true,
-                "confirmed_block_index": 209008,
-                "spent": false,
-                "spent_block_index": 0,
-                "timestamp": 1629919003
-            }
-        ],
-        "success": true
-    }
-
-
-
-
+      const data = await dispatch(get_coin_records_by_puzzle_hash(puzzlehash));
       if (data.success) {
+        pool_contract_hash = puzzlehash
         let result = dealSearchResult(data.coin_records)
         alert(result)
       } else {
         alert("fail")
       }
 
-      console.log(data)
+      // console.log(data)
     }
   }
   
-  function handleCollection(values: FormData) {
-    if (values.qdId) {
-      alert(values.qdId)
+  async function handleCollection(values: FormData) {
+
+    console.log("=====")
+    console.log(pool_contract_hash)
+    console.log(can_records)
+
+    let qdId = values.qdId
+    if (!qdId) {
+      alert("Input NFT Launcher Id")
+      return
     }
+    if (can_records.length < 1) {
+      alert("No coin records")
+      return
+    }
+
+    const data = await dispatch(recover_pool_nft(pool_contract_hash, qdId, can_records));
+    console.log(data)
   }
 
   return (
