@@ -105,7 +105,7 @@ export default function PoolCollection() {
       return
     }
     if (can_records.length < 1) {
-      alert("No coins to collect")
+      alert("Can not find any coins to recover, please enter the correct pool contract address and search.")
       return
     }
 
@@ -138,6 +138,10 @@ export default function PoolCollection() {
   return (
     <Flex flexDirection="column" gap={3}>
 
+      <Typography variant="body1" color="textSecondary">
+        Enter your chia pool contract address and NFT Launcher ID to recover the missing tSIT from your plot NFT.
+      </Typography>
+
       <Form methods={methods} onSubmit={handleSearch}>
         <Paper elevation={0} variant="outlined">
           <Flex alignItems="center" gap={1}>
@@ -155,7 +159,6 @@ export default function PoolCollection() {
       </Form>
 
       <Typography variant="body1" color="textSecondary"  dangerouslySetInnerHTML={{__html: typography}}>
-      
       </Typography>
 
       <Form methods={methods} onSubmit={handleCollection}>
@@ -168,7 +171,7 @@ export default function PoolCollection() {
               fullWidth
             />
             <Button variant="contained" color="primary" type="submit">
-              collection
+              RECOVER
             </Button>
           </Flex>
         </Paper>
