@@ -42,8 +42,8 @@ export default function PoolCollection() {
 
   function dealSearchResult(records:any[]):string {
 
+    var total: number = 0
     var can: number = 0
-    var cannot: number = 0
     var temp = new Array()
 
     var record: any
@@ -51,17 +51,16 @@ export default function PoolCollection() {
       var amount: number = record.coin.amount
       var timestamp: number = record.timestamp
 
+      total += amount
       var current = (new Date()).getTime()/1000
       if ((current-timestamp)>604800) {
         can += amount
         temp.push(record.coin)
-      } else {
-        cannot += amount
       }
     }
 
     can_records = temp
-    return "Collectible coins:" + can/1000000000000 + "\n" + "Uncollectible coins:" + cannot/1000000000000
+    return "Total Coins Not Recovered:" + total/1000000000000 + "\n" + "Total Coins Can Recovered:" + can/1000000000000
   }
 
 
@@ -81,7 +80,7 @@ export default function PoolCollection() {
     if (address) {
       pool_contract_hash = ""
       can_records = new Array()
-      setContent("Query Result:")
+      setContent(" ")
 
       try {
         let puzzlehash = address_to_puzzle_hash(address)
@@ -135,7 +134,7 @@ export default function PoolCollection() {
   }
 
 
-  const [typography, setContent] = useState("Query Result:")
+  const [typography, setContent] = useState(" ")
   return (
     <Flex flexDirection="column" gap={3}>
 
