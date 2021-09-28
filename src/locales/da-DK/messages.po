@@ -1050,7 +1050,7 @@ msgstr "Tilslut en pulje og få stabil XCH farm belønninger. Opret en plot NFT 
 msgid "K-Size"
 msgstr "K-Størrelse"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Nøgler"
 
@@ -1952,6 +1952,11 @@ msgstr "Forbrugsinterval Længde (nummer af blokke)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Forbrugsgrænse (Silicoin per interval): {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

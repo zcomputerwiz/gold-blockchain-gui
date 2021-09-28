@@ -1050,7 +1050,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-Størrelse"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Nøkler"
 
@@ -1951,6 +1951,11 @@ msgstr ""
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
+msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
 msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100

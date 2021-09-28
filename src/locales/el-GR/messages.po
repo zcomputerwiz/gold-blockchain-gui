@@ -1050,7 +1050,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-Size"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Κλειδιά"
 
@@ -1952,6 +1952,11 @@ msgstr "Spending Interval Length (number of blocks)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Όριο δαπανών (Silicoin ανά διάστημα): {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

@@ -1050,7 +1050,7 @@ msgstr "Junte-se a um Pool e obtenha recompensas consistentes de XCH. Crie um pl
 msgid "K-Size"
 msgstr "Tamanho-K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Chaves"
 
@@ -1952,6 +1952,11 @@ msgstr "Comprimento do intervalo de gasto (número de blocos)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Limite de gastos (Silicion por intervalo): {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

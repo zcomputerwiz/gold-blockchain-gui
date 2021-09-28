@@ -1050,7 +1050,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "Mărime K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Chei"
 
@@ -1952,6 +1952,11 @@ msgstr "Lungimea intervalului pentru cheltuieli (număr de blocuri)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Limită de cheltuieli (Silicion per interval): {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

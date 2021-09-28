@@ -1050,7 +1050,7 @@ msgstr "Rejoignez un pool et obtenez des récompenses de culture XCH substantiel
 msgid "K-Size"
 msgstr "Taille-K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Clés"
 
@@ -1952,6 +1952,11 @@ msgstr "Intervalle de dépense (nombre de blocs)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Limite de dépense (Silicoin par intervalle): {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

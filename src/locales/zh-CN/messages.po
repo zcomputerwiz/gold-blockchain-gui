@@ -1050,7 +1050,7 @@ msgstr "加入农业合作社来获得持续的tSIT耕种收益。创建一个�
 msgid "K-Size"
 msgstr "K值大小"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "密钥"
 
@@ -1952,6 +1952,11 @@ msgstr "支出迭代长度(区块数)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "消费限额（单位时间可消费的Silicoin币）：{0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

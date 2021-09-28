@@ -1050,7 +1050,7 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-Ebadı"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Anahtarlar"
 
@@ -1952,6 +1952,11 @@ msgstr "Harcama Aralığı Uzunluğu (blokların sayısı)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Harcama Limiti (aralık başına Silicion): {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

@@ -1050,7 +1050,7 @@ msgstr "加入農會以獲得更多持續性的 tSIT 耕種獎勵。建立農場
 msgid "K-Size"
 msgstr "K-大小"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "金鑰"
 
@@ -1952,6 +1952,11 @@ msgstr "花費間隔長度 (區塊數量)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "花用限制（每間隔可用 Silicoin）：{0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

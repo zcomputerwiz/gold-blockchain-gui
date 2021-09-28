@@ -1050,7 +1050,7 @@ msgstr "Liity pooliin ja saat tasaisen XCH-tuoton. Keskimääräinen tuotto on s
 msgid "K-Size"
 msgstr "K-Arvo"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Avaimet"
 
@@ -1952,6 +1952,11 @@ msgstr "Käyttöajanjakson pituus (lohkojen määrä)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Käyttöraja (Chiaa/ajanjakso):{0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"

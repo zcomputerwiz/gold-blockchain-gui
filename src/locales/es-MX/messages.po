@@ -1050,7 +1050,7 @@ msgstr "Únete a un conjunto y consigue recompensas de cultivo XCH más consiste
 msgid "K-Size"
 msgstr "Tamaño-K"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:71
 msgid "Keys"
 msgstr "Llaves"
 
@@ -1952,6 +1952,11 @@ msgstr "Duración del Intervalo de Gasto (cantidad de bloques)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chia per interval): {0}"
 msgstr "Limite de gasto (Silicoin por intervalo): {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:65
+#: src/components/stake/Stake.tsx:19
+msgid "Stake"
+msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
