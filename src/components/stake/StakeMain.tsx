@@ -1,9 +1,10 @@
 import React, { useState } from "react"
-import { Box, IconButton, Paper } from '@material-ui/core';
-import { Search as SearchIcon } from '@material-ui/icons';
+import { Trans } from '@lingui/macro';
+import { Box, Paper } from '@material-ui/core';
 import { Flex, Form, InputBase } from '@chia/core';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
+import StakeSelect from "./StakeSelect"
 
 import {
   Typography,
@@ -34,11 +35,14 @@ export default function StakeMain() {
 
     }
 
+    const values = ["xx", "cc", "gg"];
+    const defaultValue = "xx";
+
     return (
         <Flex flexDirection="column" gap={3}>
 
             <Typography variant="body1" color="textSecondary">
-            Enter your chia pool contract address and NFT Launcher ID to recover the missing tSIT from your plot NFT.
+            xxxxxxxxxxxxxxxxxxxxxx.
             </Typography>
 
             <Form methods={methods} onSubmit={handleSearch}>
@@ -50,11 +54,18 @@ export default function StakeMain() {
                     placeholder='Pool Contract Address'
                     fullWidth
                 />
-                <IconButton type="submit" aria-label="search">
-                    <SearchIcon />
-                </IconButton>
+                <StakeSelect values={values} defaultValue={defaultValue} />
                 </Flex>
             </Paper>
+
+            <Flex justifyContent="flex-end" gap={1}>
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+              > <Trans>Send</Trans>
+              </Button>
+            </Flex>
             </Form>
 
         </Flex>

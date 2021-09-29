@@ -1870,6 +1870,7 @@ msgstr "Vetë grumbullimi. Kur të fitoni një bllok, do të fitoni shpërblime 
 msgid "Sell"
 msgstr "Shes"
 
+#: src/components/stake/StakeMain.tsx:66
 #: src/components/wallet/coloured/WalletColoured.tsx:620
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:748
 #: src/components/wallet/standard/WalletStandard.tsx:542
