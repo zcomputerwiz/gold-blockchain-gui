@@ -1,5 +1,6 @@
 import { service_full_node } from '../util/service_names';
 import { async_api } from './message';
+import { getPlots } from './harvesterMessages';
 
 export const fullNodeMessage = (message) => ({
   type: 'OUTGOING_MESSAGE',
@@ -244,6 +245,19 @@ export function push_tx(spend_bundle) {
           spend_bundle: spend_bundle,
         },
       }),
+      false,
+      true,
+    );
+
+    return response?.data
+  };
+}
+
+export function get_plots() {
+  return async (dispatch) => {
+    const response = await async_api(
+      dispatch,
+      getPlots(),
       false,
       true,
     );

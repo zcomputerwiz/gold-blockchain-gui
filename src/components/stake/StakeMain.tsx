@@ -19,15 +19,15 @@ const StyledInputBase = styled(InputBase)`
 export default function StakeMain() {
 
     type FormData = {
-        poolAddress: string;
-        qdId: string;
+        amount: string;
+        publicKey: string;
     };
 
     const methods = useForm<FormData>({
         shouldUnregister: false,
         defaultValues: {
-          poolAddress: '',
-          qdId: '',
+          amount: '',
+          publicKey: '',
         },
     });
 
@@ -35,8 +35,6 @@ export default function StakeMain() {
 
     }
 
-    const values = ["xx", "cc", "gg"];
-    const defaultValue = "xx";
 
     return (
         <Flex flexDirection="column" gap={3}>
@@ -50,11 +48,11 @@ export default function StakeMain() {
                 <Flex alignItems="center" gap={1}>
                 <Box />
                 <StyledInputBase
-                    name="poolAddress"
-                    placeholder='Pool Contract Address'
+                    name="amount"
+                    placeholder='Amount'
                     fullWidth
                 />
-                <StakeSelect values={values} defaultValue={defaultValue} />
+                <StakeSelect/>
                 </Flex>
             </Paper>
 
