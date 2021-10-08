@@ -1870,7 +1870,7 @@ msgstr ""
 msgid "Sell"
 msgstr "Sälj"
 
-#: src/components/stake/StakeMain.tsx:64
+#: src/components/stake/StakeMain.tsx:119
 #: src/components/wallet/coloured/WalletColoured.tsx:620
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:748
 #: src/components/wallet/standard/WalletStandard.tsx:542
