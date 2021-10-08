@@ -8,9 +8,16 @@ import styled from 'styled-components';
 import { useToggle } from 'react-use';
 import { Button, Divider, Menu, MenuItem, Typography } from '@material-ui/core';
 import { ExpandMore } from '@material-ui/icons';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { get_plots } from '../../modules/fullnodeMessages';
-import { isNull } from "lodash";
+
+import {
+  get_address,
+  send_transaction,
+  farm_block,
+} from '../../modules/message';
+import { /* mojo_to_chia_string, */ chia_to_mojo } from '../../util/chia';
+
 
 
 const StyledInputBase = styled(InputBase)`
@@ -44,13 +51,26 @@ export default function StakeMain() {
         return;
       }
 
-      alert(amount + plotPublicKey);
+      // console.log("get_walletid");
+      // const wallet_id = useSelector((state: RootState) => state.wallet_menu.id);
+      // console.log(wallet_id);
+
+      const amountValue = Number.parseFloat(chia_to_mojo(amount));
+      let address =  plotPublicKey;
+      if (address.startsWith('0x') || address.startsWith('0X')) {
+        address = address.slice(2);
+      }
+
+      console.log(amountValue);
+      console.log(address);
+
+      dispatch(send_transaction(1, amountValue, 0, address));
     }
 
 
 
     //StakeSelect
-    const [plotPublicKey, setPlotPublicKey] = useState("-----------");
+    const [plotPublicKey, setPlotPublicKey] = useState("----");
     const [values, setValues] = useState([" ", " "]);
 
     const dispatch = useDispatch();
@@ -84,10 +104,10 @@ export default function StakeMain() {
         <Flex flexDirection="column" gap={3}>
 
             <Typography variant="body1" color="textSecondary">
-            xxxxxxxxxxxxxxxxxxxxxx.
+            Please select your staking address and send SIT to it.
             </Typography>
 
-            <Paper elevation={0} variant="outlined">
+            <Flex>
               <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} endIcon={<ExpandMore />}>
                 {plotPublicKey}
               </Button>
@@ -103,7 +123,7 @@ export default function StakeMain() {
                   </MenuItem>
                 ))}
               </Menu>
-            </Paper>
+            </Flex>
 
             <Form methods={methods} onSubmit={handleSubmit}>
             <Paper elevation={0} variant="outlined">
