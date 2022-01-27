@@ -1,6 +1,6 @@
 import Big from 'big.js';
 
-const MOJO_PER_CHIA = Big(1000000000000);
+const MOJO_PER_CHIA = Big(500000000000);
 const BLOCKS_PER_YEAR = 1681920;
 
 export function calculatePoolReward(height: number): Big {

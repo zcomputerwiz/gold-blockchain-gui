@@ -95,3 +95,4 @@ src/locales/**/*.js
 daemon/
 win_code_sign_cert.p12
 Silicoin-darwin-x64/
+SIT-darwin-x64/

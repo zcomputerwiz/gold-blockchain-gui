@@ -6,27 +6,23 @@ const lodash = require('lodash');
 
 // defaults used in case of error point to the localhost daemon & its certs
 let self_hostname = 'localhost';
-global.daemon_rpc_ws = `wss://${self_hostname}:56401`;
+global.daemon_rpc_ws = `wss://${self_hostname}:56402`;
 global.cert_path = 'config/ssl/daemon/private_daemon.crt';
 global.key_path = 'config/ssl/daemon/private_daemon.key';
 
-function loadConfig(version) {
+function loadConfig(net) {
   try {
-    // finding the right config file uses this precedence
-    // 1) CHIA_ROOT environment variable
-    // 2) version passed in and determined by the `chia version` call
-
-    // check if CHIA_ROOT is set. it overrides everything else
+    // check if CHIA_ROOT is set. it overrides 'net'
     const config_root_dir =
       'CHIA_ROOT' in process.env
         ? process.env.CHIA_ROOT
-        : path.join(os.homedir(), '.silicoin', version);
+        : path.join(os.homedir(), '.sit', version);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
 
     self_hostname = lodash.get(config, 'ui.daemon_host', 'localhost'); // jshint ignore:line
-    const daemon_port = lodash.get(config, 'ui.daemon_port', 56401); // jshint ignore:line
+    const daemon_port = lodash.get(config, 'ui.daemon_port', 56402); // jshint ignore:line
 
     // store these in the global object so they can be used by both main and renderer processes
     global.daemon_rpc_ws = `wss://${self_hostname}:${daemon_port}`;

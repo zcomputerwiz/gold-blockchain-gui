@@ -109,7 +109,7 @@ export default function About(props: Props) {
           </StyledLogoContainer>
 
           <StyledTitle>
-            {productName} {version}
+            {productName} {version + "(Venus)"}
           </StyledTitle>
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
