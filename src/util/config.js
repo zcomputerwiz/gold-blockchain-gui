@@ -16,7 +16,7 @@ function loadConfig(net) {
     const config_root_dir =
       'CHIA_ROOT' in process.env
         ? process.env.CHIA_ROOT
-        : path.join(os.homedir(), '.sit', version);
+        : path.join(os.homedir(), '.sit', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
