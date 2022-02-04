@@ -1,5 +1,5 @@
 # gold-blockchain
-![Alt text](https://github.com/gold-network/gold-blockchain-gui/blob/main/src/components/icons/images/chia.svg)
+![Alt text](https://github.com/goldcoin-gl/gold-blockchain-gui/blob/main/src/components/icons/images/chia.svg)
 
 ## Installing
 
