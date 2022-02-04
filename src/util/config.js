@@ -12,10 +12,10 @@ global.key_path = 'config/ssl/daemon/private_daemon.key';
 
 function loadConfig(net) {
   try {
-    // check if CHIA_ROOT is set. it overrides 'net'
+    // check if SIT_ROOT is set. it overrides 'net'
     const config_root_dir =
-      'CHIA_ROOT' in process.env
-        ? process.env.CHIA_ROOT
+      'SIT_ROOT' in process.env
+        ? process.env.SIT_ROOT
         : path.join(os.homedir(), '.sit', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
