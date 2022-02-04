@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: '0px',
   },
   resultSuccess: {
-    color: '#6f98ec',
+    color: '#f79413',
   },
   resultFailure: {
     color: 'red',
@@ -297,7 +297,7 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
     </Grid>
   );
 }
-// comment
+
 function get_cc_unit(name: string): string {
   let cc_unit = name;
   if (cc_unit.length > 10) {

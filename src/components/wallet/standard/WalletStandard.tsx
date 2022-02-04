@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 100,
   },
   resultSuccess: {
-    color: '#6f98ec',
+    color: '#f79413',
   },
   resultFailure: {
     color: 'red',
@@ -366,7 +366,6 @@ function SendCard(props: SendCardProps) {
   const { wallet_id } = props;
   const classes = useStyles();
   const dispatch = useDispatch();
-  const openDialog = useOpenDialog();
 
   const methods = useForm<SendTransactionData>({
     shouldUnregister: false,
@@ -415,43 +414,51 @@ function SendCard(props: SendCardProps) {
     }
 
     if (syncing) {
-      openDialog(
-        <AlertDialog>
-          <Trans>Please finish syncing before making a transaction</Trans>
-        </AlertDialog>,
+      dispatch(
+        openDialog(
+          <AlertDialog>
+            <Trans>Please finish syncing before making a transaction</Trans>
+          </AlertDialog>,
+        ),
       );
       return;
     }
 
     const amount = data.amount.trim();
     if (!isNumeric(amount)) {
-      openDialog(
-        <AlertDialog>
-          <Trans>Please enter a valid numeric amount</Trans>
-        </AlertDialog>,
+      dispatch(
+        openDialog(
+          <AlertDialog>
+            <Trans>Please enter a valid numeric amount</Trans>
+          </AlertDialog>,
+        ),
       );
       return;
     }
 
     const fee = data.fee.trim();
     if (!isNumeric(fee)) {
-      openDialog(
-        <AlertDialog>
-          <Trans>Please enter a valid numeric fee</Trans>
-        </AlertDialog>,
+      dispatch(
+        openDialog(
+          <AlertDialog>
+            <Trans>Please enter a valid numeric fee</Trans>
+          </AlertDialog>,
+        ),
       );
       return;
     }
 
     let address = data.address;
     if (address.includes('colour')) {
-      openDialog(
-        <AlertDialog>
-          <Trans>
-            Error: Cannot send chia to coloured address. Please enter a chia
-            address.
-          </Trans>
-        </AlertDialog>,
+      dispatch(
+        openDialog(
+          <AlertDialog>
+            <Trans>
+              Error: Cannot send chia to coloured address. Please enter a chia
+              address.
+            </Trans>
+          </AlertDialog>,
+        ),
       );
       return;
     }
@@ -608,11 +615,10 @@ function AddressCard(props: AddressCardProps) {
 
 type StandardWalletProps = {
   wallet_id: number;
-  showTitle?: boolean;
 };
 
 export default function StandardWallet(props: StandardWalletProps) {
-  const { wallet_id, showTitle } = props;
+  const { wallet_id } = props;
   const dispatch = useDispatch();
   const openDialog = useOpenDialog();
 
@@ -637,47 +643,44 @@ export default function StandardWallet(props: StandardWalletProps) {
     <Flex flexDirection="column" gap={1}>
       <Flex gap={1} alignItems="center">
         <Flex flexGrow={1}>
-          {showTitle && (
-            <Typography variant="h5" gutterBottom>
-              <Trans>Chia Wallet</Trans>
-            </Typography>
+          <Typography variant="h5" gutterBottom>
+            <Trans>Chia Wallet</Trans>
+          </Typography>
+        </Flex>
+        <More>
+          {({ onClose }) => (
+            <Box>
+              <MenuItem
+                onClick={() => {
+                  onClose();
+                  handleDeleteUnconfirmedTransactions();
+                }}
+              >
+                <ListItemIcon>
+                  <DeleteIcon />
+                </ListItemIcon>
+                <Typography variant="inherit" noWrap>
+                  <Trans>Delete Unconfirmed Transactions</Trans>
+                </Typography>
+              </MenuItem>
+            </Box>
           )}
-        </Flex>
-        <Flex gap={1} alignItems="center">
-          <Flex alignItems="center">
-            <Typography variant="body1" color="textSecondary">
-              <Trans>Wallet Status:</Trans>
-            </Typography>
-            &nbsp;
-            <WalletStatus height />
-          </Flex>
-          <More>
-            {({ onClose }) => (
-              <Box>
-                <MenuItem
-                  onClick={() => {
-                    onClose();
-                    handleDeleteUnconfirmedTransactions();
-                  }}
-                >
-                  <ListItemIcon>
-                    <DeleteIcon />
-                  </ListItemIcon>
-                  <Typography variant="inherit" noWrap>
-                    <Trans>Delete Unconfirmed Transactions</Trans>
-                  </Typography>
-                </MenuItem>
-              </Box>
-            )}
-          </More>
-        </Flex>
+        </More>
       </Flex>
 
-      <Flex flexDirection="column" gap={3}>
-        <WalletCards wallet_id={wallet_id} />
-        <SendCard wallet_id={wallet_id} />
-        <AddressCard wallet_id={wallet_id} />
-        <WalletHistory walletId={wallet_id} />
+      <Flex flexDirection="column" gap={2}>
+        <Flex gap={1} justifyContent="flex-end">
+          <Typography variant="body1" color="textSecondary">
+            <Trans>Wallet Status:</Trans>
+          </Typography>
+          <WalletStatus height />
+        </Flex>
+        <Flex flexDirection="column" gap={3}>
+          <WalletCards wallet_id={wallet_id} />
+          <SendCard wallet_id={wallet_id} />
+          <AddressCard wallet_id={wallet_id} />
+          <WalletHistory walletId={wallet_id} />
+        </Flex>
       </Flex>
     </Flex>
   );

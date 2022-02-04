@@ -70,7 +70,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://www.silicoin.cc';
+const url = 'https://www.gold.cc';
 
 type Props = {
   version: string;
@@ -109,12 +109,12 @@ export default function About(props: Props) {
           </StyledLogoContainer>
 
           <StyledTitle>
-            {productName} {version + "(Venus)"}
+            {productName} {version}
           </StyledTitle>
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 Silicoin Network</div>
+        <div className="copyright">Copyright (c) 2021 Gold Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (
@@ -144,7 +144,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/silicoin-network/silicoin-blockchain/issues"
+          href="https://github.com/gold-network/gold-blockchain/issues"
           target="_blank"
         >
           Report an issue

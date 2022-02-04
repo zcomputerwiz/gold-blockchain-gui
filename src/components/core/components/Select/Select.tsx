@@ -9,33 +9,18 @@ type Props = SelectProps & {
 };
 
 export default function Select(props: Props) {
-  const { name: controllerName, value: controllerValue, children, ...rest } = props;
+  const { name, onChange, ...rest } = props;
   const { control, errors } = useFormContext();
-  const errorMessage = get(errors, controllerName);
+  const errorMessage = get(errors, name);
 
   return (
     // @ts-ignore
     <Controller
-      name={controllerName}
+      as={MaterialSelect}
+      name={name}
       control={control}
-      render={({ field: { onChange, onBlur, value, name, ref } }) => (
-        <MaterialSelect
-          onChange={(event, ...args) => {
-            onChange(event, ...args);
-            if (props.onChange) {
-              props.onChange(event, ...args);
-            }
-          }}
-          onBlur={onBlur}
-          value={value}
-          name={name}
-          ref={ref}
-          error={!!errorMessage}
-          {...rest}
-        >
-          {children}
-        </MaterialSelect>
-      )}
+      error={!!errorMessage}
+      {...rest}
     />
   );
 }

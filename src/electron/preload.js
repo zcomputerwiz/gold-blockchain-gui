@@ -1,4 +1,5 @@
-const { ipcRenderer,shell } = require('electron');
+const electron = require('electron');
 
-window.ipcRenderer = ipcRenderer;
-window.shell = shell;
+window.remote = electron.remote;
+window.ipcRenderer = electron.ipcRenderer;
+window.shell = electron.shell;

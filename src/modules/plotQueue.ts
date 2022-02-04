@@ -8,6 +8,9 @@ import PlotStatus from '../constants/PlotStatus';
 import { stopService } from './daemon_messages';
 import { service_plotter } from '../util/service_names';
 
+const FINISHED_LOG_LINES = 2626; // 128
+// const FINISHED_LOG_LINES_64 = 1379; // 64
+// const FINISHED_LOG_LINES_32 = 754; // 32
 
 type PlotQueueItemPartial = PlotQueueItem & {
   log_new?: string;
@@ -55,35 +58,28 @@ export function plotQueueAdd(
 ): ThunkAction<any, RootState, unknown, Action<Object>> {
   return (dispatch) => {
     const {
-      bladebitDisableNUMA,
-      bladebitWarmStart,
-      c,
-      delay,
-      disableBitfieldPlotting,
-      excludeFinalDir,
-      farmerPublicKey,
+      plotSize,
+      plotCount,
+      workspaceLocation,
+      workspaceLocation2,
       finalLocation,
-      fingerprint,
-      madmaxNumBucketsPhase3,
-      madmaxTempToggle,
-      madmaxThreadMultiplier,
       maxRam,
       numBuckets,
       numThreads,
-      overrideK,
-      parallel,
-      plotCount,
-      plotSize,
-      plotterName,
-      poolPublicKey,
       queue,
-      workspaceLocation,
-      workspaceLocation2,
+      fingerprint,
+      parallel,
+      delay,
+      disableBitfieldPlotting,
+      excludeFinalDir,
+      overrideK,
+      farmerPublicKey,
+      poolPublicKey,
+      c,
     } = config;
 
     return dispatch(
       startPlotting(
-        plotterName,
         plotSize,
         plotCount,
         workspaceLocation,
@@ -102,11 +98,6 @@ export function plotQueueAdd(
         farmerPublicKey,
         poolPublicKey,
         c,
-        bladebitDisableNUMA,
-        bladebitWarmStart,
-        madmaxNumBucketsPhase3,
-        madmaxTempToggle,
-        madmaxThreadMultiplier,
       ),
     );
   };
@@ -166,14 +157,6 @@ const initialState: PlotQueueState = {
   deleting: [],
 };
 
-function parseProgressUpdate(line: string, currentProgress: number): number {
-  let progress: number = currentProgress;
-  if (line.startsWith("Progress update: ")) {
-    progress = Math.min(1, parseFloat(line.substr("Progress update: ".length)));
-  }
-  return progress;
-}
-
 function addPlotProgress(queue: PlotQueueItem[]): PlotQueueItem[] {
   if (!queue) {
     return queue;
@@ -181,22 +164,15 @@ function addPlotProgress(queue: PlotQueueItem[]): PlotQueueItem[] {
 
   return queue.map((item) => {
     const { log, state } = item;
-    if (state === 'FINISHED') {
-      return {
-        ...item,
-        progress: 1.0,
-      };
-    } else if (state !== 'RUNNING') {
+    if (state !== 'RUNNING') {
       return item;
     }
 
-    let progress = item.progress || 0;
+    let progress = 0;
 
     if (log) {
-      const lines = log.trim().split(/\r\n|\r|\n/);
-      const lastLine = lines[lines.length - 1];
-
-      progress = parseProgressUpdate(lastLine, progress);
+      const lines = log.trim().split(/\r\n|\r|\n/).length;
+      progress = lines > FINISHED_LOG_LINES ? 1 : lines / FINISHED_LOG_LINES;
     }
 
     return {

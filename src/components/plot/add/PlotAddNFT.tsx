@@ -13,15 +13,10 @@ import { useFormContext } from 'react-hook-form';
 import usePlotNFTs from '../../../hooks/usePlotNFTs';
 import PlotNFTName from '../../plotNFT/PlotNFTName';
 import PlotNFTSelectPool from '../../plotNFT/select/PlotNFTSelectPool';
-import Plotter from '../../../types/Plotter';
 
-type Props = {
-  step: number;
-  plotter: Plotter;
-};
+type Props = {};
 
 const PlotAddNFT = forwardRef((props: Props, ref) => {
-  const { step } = props;
   const { nfts, external, loading } = usePlotNFTs();
   const [showCreatePlotNFT, setShowCreatePlotNFT] = useState<boolean>(false);
   const { setValue } = useFormContext();
@@ -41,7 +36,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
   if (showCreatePlotNFT) {
     return (
       <PlotNFTSelectPool
-        step={step}
+        step={5}
         onCancel={handleCancelPlotNFT}
         ref={ref}
         title={<Trans>Create a Plot NFT</Trans>}
@@ -57,7 +52,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
 
   return (
     <CardStep
-      step={step}
+      step="5"
       title={
         <Flex gap={1} alignItems="baseline">
           <Box>
@@ -86,7 +81,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
                   <Trans>Select your Plot NFT</Trans>
                 </InputLabel>
                 <Select name="p2_singleton_puzzle_hash">
-                  <MenuItem value="">
+                  <MenuItem value={''}>
                     <em>
                       <Trans>None</Trans>
                     </em>
@@ -124,7 +119,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
             </Grid>
 
             <Grid xs={12} md={8} lg={6} item>
-              <Button onClick={handleJoinPool} variant="outlined">
+              <Button onClick={handleJoinPool} variant="filled">
                 <Trans>+ Add New Plot NFT</Trans>
               </Button>
             </Grid>

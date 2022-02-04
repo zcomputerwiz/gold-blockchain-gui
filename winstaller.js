@@ -13,19 +13,17 @@ function getInstallerConfig () {
   const rootPath = path.join('./')
   const outPath = path.join(rootPath, 'release-builds')
 
-  const appName = "SIT"
-
   return Promise.resolve({
-    appDirectory: path.join(rootPath, appName + '-win32-x64'),
-    authors: appName + ' Network',
+    appDirectory: path.join(rootPath, 'gold-win32-x64'),
+    authors: 'gold Network',
     version: process.env.CHIA_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/silicoin-network/silicoin-blockchain/master/electron-react/src/assets/img/chia.ico',
+    iconUrl: 'https://raw.githubusercontent.com/gold-network/gold-blockchain/master/electron-react/src/assets/img/chia.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: appName + '.exe',
-    setupExe: appName + 'Setup-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
+    exe: 'gold.exe',
+    setupExe: 'GoldSetup-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chia.ico')
   })
 }

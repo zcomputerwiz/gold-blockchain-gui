@@ -310,7 +310,7 @@ msgstr ""
 
 #: src/electron/main.tsx:419
 msgid "Chia"
-msgstr "Silicoin"
+msgstr "Gold"
 
 #: src/electron/main.tsx:358
 msgid "Chia Blockchain Wiki"
@@ -2023,7 +2023,7 @@ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:34
 #: src/components/plot/add/PlotAddChooseSize.tsx:91
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for mainnet is k=31"
 msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39

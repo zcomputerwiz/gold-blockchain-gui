@@ -5,14 +5,6 @@ export const plotControl = () => ({
   type: 'PLOTTER_CONTROL',
 });
 
-export const getPlotters = () => {
-  const action = daemonMessage();
-  action.message.command = 'get_plotters';
-  action.message.data = {}
-
-  return action;
-};
-
 export const stopPlotting = (id) => {
   const action = daemonMessage();
   action.message.command = 'stop_plotting';
@@ -25,37 +17,30 @@ export const stopPlotting = (id) => {
 };
 
 export const startPlotting = (
-  plotterName, // plotterName
-  k, // plotSize
-  n, // plotCount
-  t, // workspaceLocation
-  t2, // workspaceLocation2
-  d, // finalLocation
-  b, // maxRam
-  u, // numBuckets
-  r, // numThreads,
-  queue, // queue
-  a, // fingerprint
-  parallel, // parallel
-  delay, // delay
-  e, // disableBitfieldPlotting
-  x, // excludeFinalDir
-  overrideK, //overrideK
-  f, // farmerPublicKey
-  p, // poolPublicKey
-  c, // poolContractAddress
-  m, // bladebitDisableNUMA,
-  w, // bladebitWarmStart,
-  v, // madmaxNumBucketsPhase3,
-  G, // madmaxTempToggle,
-  K, // madmaxThreadMultiplier,
+  k,
+  n,
+  t,
+  t2,
+  d,
+  b,
+  u,
+  r,
+  queue,
+  a,
+  parallel,
+  delay,
+  e,
+  x,
+  overrideK,
+  f,
+  p,
+  c,
 ) => {
   const action = daemonMessage();
   action.message.command = 'start_plotting';
 
   const data = {
     service: service_plotter,
-    plotter: plotterName,
     k,
     n,
     t,
@@ -86,26 +71,6 @@ export const startPlotting = (
 
   if (c) {
     data.c = c;
-  }
-
-  if (m) { // bladebitDisableNUMA
-    data.m = m;
-  }
-
-  if (w) { // bladebitWarmStart
-    data.w = w;
-  }
-
-  if (v) { // madmaxNumBucketsPhase3
-    data.v = v;
-  }
-
-  if (G) { // madmaxTempToggle
-    data.G = G;
-  }
-
-  if (K) { // madmaxThreadMultiplier
-    data.K = K;
   }
 
   action.message.data = data;

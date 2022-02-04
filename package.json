@@ -28,7 +28,6 @@
     "activate_and_electron": "cd ../venv/Scripts&& activate&&cd ../../chia-blockchain-gui&& electron ."
   },
   "dependencies": {
-    "@electron/remote": "^2.0.4",
     "@fontsource/roboto": "^4.5.0",
     "@lingui/core": "^3.10.4",
     "@lingui/macro": "^3.10.2",

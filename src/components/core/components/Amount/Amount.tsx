@@ -71,18 +71,14 @@ export default function Amount(props: AmountProps) {
         }}
         {...rest}
       />
-
-        <FormHelperText component='div' >
+      {!!mojo && (
+        <FormHelperText>
           <Flex alignItems="center" gap={2}>
             <Flex flexGrow={1} gap={1}>
-              {!!mojo && (
-                <>
-                  <FormatLargeNumber value={mojo} />
-                  <Box>
-                    <Plural value={mojo} one="mojo" other="mojos" />
-                  </Box>
-                </>
-              )}
+              <FormatLargeNumber value={mojo} />
+              <Box>
+                <Plural value={mojo} one="mojo" other="mojos" />
+              </Box>
             </Flex>
             {children &&
               children({
@@ -91,6 +87,7 @@ export default function Amount(props: AmountProps) {
               })}
           </Flex>
         </FormHelperText>
+      )}
     </FormControl>
   );
 }

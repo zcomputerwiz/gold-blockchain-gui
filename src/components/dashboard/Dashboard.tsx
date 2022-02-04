@@ -15,9 +15,8 @@ import FullNode from '../fullNode/FullNode';
 import Plot from '../plot/Plot';
 import Farm from '../farm/Farm';
 import Pool from '../pool/Pool';
-import Block from '../block/Block';
-import Settings from '../settings/Settings';
 import Stake from '../stake/Stake';
+import Block from '../block/Block';
 import DashboardSideBar from './DashboardSideBar';
 import { DashboardTitleTarget } from './DashboardTitle';
 import TradeManager from '../trading/TradeManager';
@@ -89,7 +88,7 @@ export default function Dashboard() {
           <Route path={`${path}/block/:headerHash`} exact>
             <Block />
           </Route>
-          <Route path={`${path}/wallets/:walletId?`}>
+          <Route path={`${path}/wallets`}>
             <Wallets />
           </Route>
           <Route path={`${path}/plot`}>
@@ -101,14 +100,11 @@ export default function Dashboard() {
           <Route path={`${path}/pool`}>
             <Pool />
           </Route>
-          <Route path={`${path}/trade`}>
-            <TradeManager />
-          </Route>
-          <Route path={`${path}/settings`}>
-            <Settings />
-          </Route>
           <Route path={`${path}/stake`}>
             <Stake />
+          </Route>
+          <Route path={`${path}/trade`}>
+            <TradeManager />
           </Route>
         </Switch>
       </StyledBody>

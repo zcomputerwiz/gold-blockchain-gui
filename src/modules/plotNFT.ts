@@ -120,11 +120,11 @@ export function pwAbsorbRewards(walletId: number, fee?: string) {
   };
 }
 
-export function pwSelfPool(walletId: number, fee?: number) {
+export function pwSelfPool(walletId: number) {
   return async (dispatch) => {
     const { data } = await async_api(
       dispatch,
-      pwSelfPoolMessage(walletId, fee),
+      pwSelfPoolMessage(walletId),
       false,
     );
 
@@ -139,7 +139,6 @@ export function pwJoinPool(
   poolUrl: string,
   relativeLockHeight: number,
   targetPuzzlehash?: string,
-  fee?: number,
 ) {
   return async (dispatch) => {
     const { data } = await async_api(
@@ -149,7 +148,6 @@ export function pwJoinPool(
         poolUrl,
         relativeLockHeight,
         targetPuzzlehash,
-        fee,
       ),
       false,
     );

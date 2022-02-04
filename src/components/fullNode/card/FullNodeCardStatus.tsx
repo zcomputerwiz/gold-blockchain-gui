@@ -7,7 +7,7 @@ import FarmCard from '../../farm/card/FarmCard';
 import type { RootState } from '../../../modules/rootReducer';
 
 const StyledWarning = styled.span`
-  color: #f7ca3e;
+  color: #a7a6a2;
 `;
 
 function getData(sync) {

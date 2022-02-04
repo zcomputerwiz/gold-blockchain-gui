@@ -1,7 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useFormContext } from 'react-hook-form';
-import { useLocalStorage, writeStorage } from '@rehooks/local-storage';
 import {
   AdvancedOptions,
   ButtonSelected,
@@ -11,45 +10,33 @@ import {
 } from '@chia/core';
 import { Typography } from '@material-ui/core';
 import useSelectDirectory from '../../../hooks/useSelectDirectory';
-import Plotter from '../../../types/Plotter';
-import PlotLocalStorageKeys from '../../../constants/plotLocalStorage';
 
-type Props = {
-  step: number;
-  plotter: Plotter;
-};
-
-export default function PlotAddSelectTemporaryDirectory(props: Props) {
-  const { step } = props;
+export default function PlotAddSelectTemporaryDirectory() {
   const selectDirectory = useSelectDirectory();
   const { setValue, watch } = useFormContext();
 
   const workspaceLocation = watch('workspaceLocation');
   const hasWorkspaceLocation = !!workspaceLocation;
-  const [defaultTmpDirPath] = useLocalStorage<string>(PlotLocalStorageKeys.TMPDIR);
-  const [defaultTmp2DirPath] = useLocalStorage<string>(PlotLocalStorageKeys.TMP2DIR);
 
   const workspaceLocation2 = watch('workspaceLocation2');
   const hasWorkspaceLocation2 = !!workspaceLocation2;
 
   async function handleSelect() {
-    const location = await selectDirectory({ defaultPath: defaultTmpDirPath || undefined });
+    const location = await selectDirectory();
     if (location) {
       setValue('workspaceLocation', location, { shouldValidate: true });
-      writeStorage(PlotLocalStorageKeys.TMPDIR, location);
     }
   }
 
   async function handleSelect2() {
-    const location = await selectDirectory({ defaultPath: defaultTmp2DirPath || undefined });
+    const location = await selectDirectory();
     if (location) {
       setValue('workspaceLocation2', location, { shouldValidate: true });
-      writeStorage(PlotLocalStorageKeys.TMP2DIR, location);
     }
   }
 
   return (
-    <CardStep step={step} title={<Trans>Select Temporary Directory</Trans>}>
+    <CardStep step="3" title={<Trans>Select Temporary Directory</Trans>}>
       <Typography variant="subtitle1">
         <Trans>
           Select the temporary destination for the folder where you would like

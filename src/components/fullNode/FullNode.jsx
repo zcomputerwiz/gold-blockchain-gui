@@ -136,7 +136,7 @@ const getStatusItems = (state, connected, latestPeakTimestamp, networkInfo) => {
     const item = {
       label: <Trans>Status</Trans>,
       value: <Trans>Synced</Trans>,
-      colour: '#6f98ec',
+      colour: '#f79413',
       tooltip: (
         <Trans>This node is fully caught up and validating the network</Trans>
       ),
@@ -152,7 +152,7 @@ const getStatusItems = (state, connected, latestPeakTimestamp, networkInfo) => {
       ) : (
         <Trans>Not connected</Trans>
       ),
-      colour: connected ? '#6f98ec' : 'red',
+      colour: connected ? '#f79413' : 'red',
     });
   } else {
     const item = {

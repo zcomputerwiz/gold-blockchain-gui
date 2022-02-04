@@ -291,8 +291,8 @@ export default function WalletGraph(props: Props) {
         curve="monotoneX"
         defs={[
           linearGradientDef('gradientA', [
-            { offset: 0, color: '#6f98ec' },
-            { offset: 100, color: '#6f98ec', opacity: 0 },
+            { offset: 0, color: '#f79413' },
+            { offset: 100, color: '#f79413', opacity: 0 },
           ]),
         ]}
         fill={[{ match: '*', id: 'gradientA' }]}
@@ -301,7 +301,7 @@ export default function WalletGraph(props: Props) {
         enableGridY={false}
         enableArea
       />
-      {/* 
+      {/*
       <StyledMaxTypography variant="body2" color="textSecondary">
         <FormatLargeNumber value={max} />
       </StyledMaxTypography>

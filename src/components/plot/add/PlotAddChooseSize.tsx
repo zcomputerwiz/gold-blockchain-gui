@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { useFormContext } from 'react-hook-form';
@@ -13,39 +13,25 @@ import {
 } from '@material-ui/core';
 import { plotSizeOptions } from '../../../constants/plotSizes';
 import useOpenDialog from '../../../hooks/useOpenDialog';
-import Plotter from '../../../types/Plotter';
 
-const MIN_MAINNET_K_SIZE = 32;
+const MIN_MAINNET_K_SIZE = 31;
 
 const StyledFormHelperText = styled(FormHelperText)`
   color: ${StateColor.WARNING};
 `;
 
-type Props = {
-  step: number;
-  plotter: Plotter;
-};
-
-export default function PlotAddChooseSize(props: Props) {
-  const { step, plotter } = props;
+export default function PlotAddChooseSize() {
   const { watch, setValue } = useFormContext();
   const openDialog = useOpenDialog();
 
-  const plotterName = watch('plotterName');
   const plotSize = watch('plotSize');
   const overrideK = watch('overrideK');
   const isKLow = plotSize < MIN_MAINNET_K_SIZE;
 
-  const [allowedPlotSizes, setAllowedPlotSizes] = useState(plotSizeOptions.filter((option) => plotter.options.kSizes.includes(option.value)));
-
-  useEffect(() => {
-    setAllowedPlotSizes(plotSizeOptions.filter((option) => plotter.options.kSizes.includes(option.value)));
-  }, [plotterName]);
-
   async function getConfirmation() {
     const canUse = await openDialog(
       <ConfirmDialog
-        title={<Trans>The minimum required size for mainnet is k=32</Trans>}
+        title={<Trans>The minimum required size for mainnet is k=31</Trans>}
         confirmTitle={<Trans>Yes</Trans>}
         confirmColor="danger"
       >
@@ -57,7 +43,7 @@ export default function PlotAddChooseSize(props: Props) {
     if (canUse) {
       setValue('overrideK', true);
     } else {
-      setValue('plotSize', 32);
+      setValue('plotSize', 31);
     }
   }
 
@@ -72,15 +58,15 @@ export default function PlotAddChooseSize(props: Props) {
   }, [plotSize, overrideK]); // eslint-disable-line
 
   return (
-    <CardStep step={step} title={<Trans>Choose Plot Size</Trans>}>
+    <CardStep step="1" title={<Trans>Choose Plot Size</Trans>}>
       <Typography variant="subtitle1">
         <Trans>
           {
-            'You do not need to be synced or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. '
+            'You do not need to be synched or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. '
           }
           <Link
             target="_blank"
-            href="https://github.com/silicoin-network/silicoin-blockchain/wiki/k-sizes"
+            href="https://github.com/gold-network/gold-blockchain/wiki/k-sizes"
           >
             Learn more
           </Link>
@@ -94,7 +80,7 @@ export default function PlotAddChooseSize(props: Props) {
               <Trans>Plot Size</Trans>
             </InputLabel>
             <Select name="plotSize">
-              {allowedPlotSizes.map((option) => (
+              {plotSizeOptions.map((option) => (
                 <MenuItem value={option.value} key={option.value}>
                   {option.label}
                 </MenuItem>
@@ -102,7 +88,7 @@ export default function PlotAddChooseSize(props: Props) {
             </Select>
             {isKLow && (
               <StyledFormHelperText>
-                <Trans>The minimum required size for mainnet is k=32</Trans>
+                <Trans>The minimum required size for mainnet is k=31</Trans>
               </StyledFormHelperText>
             )}
           </FormControl>

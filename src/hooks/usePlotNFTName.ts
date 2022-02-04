@@ -41,7 +41,7 @@ function getUniqueName(seed: string, iteration: number = 0): string {
 export default function usePlotNFTName(nft: PlotNFT | PlotNFTExternal): string {
   const p2_singleton_puzzle_hash = nft?.pool_state?.p2_singleton_puzzle_hash;
   const name = useMemo(
-    () => getUniqueName(p2_singleton_puzzle_hash), 
+    () => getUniqueName(p2_singleton_puzzle_hash),
     [p2_singleton_puzzle_hash],
   );
 

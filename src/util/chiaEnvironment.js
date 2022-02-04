@@ -8,8 +8,10 @@ const fs = require('fs');
 
 const PY_MAC_DIST_FOLDER = '../../../app.asar.unpacked/daemon';
 const PY_WIN_DIST_FOLDER = '../../../app.asar.unpacked/daemon';
+// const PY_MAC_DIST_FOLDER = '../../daemon';
+// const PY_WIN_DIST_FOLDER = '../../daemon';
 const PY_DIST_FILE = 'daemon';
-const PY_FOLDER = '../chia/daemon';
+const PY_FOLDER = '../gold/daemon';
 const PY_MODULE = 'server'; // without .py suffix
 
 let pyProc = null;
@@ -39,6 +41,7 @@ const getScriptPath = (dist_file) => {
 };
 
 const getExecutablePath = (dist_file) => {
+  console.log("getExecutablePath", dist_file, process.platform)
   if (process.platform === 'win32') {
     return path.join(__dirname, PY_WIN_DIST_FOLDER, dist_file + '.exe');
   }
@@ -47,8 +50,9 @@ const getExecutablePath = (dist_file) => {
 
 const getChiaVersion = () => {
   let version = null;
-  const exePath = getExecutablePath('chia');
-  // first see if we can get a chia exe in a standard location relative to where we are
+  const exePath = getExecutablePath('gold');
+  console.log("exePath", exePath)
+  // first see if we can get a gold exe in a standard location relative to where we are
   try {
     version = child_process
       .execFileSync(exePath, ['version'], {
@@ -56,7 +60,8 @@ const getChiaVersion = () => {
       })
       .trim();
   } catch (e1) {
-    // that didn't work, let's try as if we're in the venv or chia is on the path
+    console.log("e1", e1)
+    // that didn't work, let's try as if we're in the venv or gold is on the path
     try {
       version = child_process
         .execFileSync(path.basename(exePath), ['version'], {
@@ -64,6 +69,7 @@ const getChiaVersion = () => {
         })
         .trim();
     } catch (e2) {
+      console.log("e2", e2)
       // that didn't work either - give up
     }
   }
@@ -81,7 +87,7 @@ const startChiaDaemon = () => {
     try {
       console.log('Running python executable: ');
       const Process = child_process.spawn;
-      pyProc = new Process(script, ["--wait-for-unlock"], processOptions);
+      pyProc = new Process(script, [], processOptions);
     } catch (e) {
       console.log('Running python executable: Error: ');
       console.log('Script ' + script);
@@ -91,7 +97,7 @@ const startChiaDaemon = () => {
     console.log('Script ' + script);
 
     const Process = child_process.spawn;
-    pyProc = new Process('python', [script, "--wait-for-unlock"], processOptions);
+    pyProc = new Process('python', [script], processOptions);
   }
   if (pyProc != null) {
     pyProc.stdout.setEncoding('utf8');

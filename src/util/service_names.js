@@ -1,10 +1,10 @@
-export const service_wallet = 'sit_wallet';
-export const service_full_node = 'sit_full_node';
-export const service_farmer = 'sit_farmer';
-export const service_harvester = 'sit_harvester';
-export const service_simulator = 'sit_full_node_simulator';
+export const service_wallet = 'gold_wallet';
+export const service_full_node = 'gold_full_node';
+export const service_farmer = 'gold_farmer';
+export const service_harvester = 'gold_harvester';
+export const service_simulator = 'gold_full_node_simulator';
 export const service_daemon = 'daemon';
-export const service_plotter = 'sit plots create';
+export const service_plotter = 'gold plots create';
 
 // Corresponds with outbound_message.py NodeTypes
 export const service_connection_types = {

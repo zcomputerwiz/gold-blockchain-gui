@@ -14,6 +14,7 @@ export const defaultPlotSize: PlotSize = {
 
 const plotSizes: PlotSize[] = [
   { label: '600MiB', value: 25, workspace: '1.8GiB', defaultRam: 512 },
+  { label: '55GiB', value: 31, workspace: '261GiB', defaultRam: 3700 },
   defaultPlotSize,
   { label: '208.8GiB', value: 33, workspace: '521GiB', defaultRam: 7400 },
   // workspace are guesses using 55.35% - rounded up - past here

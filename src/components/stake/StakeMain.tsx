@@ -48,11 +48,11 @@ export default function StakeMain() {
       async function initialPlotValues() {
         const data = await dispatch(get_plots());
         let plots = data.plots;
-  
+
         let publickey = plots.map((x) => {
           return x["farmer_public_key"] + "&" + x["farmer_puzzle_hash"];
         });
-  
+
         let plotValues: string[] = Array.from(new Set(publickey))
         plotValues = dealPlotCount(plotValues, plots)
         if (plotValues.length < 1) {
@@ -60,7 +60,7 @@ export default function StakeMain() {
         }
         setPlotValues(plotValues);
         setPlotValue(plotValues[0]);
-        handleSearch(plotValues[0].split('&')[1]);      
+        handleSearch(plotValues[0].split('&')[1]);
       }
       initialPlotValues();
     }, []);
@@ -69,7 +69,7 @@ export default function StakeMain() {
 
       setAnchorEl(event.currentTarget);
       toggleOpen();
-      
+
       const data = await dispatch(get_plots());
       let plots = data.plots;
 
@@ -121,7 +121,7 @@ export default function StakeMain() {
     //=========================================================================
     //=========================================================================
     const [searchResult, setSearchResult] = useState(" ")
-    
+
     async function handleSearch(address: string) {
       setSearchResult(" ");
       stakeCoins = new Array()
@@ -148,7 +148,7 @@ export default function StakeMain() {
       var total: number = 0
       var temp = new Array()
       for(let record of records) {
-        var amount: number = record.coin.amount  
+        var amount: number = record.coin.amount
         total += amount
         temp.push(record.coin)
       }
@@ -217,7 +217,7 @@ export default function StakeMain() {
 
       var totalAmount: number = 0
       for(let record of stakeCoins) {
-        var amount: number = record.amount  
+        var amount: number = record.amount
         totalAmount += amount
       }
 
@@ -247,7 +247,7 @@ export default function StakeMain() {
 
 
           <Typography variant="body1" color="textSecondary">
-          Please select your staking address and send SIT to it.
+          Please select your staking address and send GL to it.
           </Typography>
 
 
@@ -288,7 +288,7 @@ export default function StakeMain() {
 
                 <Button variant="contained" color="primary" type="submit"> Stake </Button>
               </Flex>
-          </Paper>          
+          </Paper>
           </Form>
 
           <Flex alignItems="center" justifyContent="flex-end" gap={1}>

@@ -24,7 +24,7 @@ import {
 import { useDispatch } from 'react-redux';
 import { date } from '@lingui/core/cjs/formats';
 
-import { address_to_puzzle_hash } from './address_to_puzzle_hash' 
+import { address_to_puzzle_hash } from './address_to_puzzle_hash'
 
 const StyledInputBase = styled(InputBase)`
   min-width: 15rem;
@@ -97,7 +97,7 @@ export default function PoolCollection() {
       }
     }
   }
-  
+
   async function handleCollection(values: FormData) {
     let qdId = values.qdId
     if (!qdId) {
@@ -139,7 +139,7 @@ export default function PoolCollection() {
     <Flex flexDirection="column" gap={3}>
 
       <Typography variant="body1" color="textSecondary">
-        Enter your chia pool contract address and NFT Launcher ID to recover the missing SIT from your plot NFT.
+        Enter your chia pool contract address and NFT Launcher ID to recover the missing GL from your plot NFT.
       </Typography>
 
       <Form methods={methods} onSubmit={handleSearch}>

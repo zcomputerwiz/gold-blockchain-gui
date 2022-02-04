@@ -2,14 +2,13 @@ import React, { useMemo, ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
 import { useHistory } from 'react-router';
 import { useDispatch } from 'react-redux';
-import { Flex, State, Loading, StateTypography } from '@chia/core';
+import { Flex, Loading } from '@chia/core';
 import { ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 import { useParams } from 'react-router';
 import usePlotNFTs from '../../hooks/usePlotNFTs';
 import { pwSelfPool, pwJoinPool } from '../../modules/plotNFT';
 import PlotNFTSelectPool, { SubmitData } from './select/PlotNFTSelectPool';
 import PlotNFTName from './PlotNFTName';
-import PlotNFTStateEnum from '../../constants/PlotNFTState';
 
 type Props = {
   headerTag?: ReactNode;
@@ -30,10 +29,6 @@ export default function PlotNFTChangePool(props: Props) {
     );
   }, [nfts, plotNFTId]);
 
-
-  const state = nft?.pool_wallet_status?.current?.state;
-  const isDoubleFee = state === PlotNFTStateEnum.FARMING_TO_POOL;
-
   async function handleSubmit(data: SubmitData) {
     const walletId = nft?.pool_wallet_status.wallet_id;
 
@@ -44,7 +39,6 @@ export default function PlotNFTChangePool(props: Props) {
         relative_lock_height,
         target_puzzle_hash,
       },
-      fee,
     } = data;
 
     if (
@@ -55,7 +49,7 @@ export default function PlotNFTChangePool(props: Props) {
     }
 
     if (state === 'SELF_POOLING') {
-      await dispatch(pwSelfPool(walletId, fee));
+      await dispatch(pwSelfPool(walletId));
     } else {
       await dispatch(
         pwJoinPool(
@@ -63,7 +57,6 @@ export default function PlotNFTChangePool(props: Props) {
           pool_url,
           relative_lock_height,
           target_puzzle_hash,
-          fee,
         ),
       );
     }
@@ -117,11 +110,7 @@ export default function PlotNFTChangePool(props: Props) {
         title={<Trans>Change Pool</Trans>}
         submitTitle={<Trans>Change</Trans>}
         defaultValues={defaultValues}
-        feeDescription={isDoubleFee && (
-          <StateTypography variant="body2" state={State.WARNING}>
-            <Trans>Fee is used TWICE: once to leave pool, once to join.</Trans>
-          </StateTypography>
-        )}
+        hideFee
       />
     </>
   );

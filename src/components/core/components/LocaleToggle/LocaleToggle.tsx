@@ -43,7 +43,7 @@ export default function LocaleToggle(props: Props) {
     handleClose();
 
     openExternal(
-      'https://github.com/silicoin-network/silicoin-blockchain-gui/tree/main/src/locales/README.md',
+      'https://github.com/gold-network/gold-blockchain-gui/tree/main/src/locales/README.md',
     );
   }
 

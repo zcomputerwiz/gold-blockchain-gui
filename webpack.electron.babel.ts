@@ -29,7 +29,6 @@ export default {
   output: {
     path: path.resolve(__dirname, './build/electron'),
     filename: '[name].js',
-    hashFunction: "sha256",
   },
   plugins: [
     new CopyPlugin({

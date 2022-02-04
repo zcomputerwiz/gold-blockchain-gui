@@ -13,7 +13,6 @@ import { Trans } from '@lingui/macro';
 import { useParams, useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import {
-  Back,
   Card,
   FormatLargeNumber,
   Link,
@@ -46,10 +45,6 @@ async function computeNewPlotId(block) {
   if (!pool_public_key) {
     return undefined;
   }
-  if (!plot_public_key) {
-    return undefined;
-  }
-
   let buf = hex_to_array(pool_public_key);
   buf = buf.concat(hex_to_array(plot_public_key));
   const bufHash = await sha256(buf);
@@ -337,11 +332,11 @@ export default function Block() {
     <LayoutMain title={<Trans>Block</Trans>}>
       <Card
         title={
-          <Back variant="h5">
+          <BlockTitle>
             <Trans>
               Block at height {blockRecord.height} in the Chia blockchain
             </Trans>
-          </Back>
+          </BlockTitle>
         }
         action={
           <Flex gap={1}>

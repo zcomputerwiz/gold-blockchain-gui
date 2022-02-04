@@ -28,33 +28,23 @@ const StyledBaseLink = styled(({ fullWidth, noWrap, ...rest }) => (
 `;
 
 export default function Link(props: Props) {
-  const { target, href, onClick } = props;
+  const { target, href } = props;
   const openExternal = useOpenExternal();
   const newProps = {
     ...props,
   };
 
-  function handleClick(event: SyntheticEvent) {
-    if (onClick) {
-      event.preventDefault();
-      event.stopPropagation();
-      onClick(event);
-      return;
-    }
-
-    if (href && target === '_blank') {
+  function handleOpenExternal(event: SyntheticEvent) {
+    if (href) {
       event.preventDefault();
       event.stopPropagation();
       openExternal(href);
-      return;
     }
   }
 
-  return (
-    <StyledBaseLink
-      component={RouterLink}
-      {...newProps}
-      onClick={handleClick}
-    />
-  );
+  if (target === '_blank') {
+    newProps.onClick = handleOpenExternal;
+  }
+
+  return <StyledBaseLink component={RouterLink} {...newProps} />;
 }

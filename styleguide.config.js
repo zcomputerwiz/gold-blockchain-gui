@@ -7,7 +7,7 @@ module.exports = {
     Wrapper: path.join(__dirname, "src/StyleguidistMuiWrapper"),
   },
   ribbon: {
-    url: "https://github.com/silicoin-network/silicoin-blockchain",
+    url: "https://github.com/gold-network/gold-blockchain",
   },
   version,
 };

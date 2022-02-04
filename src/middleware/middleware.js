@@ -1,20 +1,27 @@
 import isElectron from 'is-electron';
 import * as actions from '../modules/websocket';
 import {
-  keyringStatus,
   registerService,
+  startService,
+  startServiceTest,
 } from '../modules/daemon_messages';
 import { handle_message } from './middleware_api';
 import {
   service_plotter,
+  service_wallet,
+  service_full_node,
+  service_simulator,
+  service_farmer,
+  service_harvester,
 } from '../util/service_names';
+import config from '../config/config';
 
 const crypto = require('crypto');
 
 const callback_map = {};
 if (isElectron()) {
-  var {getGlobal} = window.require('@electron/remote');
-  var fs = window.require('fs');
+  var { remote } = window.require('electron');
+  var fs = remote.require('fs');
   var WS = window.require('ws');
 }
 
@@ -35,16 +42,17 @@ const socketMiddleware = () => {
     clearInterval(wsConnectInterval);
     connected = true;
     store.dispatch(actions.wsConnected(event.target.url));
-
-    store.dispatch(keyringStatus());
-
-    // TODO: Remove. Just for testing
-    // store.dispatch(unlockKeyring("asdfasdf"));
-
     store.dispatch(registerService('wallet_ui'));
     store.dispatch(registerService(service_plotter));
-
-    // Wait until we know the keyring is unlocked before launching additional services
+    if (config.local_test) {
+      store.dispatch(startServiceTest(service_wallet));
+      store.dispatch(startService(service_simulator));
+    } else {
+      store.dispatch(startService(service_wallet));
+      store.dispatch(startService(service_full_node));
+      store.dispatch(startService(service_farmer));
+      store.dispatch(startService(service_harvester));
+    }
   };
 
   const onClose = (store) => () => {
@@ -78,8 +86,8 @@ const socketMiddleware = () => {
           }
           // connect to the remote host
           try {
-            const key_path = getGlobal('key_path');
-            const cert_path = getGlobal('cert_path');
+            const key_path = remote.getGlobal('key_path');
+            const cert_path = remote.getGlobal('cert_path');
 
             const options = {
               cert: fs.readFileSync(cert_path),

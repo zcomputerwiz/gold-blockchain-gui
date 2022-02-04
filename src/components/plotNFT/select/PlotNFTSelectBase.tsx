@@ -35,18 +35,19 @@ type Props = {
   title: ReactNode;
   description?: ReactNode;
   hideFee?: boolean;
-  feeDescription?: ReactNode;
 };
 
 export default function PlotNFTSelectBase(props: Props) {
-  const { step, onCancel, title, description, hideFee, feeDescription } = props;
+  const { step, onCancel, title, description, hideFee } = props;
   // const { nfts } = usePlotNFTs();
-  const { setValue } = useFormContext();
+  const { control, setValue } = useFormContext();
   const self = useWatch<boolean>({
+    control,
     name: 'self',
   });
 
   const poolUrl = useWatch<string>({
+    control,
     name: 'poolUrl',
   });
 
@@ -146,7 +147,6 @@ export default function PlotNFTSelectBase(props: Props) {
                 label={<Trans>Fee</Trans>}
                 fullWidth
               />
-              {feeDescription}
             </Grid>
           )}
         </Grid>

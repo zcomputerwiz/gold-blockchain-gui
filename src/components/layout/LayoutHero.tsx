@@ -21,7 +21,6 @@ const StyledBody = styled(Box)`
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding-bottom: 1rem;
 `;
 
 type Props = {

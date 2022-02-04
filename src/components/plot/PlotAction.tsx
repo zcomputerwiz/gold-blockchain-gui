@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useDispatch } from 'react-redux';
 import { ConfirmDialog, More } from '@chia/core';
@@ -7,6 +7,7 @@ import { DeleteForever as DeleteForeverIcon } from '@material-ui/icons';
 import { deletePlot } from '../../modules/harvesterMessages';
 import type Plot from '../../types/Plot';
 import useOpenDialog from '../../hooks/useOpenDialog';
+import isWindows from '../../util/isWindows';
 
 type Props = {
   plot: Plot;
